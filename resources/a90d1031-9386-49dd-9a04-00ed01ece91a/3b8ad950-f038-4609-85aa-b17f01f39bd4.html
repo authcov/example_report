@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/options-general.php
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/5c3c4b32-b3c5-4816-9035-a7200c7f61e4.html">http://localhost:8000/wp-admin/options-general.php</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:14 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>set-cookie:</b> wp-settings-1=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+wp-settings-time-1=1566224054; expires=Tue, 18-Aug-2020 14:14:14 GMT; Max-Age=31536000; path=/<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 16325<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=85<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;General Settings &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;options-general&#39;,
+	typenow = &#39;&#39;,
+	adminpage = &#39;options-general-php&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;amp;load%5B%5D=,site-icon,l10n,buttons,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224054&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/options-general.php&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;
+	jQuery(document).ready(function($){
+		var $siteName = $( &#39;#wp-admin-bar-site-name&#39; ).children( &#39;a&#39; ).first(),
+			homeURL = ( &#34;http:\/\/localhost:8000&#34; || &#39;&#39; ).replace( /^(https?:\/\/)?(www\.)?/, &#39;&#39; );
+
+		$( &#39;#blogname&#39; ).on( &#39;input&#39;, function() {
+			var title = $.trim( $( this ).val() ) || homeURL;
+
+			// Truncate to 40 characters.
+			if ( 40 &lt; title.length ) {
+				title = title.substring( 0, 40 ) + &#39;\u2026&#39;;
+			}
+
+			$siteName.text( title );
+		});
+
+		$(&#34;input[name=&#39;date_format&#39;]&#34;).click(function(){
+			if ( &#34;date_format_custom_radio&#34; != $(this).attr(&#34;id&#34;) )
+				$( &#39;input[name=&#34;date_format_custom&#34;]&#39; ).val( $( this ).val() ).closest( &#39;fieldset&#39; ).find( &#39;.example&#39; ).text( $( this ).parent( &#39;label&#39; ).children( &#39;.format-i18n&#39; ).text() );
+		});
+		$( &#39;input[name=&#34;date_format_custom&#34;]&#39; ).on( &#39;click input&#39;, function() {
+			$( &#39;#date_format_custom_radio&#39; ).prop( &#39;checked&#39;, true );
+		});
+
+		$(&#34;input[name=&#39;time_format&#39;]&#34;).click(function(){
+			if ( &#34;time_format_custom_radio&#34; != $(this).attr(&#34;id&#34;) )
+				$( &#39;input[name=&#34;time_format_custom&#34;]&#39; ).val( $( this ).val() ).closest( &#39;fieldset&#39; ).find( &#39;.example&#39; ).text( $( this ).parent( &#39;label&#39; ).children( &#39;.format-i18n&#39; ).text() );
+		});
+
+		$( &#39;input[name=&#34;time_format_custom&#34;]&#39; ).on( &#39;click input&#39;, function() {
+			$( &#39;#time_format_custom_radio&#39; ).prop( &#39;checked&#39;, true );
+		});
+
+		$( &#39;input[name=&#34;date_format_custom&#34;], input[name=&#34;time_format_custom&#34;]&#39; ).on( &#39;input&#39;, function() {
+			var format = $( this ),
+				fieldset = format.closest( &#39;fieldset&#39; ),
+				example = fieldset.find( &#39;.example&#39; ),
+				spinner = fieldset.find( &#39;.spinner&#39; );
+
+			// Debounce the event callback while users are typing.
+			clearTimeout( $.data( this, &#39;timer&#39; ) );
+			$( this ).data( &#39;timer&#39;, setTimeout( function() {
+				// If custom date is not empty.
+				if ( format.val() ) {
+					spinner.addClass( &#39;is-active&#39; );
+
+					$.post( ajaxurl, {
+						action: &#39;date_format_custom&#39; == format.attr( &#39;name&#39; ) ? &#39;date_format&#39; : &#39;time_format&#39;,
+						date 	: format.val()
+					}, function( d ) { spinner.removeClass( &#39;is-active&#39; ); example.text( d ); } );
+				}
+			}, 500 ) );
+		} );
+
+		var languageSelect = $( &#39;#WPLANG&#39; );
+		$( &#39;form&#39; ).submit( function() {
+			// Don&#39;t show a spinner for English and installed languages,
+			// as there is nothing to download.
+			if ( ! languageSelect.find( &#39;option:selected&#39; ).data( &#39;installed&#39; ) ) {
+				$( &#39;#submit&#39;, this ).after( &#39;&lt;span class=&#34;spinner language-install-spinner is-active&#34; /&gt;&#39; );
+			}
+		});
+	});
+&lt;/script&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js options-general-php auto-fold admin-bar branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Foptions-general.php&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Foptions-general.php&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Foptions-general.php&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-background&#39;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-editor.php&#39;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-settings menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item current&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item current&#34; aria-current=&#34;page&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+						
+							&lt;li id=&#34;tab-link-overview&#34; class=&#34;active&#34;&gt;
+								&lt;a href=&#34;#tab-panel-overview&#34; aria-controls=&#34;tab-panel-overview&#34;&gt;
+									Overview								&lt;/a&gt;
+							&lt;/li&gt;
+													&lt;/ul&gt;
+					&lt;/div&gt;
+
+										&lt;div class=&#34;contextual-help-sidebar&#34;&gt;
+						&lt;p&gt;&lt;strong&gt;For more information:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Settings_General_Screen&#34;&gt;Documentation on General Settings&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://wordpress.org/support/&#34;&gt;Support&lt;/a&gt;&lt;/p&gt;					&lt;/div&gt;
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+						
+							&lt;div id=&#34;tab-panel-overview&#34; class=&#34;help-tab-content active&#34;&gt;
+								&lt;p&gt;The fields on this screen determine some of the basics of your site setup.&lt;/p&gt;&lt;p&gt;Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes.&lt;/p&gt;&lt;p&gt;The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory.&lt;/p&gt;&lt;p&gt;If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin.&lt;/p&gt;&lt;p&gt;You can set the language, and the translation files will be automatically downloaded and installed (available if your filesystem is writable).&lt;/p&gt;&lt;p&gt;UTC means Coordinated Universal Time.&lt;/p&gt;&lt;p&gt;You must click the Save Changes button at the bottom of the screen for new settings to take effect.&lt;/p&gt;							&lt;/div&gt;
+												&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&#34;screen-meta-links&#34;&gt;
+					&lt;div id=&#34;contextual-help-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;contextual-help-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;contextual-help-wrap&#34; aria-expanded=&#34;false&#34;&gt;Help&lt;/button&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		
+&lt;div class=&#34;wrap&#34;&gt;
+&lt;h1&gt;General Settings&lt;/h1&gt;
+
+&lt;form method=&#34;post&#34; action=&#34;options.php&#34; novalidate=&#34;novalidate&#34;&gt;
+&lt;input type=&#39;hidden&#39; name=&#39;option_page&#39; value=&#39;general&#39; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;action&#34; value=&#34;update&#34; /&gt;&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce&#34; name=&#34;_wpnonce&#34; value=&#34;7c8601f9b6&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/options-general.php&#34; /&gt;
+&lt;table class=&#34;form-table&#34;&gt;
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;blogname&#34;&gt;Site Title&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;input name=&#34;blogname&#34; type=&#34;text&#34; id=&#34;blogname&#34; value=&#34;Authcov Blog&#34; class=&#34;regular-text&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;blogdescription&#34;&gt;Tagline&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;input name=&#34;blogdescription&#34; type=&#34;text&#34; id=&#34;blogdescription&#34; aria-describedby=&#34;tagline-description&#34; value=&#34;Just another WordPress site&#34; class=&#34;regular-text&#34; /&gt;
+&lt;p class=&#34;description&#34; id=&#34;tagline-description&#34;&gt;In a few words, explain what this site is about.&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;siteurl&#34;&gt;WordPress Address (URL)&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;input name=&#34;siteurl&#34; type=&#34;url&#34; id=&#34;siteurl&#34; value=&#34;http://localhost:8000&#34; class=&#34;regular-text code&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;home&#34;&gt;Site Address (URL)&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;input name=&#34;home&#34; type=&#34;url&#34; id=&#34;home&#34; aria-describedby=&#34;home-description&#34; value=&#34;http://localhost:8000&#34; class=&#34;regular-text code&#34; /&gt;
+	&lt;p class=&#34;description&#34; id=&#34;home-description&#34;&gt;
+		Enter the address here if you &lt;a href=&#34;https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory&#34;&gt;want your site home page to be different from your WordPress installation directory&lt;/a&gt;.&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;new_admin_email&#34;&gt;Email Address&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;input name=&#34;new_admin_email&#34; type=&#34;email&#34; id=&#34;new_admin_email&#34; aria-describedby=&#34;new-admin-email-description&#34; value=&#34;admin@authcov.io&#34; class=&#34;regular-text ltr&#34; /&gt;
+&lt;p class=&#34;description&#34; id=&#34;new-admin-email-description&#34;&gt;This address is used for admin purposes. If you change this we will send you an email at your new address to confirm it. &lt;strong&gt;The new address will not become active until confirmed.&lt;/strong&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Membership&lt;/th&gt;
+&lt;td&gt; &lt;fieldset&gt;&lt;legend class=&#34;screen-reader-text&#34;&gt;&lt;span&gt;Membership&lt;/span&gt;&lt;/legend&gt;&lt;label for=&#34;users_can_register&#34;&gt;
+&lt;input name=&#34;users_can_register&#34; type=&#34;checkbox&#34; id=&#34;users_can_register&#34; value=&#34;1&#34;  /&gt;
+	Anyone can register&lt;/label&gt;
+&lt;/fieldset&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;default_role&#34;&gt;New User Default Role&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;
+&lt;select name=&#34;default_role&#34; id=&#34;default_role&#34;&gt;
+	&lt;option selected=&#39;selected&#39; value=&#39;subscriber&#39;&gt;Subscriber&lt;/option&gt;
+	&lt;option value=&#39;contributor&#39;&gt;Contributor&lt;/option&gt;
+	&lt;option value=&#39;author&#39;&gt;Author&lt;/option&gt;
+	&lt;option value=&#39;editor&#39;&gt;Editor&lt;/option&gt;
+	&lt;option value=&#39;administrator&#39;&gt;Administrator&lt;/option&gt;&lt;/select&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+		&lt;tr&gt;
+		&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;WPLANG&#34;&gt;Site Language&lt;/label&gt;&lt;/th&gt;
+		&lt;td&gt;
+			&lt;select name=&#34;WPLANG&#34; id=&#34;WPLANG&#34;&gt;&lt;optgroup label=&#34;Installed&#34;&gt;
+&lt;option value=&#34;&#34; lang=&#34;en&#34; data-installed=&#34;1&#34; selected=&#39;selected&#39;&gt;English (United States)&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Available&#34;&gt;
+&lt;option value=&#34;af&#34; lang=&#34;af&#34;&gt;Afrikaans&lt;/option&gt;
+&lt;option value=&#34;ar&#34; lang=&#34;ar&#34;&gt;العربية&lt;/option&gt;
+&lt;option value=&#34;ary&#34; lang=&#34;ar&#34;&gt;العربية المغربية&lt;/option&gt;
+&lt;option value=&#34;as&#34; lang=&#34;as&#34;&gt;অসমীয়া&lt;/option&gt;
+&lt;option value=&#34;az&#34; lang=&#34;az&#34;&gt;Azərbaycan dili&lt;/option&gt;
+&lt;option value=&#34;azb&#34; lang=&#34;az&#34;&gt;گؤنئی آذربایجان&lt;/option&gt;
+&lt;option value=&#34;bel&#34; lang=&#34;be&#34;&gt;Беларуская мова&lt;/option&gt;
+&lt;option value=&#34;bg_BG&#34; lang=&#34;bg&#34;&gt;Български&lt;/option&gt;
+&lt;option value=&#34;bn_BD&#34; lang=&#34;bn&#34;&gt;বাংলা&lt;/option&gt;
+&lt;option value=&#34;bo&#34; lang=&#34;bo&#34;&gt;བོད་ཡིག&lt;/option&gt;
+&lt;option value=&#34;bs_BA&#34; lang=&#34;bs&#34;&gt;Bosanski&lt;/option&gt;
+&lt;option value=&#34;ca&#34; lang=&#34;ca&#34;&gt;Català&lt;/option&gt;
+&lt;option value=&#34;ceb&#34; lang=&#34;ceb&#34;&gt;Cebuano&lt;/option&gt;
+&lt;option value=&#34;cs_CZ&#34; lang=&#34;cs&#34;&gt;Čeština&lt;/option&gt;
+&lt;option value=&#34;cy&#34; lang=&#34;cy&#34;&gt;Cymraeg&lt;/option&gt;
+&lt;option value=&#34;da_DK&#34; lang=&#34;da&#34;&gt;Dansk&lt;/option&gt;
+&lt;option value=&#34;de_CH_informal&#34; lang=&#34;de&#34;&gt;Deutsch (Schweiz, Du)&lt;/option&gt;
+&lt;option value=&#34;de_DE_formal&#34; lang=&#34;de&#34;&gt;Deutsch (Sie)&lt;/option&gt;
+&lt;option value=&#34;de_DE&#34; lang=&#34;de&#34;&gt;Deutsch&lt;/option&gt;
+&lt;option value=&#34;de_AT&#34; lang=&#34;de&#34;&gt;Deutsch (Österreich)&lt;/option&gt;
+&lt;option value=&#34;de_CH&#34; lang=&#34;de&#34;&gt;Deutsch (Schweiz)&lt;/option&gt;
+&lt;option value=&#34;dzo&#34; lang=&#34;dz&#34;&gt;རྫོང་ཁ&lt;/option&gt;
+&lt;option value=&#34;el&#34; lang=&#34;el&#34;&gt;Ελληνικά&lt;/option&gt;
+&lt;option value=&#34;en_AU&#34; lang=&#34;en&#34;&gt;English (Australia)&lt;/option&gt;
+&lt;option value=&#34;en_GB&#34; lang=&#34;en&#34;&gt;English (UK)&lt;/option&gt;
+&lt;option value=&#34;en_ZA&#34; lang=&#34;en&#34;&gt;English (South Africa)&lt;/option&gt;
+&lt;option value=&#34;en_NZ&#34; lang=&#34;en&#34;&gt;English (New Zealand)&lt;/option&gt;
+&lt;option value=&#34;en_CA&#34; lang=&#34;en&#34;&gt;English (Canada)&lt;/option&gt;
+&lt;option value=&#34;eo&#34; lang=&#34;eo&#34;&gt;Esperanto&lt;/option&gt;
+&lt;option value=&#34;es_CL&#34; lang=&#34;es&#34;&gt;Español de Chile&lt;/option&gt;
+&lt;option value=&#34;es_ES&#34; lang=&#34;es&#34;&gt;Español&lt;/option&gt;
+&lt;option value=&#34;es_GT&#34; lang=&#34;es&#34;&gt;Español de Guatemala&lt;/option&gt;
+&lt;option value=&#34;es_MX&#34; lang=&#34;es&#34;&gt;Español de México&lt;/option&gt;
+&lt;option value=&#34;es_CR&#34; lang=&#34;es&#34;&gt;Español de Costa Rica&lt;/option&gt;
+&lt;option value=&#34;es_CO&#34; lang=&#34;es&#34;&gt;Español de Colombia&lt;/option&gt;
+&lt;option value=&#34;es_PE&#34; lang=&#34;es&#34;&gt;Español de Perú&lt;/option&gt;
+&lt;option value=&#34;es_AR&#34; lang=&#34;es&#34;&gt;Español de Argentina&lt;/option&gt;
+&lt;option value=&#34;es_VE&#34; lang=&#34;es&#34;&gt;Español de Venezuela&lt;/option&gt;
+&lt;option value=&#34;et&#34; lang=&#34;et&#34;&gt;Eesti&lt;/option&gt;
+&lt;option value=&#34;eu&#34; lang=&#34;eu&#34;&gt;Euskara&lt;/option&gt;
+&lt;option value=&#34;fa_IR&#34; lang=&#34;fa&#34;&gt;فارسی&lt;/option&gt;
+&lt;option value=&#34;fi&#34; lang=&#34;fi&#34;&gt;Suomi&lt;/option&gt;
+&lt;option value=&#34;fr_CA&#34; lang=&#34;fr&#34;&gt;Français du Canada&lt;/option&gt;
+&lt;option value=&#34;fr_FR&#34; lang=&#34;fr&#34;&gt;Français&lt;/option&gt;
+&lt;option value=&#34;fr_BE&#34; lang=&#34;fr&#34;&gt;Français de Belgique&lt;/option&gt;
+&lt;option value=&#34;fur&#34; lang=&#34;fur&#34;&gt;Friulian&lt;/option&gt;
+&lt;option value=&#34;gd&#34; lang=&#34;gd&#34;&gt;Gàidhlig&lt;/option&gt;
+&lt;option value=&#34;gl_ES&#34; lang=&#34;gl&#34;&gt;Galego&lt;/option&gt;
+&lt;option value=&#34;gu&#34; lang=&#34;gu&#34;&gt;ગુજરાતી&lt;/option&gt;
+&lt;option value=&#34;haz&#34; lang=&#34;haz&#34;&gt;هزاره گی&lt;/option&gt;
+&lt;option value=&#34;he_IL&#34; lang=&#34;he&#34;&gt;עִבְרִית&lt;/option&gt;
+&lt;option value=&#34;hi_IN&#34; lang=&#34;hi&#34;&gt;हिन्दी&lt;/option&gt;
+&lt;option value=&#34;hr&#34; lang=&#34;hr&#34;&gt;Hrvatski&lt;/option&gt;
+&lt;option value=&#34;hu_HU&#34; lang=&#34;hu&#34;&gt;Magyar&lt;/option&gt;
+&lt;option value=&#34;hy&#34; lang=&#34;hy&#34;&gt;Հայերեն&lt;/option&gt;
+&lt;option value=&#34;id_ID&#34; lang=&#34;id&#34;&gt;Bahasa Indonesia&lt;/option&gt;
+&lt;option value=&#34;is_IS&#34; lang=&#34;is&#34;&gt;Íslenska&lt;/option&gt;
+&lt;option value=&#34;it_IT&#34; lang=&#34;it&#34;&gt;Italiano&lt;/option&gt;
+&lt;option value=&#34;ja&#34; lang=&#34;ja&#34;&gt;日本語&lt;/option&gt;
+&lt;option value=&#34;jv_ID&#34; lang=&#34;jv&#34;&gt;Basa Jawa&lt;/option&gt;
+&lt;option value=&#34;ka_GE&#34; lang=&#34;ka&#34;&gt;ქართული&lt;/option&gt;
+&lt;option value=&#34;kab&#34; lang=&#34;kab&#34;&gt;Taqbaylit&lt;/option&gt;
+&lt;option value=&#34;kk&#34; lang=&#34;kk&#34;&gt;Қазақ тілі&lt;/option&gt;
+&lt;option value=&#34;km&#34; lang=&#34;km&#34;&gt;ភាសាខ្មែរ&lt;/option&gt;
+&lt;option value=&#34;kn&#34; lang=&#34;kn&#34;&gt;ಕನ್ನಡ&lt;/option&gt;
+&lt;option value=&#34;ko_KR&#34; lang=&#34;ko&#34;&gt;한국어&lt;/option&gt;
+&lt;option value=&#34;ckb&#34; lang=&#34;ku&#34;&gt;كوردی‎&lt;/option&gt;
+&lt;option value=&#34;lo&#34; lang=&#34;lo&#34;&gt;ພາສາລາວ&lt;/option&gt;
+&lt;option value=&#34;lt_LT&#34; lang=&#34;lt&#34;&gt;Lietuvių kalba&lt;/option&gt;
+&lt;option value=&#34;lv&#34; lang=&#34;lv&#34;&gt;Latviešu valoda&lt;/option&gt;
+&lt;option value=&#34;mk_MK&#34; lang=&#34;mk&#34;&gt;Македонски јазик&lt;/option&gt;
+&lt;option value=&#34;ml_IN&#34; lang=&#34;ml&#34;&gt;മലയാളം&lt;/option&gt;
+&lt;option value=&#34;mn&#34; lang=&#34;mn&#34;&gt;Монгол&lt;/option&gt;
+&lt;option value=&#34;mr&#34; lang=&#34;mr&#34;&gt;मराठी&lt;/option&gt;
+&lt;option value=&#34;ms_MY&#34; lang=&#34;ms&#34;&gt;Bahasa Melayu&lt;/option&gt;
+&lt;option value=&#34;my_MM&#34; lang=&#34;my&#34;&gt;ဗမာစာ&lt;/option&gt;
+&lt;option value=&#34;nb_NO&#34; lang=&#34;nb&#34;&gt;Norsk bokmål&lt;/option&gt;
+&lt;option value=&#34;ne_NP&#34; lang=&#34;ne&#34;&gt;नेपाली&lt;/option&gt;
+&lt;option value=&#34;nl_BE&#34; lang=&#34;nl&#34;&gt;Nederlands (België)&lt;/option&gt;
+&lt;option value=&#34;nl_NL_formal&#34; lang=&#34;nl&#34;&gt;Nederlands (Formeel)&lt;/option&gt;
+&lt;option value=&#34;nl_NL&#34; lang=&#34;nl&#34;&gt;Nederlands&lt;/option&gt;
+&lt;option value=&#34;nn_NO&#34; lang=&#34;nn&#34;&gt;Norsk nynorsk&lt;/option&gt;
+&lt;option value=&#34;oci&#34; lang=&#34;oc&#34;&gt;Occitan&lt;/option&gt;
+&lt;option value=&#34;pa_IN&#34; lang=&#34;pa&#34;&gt;ਪੰਜਾਬੀ&lt;/option&gt;
+&lt;option value=&#34;pl_PL&#34; lang=&#34;pl&#34;&gt;Polski&lt;/option&gt;
+&lt;option value=&#34;ps&#34; lang=&#34;ps&#34;&gt;پښتو&lt;/option&gt;
+&lt;option value=&#34;pt_AO&#34; lang=&#34;pt&#34;&gt;Português de Angola&lt;/option&gt;
+&lt;option value=&#34;pt_PT&#34; lang=&#34;pt&#34;&gt;Português&lt;/option&gt;
+&lt;option value=&#34;pt_PT_ao90&#34; lang=&#34;pt&#34;&gt;Português (AO90)&lt;/option&gt;
+&lt;option value=&#34;pt_BR&#34; lang=&#34;pt&#34;&gt;Português do Brasil&lt;/option&gt;
+&lt;option value=&#34;rhg&#34; lang=&#34;rhg&#34;&gt;Ruáinga&lt;/option&gt;
+&lt;option value=&#34;ro_RO&#34; lang=&#34;ro&#34;&gt;Română&lt;/option&gt;
+&lt;option value=&#34;ru_RU&#34; lang=&#34;ru&#34;&gt;Русский&lt;/option&gt;
+&lt;option value=&#34;sah&#34; lang=&#34;sah&#34;&gt;Сахалыы&lt;/option&gt;
+&lt;option value=&#34;si_LK&#34; lang=&#34;si&#34;&gt;සිංහල&lt;/option&gt;
+&lt;option value=&#34;sk_SK&#34; lang=&#34;sk&#34;&gt;Slovenčina&lt;/option&gt;
+&lt;option value=&#34;skr&#34; lang=&#34;skr&#34;&gt;سرائیکی&lt;/option&gt;
+&lt;option value=&#34;sl_SI&#34; lang=&#34;sl&#34;&gt;Slovenščina&lt;/option&gt;
+&lt;option value=&#34;sq&#34; lang=&#34;sq&#34;&gt;Shqip&lt;/option&gt;
+&lt;option value=&#34;sr_RS&#34; lang=&#34;sr&#34;&gt;Српски језик&lt;/option&gt;
+&lt;option value=&#34;sv_SE&#34; lang=&#34;sv&#34;&gt;Svenska&lt;/option&gt;
+&lt;option value=&#34;szl&#34; lang=&#34;szl&#34;&gt;Ślōnskŏ gŏdka&lt;/option&gt;
+&lt;option value=&#34;ta_IN&#34; lang=&#34;ta&#34;&gt;தமிழ்&lt;/option&gt;
+&lt;option value=&#34;te&#34; lang=&#34;te&#34;&gt;తెలుగు&lt;/option&gt;
+&lt;option value=&#34;th&#34; lang=&#34;th&#34;&gt;ไทย&lt;/option&gt;
+&lt;option value=&#34;tl&#34; lang=&#34;tl&#34;&gt;Tagalog&lt;/option&gt;
+&lt;option value=&#34;tr_TR&#34; lang=&#34;tr&#34;&gt;Türkçe&lt;/option&gt;
+&lt;option value=&#34;tt_RU&#34; lang=&#34;tt&#34;&gt;Татар теле&lt;/option&gt;
+&lt;option value=&#34;tah&#34; lang=&#34;ty&#34;&gt;Reo Tahiti&lt;/option&gt;
+&lt;option value=&#34;ug_CN&#34; lang=&#34;ug&#34;&gt;ئۇيغۇرچە&lt;/option&gt;
+&lt;option value=&#34;uk&#34; lang=&#34;uk&#34;&gt;Українська&lt;/option&gt;
+&lt;option value=&#34;ur&#34; lang=&#34;ur&#34;&gt;اردو&lt;/option&gt;
+&lt;option value=&#34;uz_UZ&#34; lang=&#34;uz&#34;&gt;O‘zbekcha&lt;/option&gt;
+&lt;option value=&#34;vi&#34; lang=&#34;vi&#34;&gt;Tiếng Việt&lt;/option&gt;
+&lt;option value=&#34;zh_CN&#34; lang=&#34;zh&#34;&gt;简体中文&lt;/option&gt;
+&lt;option value=&#34;zh_TW&#34; lang=&#34;zh&#34;&gt;繁體中文&lt;/option&gt;
+&lt;option value=&#34;zh_HK&#34; lang=&#34;zh&#34;&gt;香港中文版	&lt;/option&gt;
+&lt;/optgroup&gt;&lt;/select&gt;		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;timezone_string&#34;&gt;Timezone&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;
+
+&lt;select id=&#34;timezone_string&#34; name=&#34;timezone_string&#34; aria-describedby=&#34;timezone-description&#34;&gt;
+	&lt;optgroup label=&#34;Africa&#34;&gt;
+&lt;option value=&#34;Africa/Abidjan&#34;&gt;Abidjan&lt;/option&gt;
+&lt;option value=&#34;Africa/Accra&#34;&gt;Accra&lt;/option&gt;
+&lt;option value=&#34;Africa/Addis_Ababa&#34;&gt;Addis Ababa&lt;/option&gt;
+&lt;option value=&#34;Africa/Algiers&#34;&gt;Algiers&lt;/option&gt;
+&lt;option value=&#34;Africa/Asmara&#34;&gt;Asmara&lt;/option&gt;
+&lt;option value=&#34;Africa/Bamako&#34;&gt;Bamako&lt;/option&gt;
+&lt;option value=&#34;Africa/Bangui&#34;&gt;Bangui&lt;/option&gt;
+&lt;option value=&#34;Africa/Banjul&#34;&gt;Banjul&lt;/option&gt;
+&lt;option value=&#34;Africa/Bissau&#34;&gt;Bissau&lt;/option&gt;
+&lt;option value=&#34;Africa/Blantyre&#34;&gt;Blantyre&lt;/option&gt;
+&lt;option value=&#34;Africa/Brazzaville&#34;&gt;Brazzaville&lt;/option&gt;
+&lt;option value=&#34;Africa/Bujumbura&#34;&gt;Bujumbura&lt;/option&gt;
+&lt;option value=&#34;Africa/Cairo&#34;&gt;Cairo&lt;/option&gt;
+&lt;option value=&#34;Africa/Casablanca&#34;&gt;Casablanca&lt;/option&gt;
+&lt;option value=&#34;Africa/Ceuta&#34;&gt;Ceuta&lt;/option&gt;
+&lt;option value=&#34;Africa/Conakry&#34;&gt;Conakry&lt;/option&gt;
+&lt;option value=&#34;Africa/Dakar&#34;&gt;Dakar&lt;/option&gt;
+&lt;option value=&#34;Africa/Dar_es_Salaam&#34;&gt;Dar es Salaam&lt;/option&gt;
+&lt;option value=&#34;Africa/Djibouti&#34;&gt;Djibouti&lt;/option&gt;
+&lt;option value=&#34;Africa/Douala&#34;&gt;Douala&lt;/option&gt;
+&lt;option value=&#34;Africa/El_Aaiun&#34;&gt;El Aaiun&lt;/option&gt;
+&lt;option value=&#34;Africa/Freetown&#34;&gt;Freetown&lt;/option&gt;
+&lt;option value=&#34;Africa/Gaborone&#34;&gt;Gaborone&lt;/option&gt;
+&lt;option value=&#34;Africa/Harare&#34;&gt;Harare&lt;/option&gt;
+&lt;option value=&#34;Africa/Johannesburg&#34;&gt;Johannesburg&lt;/option&gt;
+&lt;option value=&#34;Africa/Juba&#34;&gt;Juba&lt;/option&gt;
+&lt;option value=&#34;Africa/Kampala&#34;&gt;Kampala&lt;/option&gt;
+&lt;option value=&#34;Africa/Khartoum&#34;&gt;Khartoum&lt;/option&gt;
+&lt;option value=&#34;Africa/Kigali&#34;&gt;Kigali&lt;/option&gt;
+&lt;option value=&#34;Africa/Kinshasa&#34;&gt;Kinshasa&lt;/option&gt;
+&lt;option value=&#34;Africa/Lagos&#34;&gt;Lagos&lt;/option&gt;
+&lt;option value=&#34;Africa/Libreville&#34;&gt;Libreville&lt;/option&gt;
+&lt;option value=&#34;Africa/Lome&#34;&gt;Lome&lt;/option&gt;
+&lt;option value=&#34;Africa/Luanda&#34;&gt;Luanda&lt;/option&gt;
+&lt;option value=&#34;Africa/Lubumbashi&#34;&gt;Lubumbashi&lt;/option&gt;
+&lt;option value=&#34;Africa/Lusaka&#34;&gt;Lusaka&lt;/option&gt;
+&lt;option value=&#34;Africa/Malabo&#34;&gt;Malabo&lt;/option&gt;
+&lt;option value=&#34;Africa/Maputo&#34;&gt;Maputo&lt;/option&gt;
+&lt;option value=&#34;Africa/Maseru&#34;&gt;Maseru&lt;/option&gt;
+&lt;option value=&#34;Africa/Mbabane&#34;&gt;Mbabane&lt;/option&gt;
+&lt;option value=&#34;Africa/Mogadishu&#34;&gt;Mogadishu&lt;/option&gt;
+&lt;option value=&#34;Africa/Monrovia&#34;&gt;Monrovia&lt;/option&gt;
+&lt;option value=&#34;Africa/Nairobi&#34;&gt;Nairobi&lt;/option&gt;
+&lt;option value=&#34;Africa/Ndjamena&#34;&gt;Ndjamena&lt;/option&gt;
+&lt;option value=&#34;Africa/Niamey&#34;&gt;Niamey&lt;/option&gt;
+&lt;option value=&#34;Africa/Nouakchott&#34;&gt;Nouakchott&lt;/option&gt;
+&lt;option value=&#34;Africa/Ouagadougou&#34;&gt;Ouagadougou&lt;/option&gt;
+&lt;option value=&#34;Africa/Porto-Novo&#34;&gt;Porto-Novo&lt;/option&gt;
+&lt;option value=&#34;Africa/Sao_Tome&#34;&gt;Sao Tome&lt;/option&gt;
+&lt;option value=&#34;Africa/Tripoli&#34;&gt;Tripoli&lt;/option&gt;
+&lt;option value=&#34;Africa/Tunis&#34;&gt;Tunis&lt;/option&gt;
+&lt;option value=&#34;Africa/Windhoek&#34;&gt;Windhoek&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;America&#34;&gt;
+&lt;option value=&#34;America/Adak&#34;&gt;Adak&lt;/option&gt;
+&lt;option value=&#34;America/Anchorage&#34;&gt;Anchorage&lt;/option&gt;
+&lt;option value=&#34;America/Anguilla&#34;&gt;Anguilla&lt;/option&gt;
+&lt;option value=&#34;America/Antigua&#34;&gt;Antigua&lt;/option&gt;
+&lt;option value=&#34;America/Araguaina&#34;&gt;Araguaina&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Buenos_Aires&#34;&gt;Argentina - Buenos Aires&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Catamarca&#34;&gt;Argentina - Catamarca&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Cordoba&#34;&gt;Argentina - Cordoba&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Jujuy&#34;&gt;Argentina - Jujuy&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/La_Rioja&#34;&gt;Argentina - La Rioja&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Mendoza&#34;&gt;Argentina - Mendoza&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Rio_Gallegos&#34;&gt;Argentina - Rio Gallegos&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Salta&#34;&gt;Argentina - Salta&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/San_Juan&#34;&gt;Argentina - San Juan&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/San_Luis&#34;&gt;Argentina - San Luis&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Tucuman&#34;&gt;Argentina - Tucuman&lt;/option&gt;
+&lt;option value=&#34;America/Argentina/Ushuaia&#34;&gt;Argentina - Ushuaia&lt;/option&gt;
+&lt;option value=&#34;America/Aruba&#34;&gt;Aruba&lt;/option&gt;
+&lt;option value=&#34;America/Asuncion&#34;&gt;Asuncion&lt;/option&gt;
+&lt;option value=&#34;America/Atikokan&#34;&gt;Atikokan&lt;/option&gt;
+&lt;option value=&#34;America/Bahia&#34;&gt;Bahia&lt;/option&gt;
+&lt;option value=&#34;America/Bahia_Banderas&#34;&gt;Bahia Banderas&lt;/option&gt;
+&lt;option value=&#34;America/Barbados&#34;&gt;Barbados&lt;/option&gt;
+&lt;option value=&#34;America/Belem&#34;&gt;Belem&lt;/option&gt;
+&lt;option value=&#34;America/Belize&#34;&gt;Belize&lt;/option&gt;
+&lt;option value=&#34;America/Blanc-Sablon&#34;&gt;Blanc-Sablon&lt;/option&gt;
+&lt;option value=&#34;America/Boa_Vista&#34;&gt;Boa Vista&lt;/option&gt;
+&lt;option value=&#34;America/Bogota&#34;&gt;Bogota&lt;/option&gt;
+&lt;option value=&#34;America/Boise&#34;&gt;Boise&lt;/option&gt;
+&lt;option value=&#34;America/Cambridge_Bay&#34;&gt;Cambridge Bay&lt;/option&gt;
+&lt;option value=&#34;America/Campo_Grande&#34;&gt;Campo Grande&lt;/option&gt;
+&lt;option value=&#34;America/Cancun&#34;&gt;Cancun&lt;/option&gt;
+&lt;option value=&#34;America/Caracas&#34;&gt;Caracas&lt;/option&gt;
+&lt;option value=&#34;America/Cayenne&#34;&gt;Cayenne&lt;/option&gt;
+&lt;option value=&#34;America/Cayman&#34;&gt;Cayman&lt;/option&gt;
+&lt;option value=&#34;America/Chicago&#34;&gt;Chicago&lt;/option&gt;
+&lt;option value=&#34;America/Chihuahua&#34;&gt;Chihuahua&lt;/option&gt;
+&lt;option value=&#34;America/Costa_Rica&#34;&gt;Costa Rica&lt;/option&gt;
+&lt;option value=&#34;America/Creston&#34;&gt;Creston&lt;/option&gt;
+&lt;option value=&#34;America/Cuiaba&#34;&gt;Cuiaba&lt;/option&gt;
+&lt;option value=&#34;America/Curacao&#34;&gt;Curacao&lt;/option&gt;
+&lt;option value=&#34;America/Danmarkshavn&#34;&gt;Danmarkshavn&lt;/option&gt;
+&lt;option value=&#34;America/Dawson&#34;&gt;Dawson&lt;/option&gt;
+&lt;option value=&#34;America/Dawson_Creek&#34;&gt;Dawson Creek&lt;/option&gt;
+&lt;option value=&#34;America/Denver&#34;&gt;Denver&lt;/option&gt;
+&lt;option value=&#34;America/Detroit&#34;&gt;Detroit&lt;/option&gt;
+&lt;option value=&#34;America/Dominica&#34;&gt;Dominica&lt;/option&gt;
+&lt;option value=&#34;America/Edmonton&#34;&gt;Edmonton&lt;/option&gt;
+&lt;option value=&#34;America/Eirunepe&#34;&gt;Eirunepe&lt;/option&gt;
+&lt;option value=&#34;America/El_Salvador&#34;&gt;El Salvador&lt;/option&gt;
+&lt;option value=&#34;America/Fortaleza&#34;&gt;Fortaleza&lt;/option&gt;
+&lt;option value=&#34;America/Fort_Nelson&#34;&gt;Fort Nelson&lt;/option&gt;
+&lt;option value=&#34;America/Glace_Bay&#34;&gt;Glace Bay&lt;/option&gt;
+&lt;option value=&#34;America/Godthab&#34;&gt;Godthab&lt;/option&gt;
+&lt;option value=&#34;America/Goose_Bay&#34;&gt;Goose Bay&lt;/option&gt;
+&lt;option value=&#34;America/Grand_Turk&#34;&gt;Grand Turk&lt;/option&gt;
+&lt;option value=&#34;America/Grenada&#34;&gt;Grenada&lt;/option&gt;
+&lt;option value=&#34;America/Guadeloupe&#34;&gt;Guadeloupe&lt;/option&gt;
+&lt;option value=&#34;America/Guatemala&#34;&gt;Guatemala&lt;/option&gt;
+&lt;option value=&#34;America/Guayaquil&#34;&gt;Guayaquil&lt;/option&gt;
+&lt;option value=&#34;America/Guyana&#34;&gt;Guyana&lt;/option&gt;
+&lt;option value=&#34;America/Halifax&#34;&gt;Halifax&lt;/option&gt;
+&lt;option value=&#34;America/Havana&#34;&gt;Havana&lt;/option&gt;
+&lt;option value=&#34;America/Hermosillo&#34;&gt;Hermosillo&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Indianapolis&#34;&gt;Indiana - Indianapolis&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Knox&#34;&gt;Indiana - Knox&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Marengo&#34;&gt;Indiana - Marengo&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Petersburg&#34;&gt;Indiana - Petersburg&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Tell_City&#34;&gt;Indiana - Tell City&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Vevay&#34;&gt;Indiana - Vevay&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Vincennes&#34;&gt;Indiana - Vincennes&lt;/option&gt;
+&lt;option value=&#34;America/Indiana/Winamac&#34;&gt;Indiana - Winamac&lt;/option&gt;
+&lt;option value=&#34;America/Inuvik&#34;&gt;Inuvik&lt;/option&gt;
+&lt;option value=&#34;America/Iqaluit&#34;&gt;Iqaluit&lt;/option&gt;
+&lt;option value=&#34;America/Jamaica&#34;&gt;Jamaica&lt;/option&gt;
+&lt;option value=&#34;America/Juneau&#34;&gt;Juneau&lt;/option&gt;
+&lt;option value=&#34;America/Kentucky/Louisville&#34;&gt;Kentucky - Louisville&lt;/option&gt;
+&lt;option value=&#34;America/Kentucky/Monticello&#34;&gt;Kentucky - Monticello&lt;/option&gt;
+&lt;option value=&#34;America/Kralendijk&#34;&gt;Kralendijk&lt;/option&gt;
+&lt;option value=&#34;America/La_Paz&#34;&gt;La Paz&lt;/option&gt;
+&lt;option value=&#34;America/Lima&#34;&gt;Lima&lt;/option&gt;
+&lt;option value=&#34;America/Los_Angeles&#34;&gt;Los Angeles&lt;/option&gt;
+&lt;option value=&#34;America/Lower_Princes&#34;&gt;Lower Princes&lt;/option&gt;
+&lt;option value=&#34;America/Maceio&#34;&gt;Maceio&lt;/option&gt;
+&lt;option value=&#34;America/Managua&#34;&gt;Managua&lt;/option&gt;
+&lt;option value=&#34;America/Manaus&#34;&gt;Manaus&lt;/option&gt;
+&lt;option value=&#34;America/Marigot&#34;&gt;Marigot&lt;/option&gt;
+&lt;option value=&#34;America/Martinique&#34;&gt;Martinique&lt;/option&gt;
+&lt;option value=&#34;America/Matamoros&#34;&gt;Matamoros&lt;/option&gt;
+&lt;option value=&#34;America/Mazatlan&#34;&gt;Mazatlan&lt;/option&gt;
+&lt;option value=&#34;America/Menominee&#34;&gt;Menominee&lt;/option&gt;
+&lt;option value=&#34;America/Merida&#34;&gt;Merida&lt;/option&gt;
+&lt;option value=&#34;America/Metlakatla&#34;&gt;Metlakatla&lt;/option&gt;
+&lt;option value=&#34;America/Mexico_City&#34;&gt;Mexico City&lt;/option&gt;
+&lt;option value=&#34;America/Miquelon&#34;&gt;Miquelon&lt;/option&gt;
+&lt;option value=&#34;America/Moncton&#34;&gt;Moncton&lt;/option&gt;
+&lt;option value=&#34;America/Monterrey&#34;&gt;Monterrey&lt;/option&gt;
+&lt;option value=&#34;America/Montevideo&#34;&gt;Montevideo&lt;/option&gt;
+&lt;option value=&#34;America/Montserrat&#34;&gt;Montserrat&lt;/option&gt;
+&lt;option value=&#34;America/Nassau&#34;&gt;Nassau&lt;/option&gt;
+&lt;option value=&#34;America/New_York&#34;&gt;New York&lt;/option&gt;
+&lt;option value=&#34;America/Nipigon&#34;&gt;Nipigon&lt;/option&gt;
+&lt;option value=&#34;America/Nome&#34;&gt;Nome&lt;/option&gt;
+&lt;option value=&#34;America/Noronha&#34;&gt;Noronha&lt;/option&gt;
+&lt;option value=&#34;America/North_Dakota/Beulah&#34;&gt;North Dakota - Beulah&lt;/option&gt;
+&lt;option value=&#34;America/North_Dakota/Center&#34;&gt;North Dakota - Center&lt;/option&gt;
+&lt;option value=&#34;America/North_Dakota/New_Salem&#34;&gt;North Dakota - New Salem&lt;/option&gt;
+&lt;option value=&#34;America/Ojinaga&#34;&gt;Ojinaga&lt;/option&gt;
+&lt;option value=&#34;America/Panama&#34;&gt;Panama&lt;/option&gt;
+&lt;option value=&#34;America/Pangnirtung&#34;&gt;Pangnirtung&lt;/option&gt;
+&lt;option value=&#34;America/Paramaribo&#34;&gt;Paramaribo&lt;/option&gt;
+&lt;option value=&#34;America/Phoenix&#34;&gt;Phoenix&lt;/option&gt;
+&lt;option value=&#34;America/Port-au-Prince&#34;&gt;Port-au-Prince&lt;/option&gt;
+&lt;option value=&#34;America/Port_of_Spain&#34;&gt;Port of Spain&lt;/option&gt;
+&lt;option value=&#34;America/Porto_Velho&#34;&gt;Porto Velho&lt;/option&gt;
+&lt;option value=&#34;America/Puerto_Rico&#34;&gt;Puerto Rico&lt;/option&gt;
+&lt;option value=&#34;America/Punta_Arenas&#34;&gt;Punta Arenas&lt;/option&gt;
+&lt;option value=&#34;America/Rainy_River&#34;&gt;Rainy River&lt;/option&gt;
+&lt;option value=&#34;America/Rankin_Inlet&#34;&gt;Rankin Inlet&lt;/option&gt;
+&lt;option value=&#34;America/Recife&#34;&gt;Recife&lt;/option&gt;
+&lt;option value=&#34;America/Regina&#34;&gt;Regina&lt;/option&gt;
+&lt;option value=&#34;America/Resolute&#34;&gt;Resolute&lt;/option&gt;
+&lt;option value=&#34;America/Rio_Branco&#34;&gt;Rio Branco&lt;/option&gt;
+&lt;option value=&#34;America/Santarem&#34;&gt;Santarem&lt;/option&gt;
+&lt;option value=&#34;America/Santiago&#34;&gt;Santiago&lt;/option&gt;
+&lt;option value=&#34;America/Santo_Domingo&#34;&gt;Santo Domingo&lt;/option&gt;
+&lt;option value=&#34;America/Sao_Paulo&#34;&gt;Sao Paulo&lt;/option&gt;
+&lt;option value=&#34;America/Scoresbysund&#34;&gt;Scoresbysund&lt;/option&gt;
+&lt;option value=&#34;America/Sitka&#34;&gt;Sitka&lt;/option&gt;
+&lt;option value=&#34;America/St_Barthelemy&#34;&gt;St Barthelemy&lt;/option&gt;
+&lt;option value=&#34;America/St_Johns&#34;&gt;St Johns&lt;/option&gt;
+&lt;option value=&#34;America/St_Kitts&#34;&gt;St Kitts&lt;/option&gt;
+&lt;option value=&#34;America/St_Lucia&#34;&gt;St Lucia&lt;/option&gt;
+&lt;option value=&#34;America/St_Thomas&#34;&gt;St Thomas&lt;/option&gt;
+&lt;option value=&#34;America/St_Vincent&#34;&gt;St Vincent&lt;/option&gt;
+&lt;option value=&#34;America/Swift_Current&#34;&gt;Swift Current&lt;/option&gt;
+&lt;option value=&#34;America/Tegucigalpa&#34;&gt;Tegucigalpa&lt;/option&gt;
+&lt;option value=&#34;America/Thule&#34;&gt;Thule&lt;/option&gt;
+&lt;option value=&#34;America/Thunder_Bay&#34;&gt;Thunder Bay&lt;/option&gt;
+&lt;option value=&#34;America/Tijuana&#34;&gt;Tijuana&lt;/option&gt;
+&lt;option value=&#34;America/Toronto&#34;&gt;Toronto&lt;/option&gt;
+&lt;option value=&#34;America/Tortola&#34;&gt;Tortola&lt;/option&gt;
+&lt;option value=&#34;America/Vancouver&#34;&gt;Vancouver&lt;/option&gt;
+&lt;option value=&#34;America/Whitehorse&#34;&gt;Whitehorse&lt;/option&gt;
+&lt;option value=&#34;America/Winnipeg&#34;&gt;Winnipeg&lt;/option&gt;
+&lt;option value=&#34;America/Yakutat&#34;&gt;Yakutat&lt;/option&gt;
+&lt;option value=&#34;America/Yellowknife&#34;&gt;Yellowknife&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Antarctica&#34;&gt;
+&lt;option value=&#34;Antarctica/Casey&#34;&gt;Casey&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Davis&#34;&gt;Davis&lt;/option&gt;
+&lt;option value=&#34;Antarctica/DumontDUrville&#34;&gt;DumontDUrville&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Macquarie&#34;&gt;Macquarie&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Mawson&#34;&gt;Mawson&lt;/option&gt;
+&lt;option value=&#34;Antarctica/McMurdo&#34;&gt;McMurdo&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Palmer&#34;&gt;Palmer&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Rothera&#34;&gt;Rothera&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Syowa&#34;&gt;Syowa&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Troll&#34;&gt;Troll&lt;/option&gt;
+&lt;option value=&#34;Antarctica/Vostok&#34;&gt;Vostok&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Arctic&#34;&gt;
+&lt;option value=&#34;Arctic/Longyearbyen&#34;&gt;Longyearbyen&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Asia&#34;&gt;
+&lt;option value=&#34;Asia/Aden&#34;&gt;Aden&lt;/option&gt;
+&lt;option value=&#34;Asia/Almaty&#34;&gt;Almaty&lt;/option&gt;
+&lt;option value=&#34;Asia/Amman&#34;&gt;Amman&lt;/option&gt;
+&lt;option value=&#34;Asia/Anadyr&#34;&gt;Anadyr&lt;/option&gt;
+&lt;option value=&#34;Asia/Aqtau&#34;&gt;Aqtau&lt;/option&gt;
+&lt;option value=&#34;Asia/Aqtobe&#34;&gt;Aqtobe&lt;/option&gt;
+&lt;option value=&#34;Asia/Ashgabat&#34;&gt;Ashgabat&lt;/option&gt;
+&lt;option value=&#34;Asia/Atyrau&#34;&gt;Atyrau&lt;/option&gt;
+&lt;option value=&#34;Asia/Baghdad&#34;&gt;Baghdad&lt;/option&gt;
+&lt;option value=&#34;Asia/Bahrain&#34;&gt;Bahrain&lt;/option&gt;
+&lt;option value=&#34;Asia/Baku&#34;&gt;Baku&lt;/option&gt;
+&lt;option value=&#34;Asia/Bangkok&#34;&gt;Bangkok&lt;/option&gt;
+&lt;option value=&#34;Asia/Barnaul&#34;&gt;Barnaul&lt;/option&gt;
+&lt;option value=&#34;Asia/Beirut&#34;&gt;Beirut&lt;/option&gt;
+&lt;option value=&#34;Asia/Bishkek&#34;&gt;Bishkek&lt;/option&gt;
+&lt;option value=&#34;Asia/Brunei&#34;&gt;Brunei&lt;/option&gt;
+&lt;option value=&#34;Asia/Chita&#34;&gt;Chita&lt;/option&gt;
+&lt;option value=&#34;Asia/Choibalsan&#34;&gt;Choibalsan&lt;/option&gt;
+&lt;option value=&#34;Asia/Colombo&#34;&gt;Colombo&lt;/option&gt;
+&lt;option value=&#34;Asia/Damascus&#34;&gt;Damascus&lt;/option&gt;
+&lt;option value=&#34;Asia/Dhaka&#34;&gt;Dhaka&lt;/option&gt;
+&lt;option value=&#34;Asia/Dili&#34;&gt;Dili&lt;/option&gt;
+&lt;option value=&#34;Asia/Dubai&#34;&gt;Dubai&lt;/option&gt;
+&lt;option value=&#34;Asia/Dushanbe&#34;&gt;Dushanbe&lt;/option&gt;
+&lt;option value=&#34;Asia/Famagusta&#34;&gt;Famagusta&lt;/option&gt;
+&lt;option value=&#34;Asia/Gaza&#34;&gt;Gaza&lt;/option&gt;
+&lt;option value=&#34;Asia/Hebron&#34;&gt;Hebron&lt;/option&gt;
+&lt;option value=&#34;Asia/Ho_Chi_Minh&#34;&gt;Ho Chi Minh&lt;/option&gt;
+&lt;option value=&#34;Asia/Hong_Kong&#34;&gt;Hong Kong&lt;/option&gt;
+&lt;option value=&#34;Asia/Hovd&#34;&gt;Hovd&lt;/option&gt;
+&lt;option value=&#34;Asia/Irkutsk&#34;&gt;Irkutsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Jakarta&#34;&gt;Jakarta&lt;/option&gt;
+&lt;option value=&#34;Asia/Jayapura&#34;&gt;Jayapura&lt;/option&gt;
+&lt;option value=&#34;Asia/Jerusalem&#34;&gt;Jerusalem&lt;/option&gt;
+&lt;option value=&#34;Asia/Kabul&#34;&gt;Kabul&lt;/option&gt;
+&lt;option value=&#34;Asia/Kamchatka&#34;&gt;Kamchatka&lt;/option&gt;
+&lt;option value=&#34;Asia/Karachi&#34;&gt;Karachi&lt;/option&gt;
+&lt;option value=&#34;Asia/Kathmandu&#34;&gt;Kathmandu&lt;/option&gt;
+&lt;option value=&#34;Asia/Khandyga&#34;&gt;Khandyga&lt;/option&gt;
+&lt;option value=&#34;Asia/Kolkata&#34;&gt;Kolkata&lt;/option&gt;
+&lt;option value=&#34;Asia/Krasnoyarsk&#34;&gt;Krasnoyarsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Kuala_Lumpur&#34;&gt;Kuala Lumpur&lt;/option&gt;
+&lt;option value=&#34;Asia/Kuching&#34;&gt;Kuching&lt;/option&gt;
+&lt;option value=&#34;Asia/Kuwait&#34;&gt;Kuwait&lt;/option&gt;
+&lt;option value=&#34;Asia/Macau&#34;&gt;Macau&lt;/option&gt;
+&lt;option value=&#34;Asia/Magadan&#34;&gt;Magadan&lt;/option&gt;
+&lt;option value=&#34;Asia/Makassar&#34;&gt;Makassar&lt;/option&gt;
+&lt;option value=&#34;Asia/Manila&#34;&gt;Manila&lt;/option&gt;
+&lt;option value=&#34;Asia/Muscat&#34;&gt;Muscat&lt;/option&gt;
+&lt;option value=&#34;Asia/Nicosia&#34;&gt;Nicosia&lt;/option&gt;
+&lt;option value=&#34;Asia/Novokuznetsk&#34;&gt;Novokuznetsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Novosibirsk&#34;&gt;Novosibirsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Omsk&#34;&gt;Omsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Oral&#34;&gt;Oral&lt;/option&gt;
+&lt;option value=&#34;Asia/Phnom_Penh&#34;&gt;Phnom Penh&lt;/option&gt;
+&lt;option value=&#34;Asia/Pontianak&#34;&gt;Pontianak&lt;/option&gt;
+&lt;option value=&#34;Asia/Pyongyang&#34;&gt;Pyongyang&lt;/option&gt;
+&lt;option value=&#34;Asia/Qatar&#34;&gt;Qatar&lt;/option&gt;
+&lt;option value=&#34;Asia/Qostanay&#34;&gt;Qostanay&lt;/option&gt;
+&lt;option value=&#34;Asia/Qyzylorda&#34;&gt;Qyzylorda&lt;/option&gt;
+&lt;option value=&#34;Asia/Riyadh&#34;&gt;Riyadh&lt;/option&gt;
+&lt;option value=&#34;Asia/Sakhalin&#34;&gt;Sakhalin&lt;/option&gt;
+&lt;option value=&#34;Asia/Samarkand&#34;&gt;Samarkand&lt;/option&gt;
+&lt;option value=&#34;Asia/Seoul&#34;&gt;Seoul&lt;/option&gt;
+&lt;option value=&#34;Asia/Shanghai&#34;&gt;Shanghai&lt;/option&gt;
+&lt;option value=&#34;Asia/Singapore&#34;&gt;Singapore&lt;/option&gt;
+&lt;option value=&#34;Asia/Srednekolymsk&#34;&gt;Srednekolymsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Taipei&#34;&gt;Taipei&lt;/option&gt;
+&lt;option value=&#34;Asia/Tashkent&#34;&gt;Tashkent&lt;/option&gt;
+&lt;option value=&#34;Asia/Tbilisi&#34;&gt;Tbilisi&lt;/option&gt;
+&lt;option value=&#34;Asia/Tehran&#34;&gt;Tehran&lt;/option&gt;
+&lt;option value=&#34;Asia/Thimphu&#34;&gt;Thimphu&lt;/option&gt;
+&lt;option value=&#34;Asia/Tokyo&#34;&gt;Tokyo&lt;/option&gt;
+&lt;option value=&#34;Asia/Tomsk&#34;&gt;Tomsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Ulaanbaatar&#34;&gt;Ulaanbaatar&lt;/option&gt;
+&lt;option value=&#34;Asia/Urumqi&#34;&gt;Urumqi&lt;/option&gt;
+&lt;option value=&#34;Asia/Ust-Nera&#34;&gt;Ust-Nera&lt;/option&gt;
+&lt;option value=&#34;Asia/Vientiane&#34;&gt;Vientiane&lt;/option&gt;
+&lt;option value=&#34;Asia/Vladivostok&#34;&gt;Vladivostok&lt;/option&gt;
+&lt;option value=&#34;Asia/Yakutsk&#34;&gt;Yakutsk&lt;/option&gt;
+&lt;option value=&#34;Asia/Yangon&#34;&gt;Yangon&lt;/option&gt;
+&lt;option value=&#34;Asia/Yekaterinburg&#34;&gt;Yekaterinburg&lt;/option&gt;
+&lt;option value=&#34;Asia/Yerevan&#34;&gt;Yerevan&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Atlantic&#34;&gt;
+&lt;option value=&#34;Atlantic/Azores&#34;&gt;Azores&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Bermuda&#34;&gt;Bermuda&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Canary&#34;&gt;Canary&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Cape_Verde&#34;&gt;Cape Verde&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Faroe&#34;&gt;Faroe&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Madeira&#34;&gt;Madeira&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Reykjavik&#34;&gt;Reykjavik&lt;/option&gt;
+&lt;option value=&#34;Atlantic/South_Georgia&#34;&gt;South Georgia&lt;/option&gt;
+&lt;option value=&#34;Atlantic/Stanley&#34;&gt;Stanley&lt;/option&gt;
+&lt;option value=&#34;Atlantic/St_Helena&#34;&gt;St Helena&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Australia&#34;&gt;
+&lt;option value=&#34;Australia/Adelaide&#34;&gt;Adelaide&lt;/option&gt;
+&lt;option value=&#34;Australia/Brisbane&#34;&gt;Brisbane&lt;/option&gt;
+&lt;option value=&#34;Australia/Broken_Hill&#34;&gt;Broken Hill&lt;/option&gt;
+&lt;option value=&#34;Australia/Currie&#34;&gt;Currie&lt;/option&gt;
+&lt;option value=&#34;Australia/Darwin&#34;&gt;Darwin&lt;/option&gt;
+&lt;option value=&#34;Australia/Eucla&#34;&gt;Eucla&lt;/option&gt;
+&lt;option value=&#34;Australia/Hobart&#34;&gt;Hobart&lt;/option&gt;
+&lt;option value=&#34;Australia/Lindeman&#34;&gt;Lindeman&lt;/option&gt;
+&lt;option value=&#34;Australia/Lord_Howe&#34;&gt;Lord Howe&lt;/option&gt;
+&lt;option value=&#34;Australia/Melbourne&#34;&gt;Melbourne&lt;/option&gt;
+&lt;option value=&#34;Australia/Perth&#34;&gt;Perth&lt;/option&gt;
+&lt;option value=&#34;Australia/Sydney&#34;&gt;Sydney&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Europe&#34;&gt;
+&lt;option value=&#34;Europe/Amsterdam&#34;&gt;Amsterdam&lt;/option&gt;
+&lt;option value=&#34;Europe/Andorra&#34;&gt;Andorra&lt;/option&gt;
+&lt;option value=&#34;Europe/Astrakhan&#34;&gt;Astrakhan&lt;/option&gt;
+&lt;option value=&#34;Europe/Athens&#34;&gt;Athens&lt;/option&gt;
+&lt;option value=&#34;Europe/Belgrade&#34;&gt;Belgrade&lt;/option&gt;
+&lt;option value=&#34;Europe/Berlin&#34;&gt;Berlin&lt;/option&gt;
+&lt;option value=&#34;Europe/Bratislava&#34;&gt;Bratislava&lt;/option&gt;
+&lt;option value=&#34;Europe/Brussels&#34;&gt;Brussels&lt;/option&gt;
+&lt;option value=&#34;Europe/Bucharest&#34;&gt;Bucharest&lt;/option&gt;
+&lt;option value=&#34;Europe/Budapest&#34;&gt;Budapest&lt;/option&gt;
+&lt;option value=&#34;Europe/Busingen&#34;&gt;Busingen&lt;/option&gt;
+&lt;option value=&#34;Europe/Chisinau&#34;&gt;Chisinau&lt;/option&gt;
+&lt;option value=&#34;Europe/Copenhagen&#34;&gt;Copenhagen&lt;/option&gt;
+&lt;option value=&#34;Europe/Dublin&#34;&gt;Dublin&lt;/option&gt;
+&lt;option value=&#34;Europe/Gibraltar&#34;&gt;Gibraltar&lt;/option&gt;
+&lt;option value=&#34;Europe/Guernsey&#34;&gt;Guernsey&lt;/option&gt;
+&lt;option value=&#34;Europe/Helsinki&#34;&gt;Helsinki&lt;/option&gt;
+&lt;option value=&#34;Europe/Isle_of_Man&#34;&gt;Isle of Man&lt;/option&gt;
+&lt;option value=&#34;Europe/Istanbul&#34;&gt;Istanbul&lt;/option&gt;
+&lt;option value=&#34;Europe/Jersey&#34;&gt;Jersey&lt;/option&gt;
+&lt;option value=&#34;Europe/Kaliningrad&#34;&gt;Kaliningrad&lt;/option&gt;
+&lt;option value=&#34;Europe/Kiev&#34;&gt;Kiev&lt;/option&gt;
+&lt;option value=&#34;Europe/Kirov&#34;&gt;Kirov&lt;/option&gt;
+&lt;option value=&#34;Europe/Lisbon&#34;&gt;Lisbon&lt;/option&gt;
+&lt;option value=&#34;Europe/Ljubljana&#34;&gt;Ljubljana&lt;/option&gt;
+&lt;option value=&#34;Europe/London&#34;&gt;London&lt;/option&gt;
+&lt;option value=&#34;Europe/Luxembourg&#34;&gt;Luxembourg&lt;/option&gt;
+&lt;option value=&#34;Europe/Madrid&#34;&gt;Madrid&lt;/option&gt;
+&lt;option value=&#34;Europe/Malta&#34;&gt;Malta&lt;/option&gt;
+&lt;option value=&#34;Europe/Mariehamn&#34;&gt;Mariehamn&lt;/option&gt;
+&lt;option value=&#34;Europe/Minsk&#34;&gt;Minsk&lt;/option&gt;
+&lt;option value=&#34;Europe/Monaco&#34;&gt;Monaco&lt;/option&gt;
+&lt;option value=&#34;Europe/Moscow&#34;&gt;Moscow&lt;/option&gt;
+&lt;option value=&#34;Europe/Oslo&#34;&gt;Oslo&lt;/option&gt;
+&lt;option value=&#34;Europe/Paris&#34;&gt;Paris&lt;/option&gt;
+&lt;option value=&#34;Europe/Podgorica&#34;&gt;Podgorica&lt;/option&gt;
+&lt;option value=&#34;Europe/Prague&#34;&gt;Prague&lt;/option&gt;
+&lt;option value=&#34;Europe/Riga&#34;&gt;Riga&lt;/option&gt;
+&lt;option value=&#34;Europe/Rome&#34;&gt;Rome&lt;/option&gt;
+&lt;option value=&#34;Europe/Samara&#34;&gt;Samara&lt;/option&gt;
+&lt;option value=&#34;Europe/San_Marino&#34;&gt;San Marino&lt;/option&gt;
+&lt;option value=&#34;Europe/Sarajevo&#34;&gt;Sarajevo&lt;/option&gt;
+&lt;option value=&#34;Europe/Saratov&#34;&gt;Saratov&lt;/option&gt;
+&lt;option value=&#34;Europe/Simferopol&#34;&gt;Simferopol&lt;/option&gt;
+&lt;option value=&#34;Europe/Skopje&#34;&gt;Skopje&lt;/option&gt;
+&lt;option value=&#34;Europe/Sofia&#34;&gt;Sofia&lt;/option&gt;
+&lt;option value=&#34;Europe/Stockholm&#34;&gt;Stockholm&lt;/option&gt;
+&lt;option value=&#34;Europe/Tallinn&#34;&gt;Tallinn&lt;/option&gt;
+&lt;option value=&#34;Europe/Tirane&#34;&gt;Tirane&lt;/option&gt;
+&lt;option value=&#34;Europe/Ulyanovsk&#34;&gt;Ulyanovsk&lt;/option&gt;
+&lt;option value=&#34;Europe/Uzhgorod&#34;&gt;Uzhgorod&lt;/option&gt;
+&lt;option value=&#34;Europe/Vaduz&#34;&gt;Vaduz&lt;/option&gt;
+&lt;option value=&#34;Europe/Vatican&#34;&gt;Vatican&lt;/option&gt;
+&lt;option value=&#34;Europe/Vienna&#34;&gt;Vienna&lt;/option&gt;
+&lt;option value=&#34;Europe/Vilnius&#34;&gt;Vilnius&lt;/option&gt;
+&lt;option value=&#34;Europe/Volgograd&#34;&gt;Volgograd&lt;/option&gt;
+&lt;option value=&#34;Europe/Warsaw&#34;&gt;Warsaw&lt;/option&gt;
+&lt;option value=&#34;Europe/Zagreb&#34;&gt;Zagreb&lt;/option&gt;
+&lt;option value=&#34;Europe/Zaporozhye&#34;&gt;Zaporozhye&lt;/option&gt;
+&lt;option value=&#34;Europe/Zurich&#34;&gt;Zurich&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Indian&#34;&gt;
+&lt;option value=&#34;Indian/Antananarivo&#34;&gt;Antananarivo&lt;/option&gt;
+&lt;option value=&#34;Indian/Chagos&#34;&gt;Chagos&lt;/option&gt;
+&lt;option value=&#34;Indian/Christmas&#34;&gt;Christmas&lt;/option&gt;
+&lt;option value=&#34;Indian/Cocos&#34;&gt;Cocos&lt;/option&gt;
+&lt;option value=&#34;Indian/Comoro&#34;&gt;Comoro&lt;/option&gt;
+&lt;option value=&#34;Indian/Kerguelen&#34;&gt;Kerguelen&lt;/option&gt;
+&lt;option value=&#34;Indian/Mahe&#34;&gt;Mahe&lt;/option&gt;
+&lt;option value=&#34;Indian/Maldives&#34;&gt;Maldives&lt;/option&gt;
+&lt;option value=&#34;Indian/Mauritius&#34;&gt;Mauritius&lt;/option&gt;
+&lt;option value=&#34;Indian/Mayotte&#34;&gt;Mayotte&lt;/option&gt;
+&lt;option value=&#34;Indian/Reunion&#34;&gt;Reunion&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Pacific&#34;&gt;
+&lt;option value=&#34;Pacific/Apia&#34;&gt;Apia&lt;/option&gt;
+&lt;option value=&#34;Pacific/Auckland&#34;&gt;Auckland&lt;/option&gt;
+&lt;option value=&#34;Pacific/Bougainville&#34;&gt;Bougainville&lt;/option&gt;
+&lt;option value=&#34;Pacific/Chatham&#34;&gt;Chatham&lt;/option&gt;
+&lt;option value=&#34;Pacific/Chuuk&#34;&gt;Chuuk&lt;/option&gt;
+&lt;option value=&#34;Pacific/Easter&#34;&gt;Easter&lt;/option&gt;
+&lt;option value=&#34;Pacific/Efate&#34;&gt;Efate&lt;/option&gt;
+&lt;option value=&#34;Pacific/Enderbury&#34;&gt;Enderbury&lt;/option&gt;
+&lt;option value=&#34;Pacific/Fakaofo&#34;&gt;Fakaofo&lt;/option&gt;
+&lt;option value=&#34;Pacific/Fiji&#34;&gt;Fiji&lt;/option&gt;
+&lt;option value=&#34;Pacific/Funafuti&#34;&gt;Funafuti&lt;/option&gt;
+&lt;option value=&#34;Pacific/Galapagos&#34;&gt;Galapagos&lt;/option&gt;
+&lt;option value=&#34;Pacific/Gambier&#34;&gt;Gambier&lt;/option&gt;
+&lt;option value=&#34;Pacific/Guadalcanal&#34;&gt;Guadalcanal&lt;/option&gt;
+&lt;option value=&#34;Pacific/Guam&#34;&gt;Guam&lt;/option&gt;
+&lt;option value=&#34;Pacific/Honolulu&#34;&gt;Honolulu&lt;/option&gt;
+&lt;option value=&#34;Pacific/Kiritimati&#34;&gt;Kiritimati&lt;/option&gt;
+&lt;option value=&#34;Pacific/Kosrae&#34;&gt;Kosrae&lt;/option&gt;
+&lt;option value=&#34;Pacific/Kwajalein&#34;&gt;Kwajalein&lt;/option&gt;
+&lt;option value=&#34;Pacific/Majuro&#34;&gt;Majuro&lt;/option&gt;
+&lt;option value=&#34;Pacific/Marquesas&#34;&gt;Marquesas&lt;/option&gt;
+&lt;option value=&#34;Pacific/Midway&#34;&gt;Midway&lt;/option&gt;
+&lt;option value=&#34;Pacific/Nauru&#34;&gt;Nauru&lt;/option&gt;
+&lt;option value=&#34;Pacific/Niue&#34;&gt;Niue&lt;/option&gt;
+&lt;option value=&#34;Pacific/Norfolk&#34;&gt;Norfolk&lt;/option&gt;
+&lt;option value=&#34;Pacific/Noumea&#34;&gt;Noumea&lt;/option&gt;
+&lt;option value=&#34;Pacific/Pago_Pago&#34;&gt;Pago Pago&lt;/option&gt;
+&lt;option value=&#34;Pacific/Palau&#34;&gt;Palau&lt;/option&gt;
+&lt;option value=&#34;Pacific/Pitcairn&#34;&gt;Pitcairn&lt;/option&gt;
+&lt;option value=&#34;Pacific/Pohnpei&#34;&gt;Pohnpei&lt;/option&gt;
+&lt;option value=&#34;Pacific/Port_Moresby&#34;&gt;Port Moresby&lt;/option&gt;
+&lt;option value=&#34;Pacific/Rarotonga&#34;&gt;Rarotonga&lt;/option&gt;
+&lt;option value=&#34;Pacific/Saipan&#34;&gt;Saipan&lt;/option&gt;
+&lt;option value=&#34;Pacific/Tahiti&#34;&gt;Tahiti&lt;/option&gt;
+&lt;option value=&#34;Pacific/Tarawa&#34;&gt;Tarawa&lt;/option&gt;
+&lt;option value=&#34;Pacific/Tongatapu&#34;&gt;Tongatapu&lt;/option&gt;
+&lt;option value=&#34;Pacific/Wake&#34;&gt;Wake&lt;/option&gt;
+&lt;option value=&#34;Pacific/Wallis&#34;&gt;Wallis&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;UTC&#34;&gt;
+&lt;option value=&#34;UTC&#34;&gt;UTC&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&#34;Manual Offsets&#34;&gt;
+&lt;option value=&#34;UTC-12&#34;&gt;UTC-12&lt;/option&gt;
+&lt;option value=&#34;UTC-11.5&#34;&gt;UTC-11:30&lt;/option&gt;
+&lt;option value=&#34;UTC-11&#34;&gt;UTC-11&lt;/option&gt;
+&lt;option value=&#34;UTC-10.5&#34;&gt;UTC-10:30&lt;/option&gt;
+&lt;option value=&#34;UTC-10&#34;&gt;UTC-10&lt;/option&gt;
+&lt;option value=&#34;UTC-9.5&#34;&gt;UTC-9:30&lt;/option&gt;
+&lt;option value=&#34;UTC-9&#34;&gt;UTC-9&lt;/option&gt;
+&lt;option value=&#34;UTC-8.5&#34;&gt;UTC-8:30&lt;/option&gt;
+&lt;option value=&#34;UTC-8&#34;&gt;UTC-8&lt;/option&gt;
+&lt;option value=&#34;UTC-7.5&#34;&gt;UTC-7:30&lt;/option&gt;
+&lt;option value=&#34;UTC-7&#34;&gt;UTC-7&lt;/option&gt;
+&lt;option value=&#34;UTC-6.5&#34;&gt;UTC-6:30&lt;/option&gt;
+&lt;option value=&#34;UTC-6&#34;&gt;UTC-6&lt;/option&gt;
+&lt;option value=&#34;UTC-5.5&#34;&gt;UTC-5:30&lt;/option&gt;
+&lt;option value=&#34;UTC-5&#34;&gt;UTC-5&lt;/option&gt;
+&lt;option value=&#34;UTC-4.5&#34;&gt;UTC-4:30&lt;/option&gt;
+&lt;option value=&#34;UTC-4&#34;&gt;UTC-4&lt;/option&gt;
+&lt;option value=&#34;UTC-3.5&#34;&gt;UTC-3:30&lt;/option&gt;
+&lt;option value=&#34;UTC-3&#34;&gt;UTC-3&lt;/option&gt;
+&lt;option value=&#34;UTC-2.5&#34;&gt;UTC-2:30&lt;/option&gt;
+&lt;option value=&#34;UTC-2&#34;&gt;UTC-2&lt;/option&gt;
+&lt;option value=&#34;UTC-1.5&#34;&gt;UTC-1:30&lt;/option&gt;
+&lt;option value=&#34;UTC-1&#34;&gt;UTC-1&lt;/option&gt;
+&lt;option value=&#34;UTC-0.5&#34;&gt;UTC-0:30&lt;/option&gt;
+&lt;option selected=&#34;selected&#34; value=&#34;UTC+0&#34;&gt;UTC+0&lt;/option&gt;
+&lt;option value=&#34;UTC+0.5&#34;&gt;UTC+0:30&lt;/option&gt;
+&lt;option value=&#34;UTC+1&#34;&gt;UTC+1&lt;/option&gt;
+&lt;option value=&#34;UTC+1.5&#34;&gt;UTC+1:30&lt;/option&gt;
+&lt;option value=&#34;UTC+2&#34;&gt;UTC+2&lt;/option&gt;
+&lt;option value=&#34;UTC+2.5&#34;&gt;UTC+2:30&lt;/option&gt;
+&lt;option value=&#34;UTC+3&#34;&gt;UTC+3&lt;/option&gt;
+&lt;option value=&#34;UTC+3.5&#34;&gt;UTC+3:30&lt;/option&gt;
+&lt;option value=&#34;UTC+4&#34;&gt;UTC+4&lt;/option&gt;
+&lt;option value=&#34;UTC+4.5&#34;&gt;UTC+4:30&lt;/option&gt;
+&lt;option value=&#34;UTC+5&#34;&gt;UTC+5&lt;/option&gt;
+&lt;option value=&#34;UTC+5.5&#34;&gt;UTC+5:30&lt;/option&gt;
+&lt;option value=&#34;UTC+5.75&#34;&gt;UTC+5:45&lt;/option&gt;
+&lt;option value=&#34;UTC+6&#34;&gt;UTC+6&lt;/option&gt;
+&lt;option value=&#34;UTC+6.5&#34;&gt;UTC+6:30&lt;/option&gt;
+&lt;option value=&#34;UTC+7&#34;&gt;UTC+7&lt;/option&gt;
+&lt;option value=&#34;UTC+7.5&#34;&gt;UTC+7:30&lt;/option&gt;
+&lt;option value=&#34;UTC+8&#34;&gt;UTC+8&lt;/option&gt;
+&lt;option value=&#34;UTC+8.5&#34;&gt;UTC+8:30&lt;/option&gt;
+&lt;option value=&#34;UTC+8.75&#34;&gt;UTC+8:45&lt;/option&gt;
+&lt;option value=&#34;UTC+9&#34;&gt;UTC+9&lt;/option&gt;
+&lt;option value=&#34;UTC+9.5&#34;&gt;UTC+9:30&lt;/option&gt;
+&lt;option value=&#34;UTC+10&#34;&gt;UTC+10&lt;/option&gt;
+&lt;option value=&#34;UTC+10.5&#34;&gt;UTC+10:30&lt;/option&gt;
+&lt;option value=&#34;UTC+11&#34;&gt;UTC+11&lt;/option&gt;
+&lt;option value=&#34;UTC+11.5&#34;&gt;UTC+11:30&lt;/option&gt;
+&lt;option value=&#34;UTC+12&#34;&gt;UTC+12&lt;/option&gt;
+&lt;option value=&#34;UTC+12.75&#34;&gt;UTC+12:45&lt;/option&gt;
+&lt;option value=&#34;UTC+13&#34;&gt;UTC+13&lt;/option&gt;
+&lt;option value=&#34;UTC+13.75&#34;&gt;UTC+13:45&lt;/option&gt;
+&lt;option value=&#34;UTC+14&#34;&gt;UTC+14&lt;/option&gt;
+&lt;/optgroup&gt;&lt;/select&gt;
+
+&lt;p class=&#34;description&#34; id=&#34;timezone-description&#34;&gt;Choose either a city in the same timezone as you or a UTC timezone offset.&lt;/p&gt;
+
+&lt;p class=&#34;timezone-info&#34;&gt;
+	&lt;span id=&#34;utc-time&#34;&gt;
+	Universal time (&lt;abbr&gt;UTC&lt;/abbr&gt;) is &lt;code&gt;2019-08-19 14:14:14&lt;/code&gt;.	&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;/td&gt;
+
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Date Format&lt;/th&gt;
+&lt;td&gt;
+	&lt;fieldset&gt;&lt;legend class=&#34;screen-reader-text&#34;&gt;&lt;span&gt;Date Format&lt;/span&gt;&lt;/legend&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;date_format&#39; value=&#39;F j, Y&#39; checked=&#39;checked&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;August 19, 2019&lt;/span&gt;&lt;code&gt;F j, Y&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;date_format&#39; value=&#39;Y-m-d&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;2019-08-19&lt;/span&gt;&lt;code&gt;Y-m-d&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;date_format&#39; value=&#39;m/d/Y&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;08/19/2019&lt;/span&gt;&lt;code&gt;m/d/Y&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;date_format&#39; value=&#39;d/m/Y&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;19/08/2019&lt;/span&gt;&lt;code&gt;d/m/Y&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+&lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;date_format&#34; id=&#34;date_format_custom_radio&#34; value=&#34;\c\u\s\t\o\m&#34;/&gt; &lt;span class=&#34;date-time-text date-time-custom-text&#34;&gt;Custom:&lt;span class=&#34;screen-reader-text&#34;&gt; enter a custom date format in the following field&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;&lt;label for=&#34;date_format_custom&#34; class=&#34;screen-reader-text&#34;&gt;Custom date format:&lt;/label&gt;&lt;input type=&#34;text&#34; name=&#34;date_format_custom&#34; id=&#34;date_format_custom&#34; value=&#34;F j, Y&#34; class=&#34;small-text&#34; /&gt;&lt;br /&gt;&lt;p&gt;&lt;strong&gt;Preview:&lt;/strong&gt; &lt;span class=&#34;example&#34;&gt;August 19, 2019&lt;/span&gt;&lt;span class=&#39;spinner&#39;&gt;&lt;/span&gt;
+&lt;/p&gt;	&lt;/fieldset&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Time Format&lt;/th&gt;
+&lt;td&gt;
+	&lt;fieldset&gt;&lt;legend class=&#34;screen-reader-text&#34;&gt;&lt;span&gt;Time Format&lt;/span&gt;&lt;/legend&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;time_format&#39; value=&#39;g:i a&#39; checked=&#39;checked&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;2:14 pm&lt;/span&gt;&lt;code&gt;g:i a&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;time_format&#39; value=&#39;g:i A&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;2:14 PM&lt;/span&gt;&lt;code&gt;g:i A&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+	&lt;label&gt;&lt;input type=&#39;radio&#39; name=&#39;time_format&#39; value=&#39;H:i&#39; /&gt; &lt;span class=&#34;date-time-text format-i18n&#34;&gt;14:14&lt;/span&gt;&lt;code&gt;H:i&lt;/code&gt;&lt;/label&gt;&lt;br /&gt;
+&lt;label&gt;&lt;input type=&#34;radio&#34; name=&#34;time_format&#34; id=&#34;time_format_custom_radio&#34; value=&#34;\c\u\s\t\o\m&#34;/&gt; &lt;span class=&#34;date-time-text date-time-custom-text&#34;&gt;Custom:&lt;span class=&#34;screen-reader-text&#34;&gt; enter a custom time format in the following field&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;&lt;label for=&#34;time_format_custom&#34; class=&#34;screen-reader-text&#34;&gt;Custom time format:&lt;/label&gt;&lt;input type=&#34;text&#34; name=&#34;time_format_custom&#34; id=&#34;time_format_custom&#34; value=&#34;g:i a&#34; class=&#34;small-text&#34; /&gt;&lt;br /&gt;&lt;p&gt;&lt;strong&gt;Preview:&lt;/strong&gt; &lt;span class=&#34;example&#34;&gt;2:14 pm&lt;/span&gt;&lt;span class=&#39;spinner&#39;&gt;&lt;/span&gt;
+&lt;/p&gt;	&lt;p class=&#39;date-time-doc&#39;&gt;&lt;a href=&#34;https://codex.wordpress.org/Formatting_Date_and_Time&#34;&gt;Documentation on date and time formatting&lt;/a&gt;.&lt;/p&gt;
+	&lt;/fieldset&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;&lt;label for=&#34;start_of_week&#34;&gt;Week Starts On&lt;/label&gt;&lt;/th&gt;
+&lt;td&gt;&lt;select name=&#34;start_of_week&#34; id=&#34;start_of_week&#34;&gt;
+
+	&lt;option value=&#39;0&#39; &gt;Sunday&lt;/option&gt;
+	&lt;option value=&#39;1&#39; selected=&#34;selected&#34;&gt;Monday&lt;/option&gt;
+	&lt;option value=&#39;2&#39; &gt;Tuesday&lt;/option&gt;
+	&lt;option value=&#39;3&#39; &gt;Wednesday&lt;/option&gt;
+	&lt;option value=&#39;4&#39; &gt;Thursday&lt;/option&gt;
+	&lt;option value=&#39;5&#39; &gt;Friday&lt;/option&gt;
+	&lt;option value=&#39;6&#39; &gt;Saturday&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+
+&lt;p class=&#34;submit&#34;&gt;&lt;input type=&#34;submit&#34; name=&#34;submit&#34; id=&#34;submit&#34; class=&#34;button button-primary&#34; value=&#34;Save Changes&#34;  /&gt;&lt;/p&gt;&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

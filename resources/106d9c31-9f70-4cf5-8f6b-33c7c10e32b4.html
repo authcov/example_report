@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h2>GET http://localhost:8000/wp-admin/widgets.php?editwidget=recent-comments-2&amp;sidebar=sidebar-1&amp;key=2</h2>
+  </div>
+
+  <div class="table-responsive">
+    Requests:
+
+    <ul>
+      
+        <li>
+            <a href="106d9c31-9f70-4cf5-8f6b-33c7c10e32b4/c24ca50a-5ff9-4b5c-b495-6b9d380d12c3.html">
+              
+                admin (Authorized)
+              
+            </a>
+        </li>
+      
+        <li>
+            <a href="106d9c31-9f70-4cf5-8f6b-33c7c10e32b4/c574f29b-0492-4506-8cc0-fc2df88b151a.html">
+              
+                contributor (N/A)
+              
+            </a>
+        </li>
+      
+        <li>
+            <a href="106d9c31-9f70-4cf5-8f6b-33c7c10e32b4/5a13badd-ffa1-44ea-a190-aab11c5e4dc3.html">
+              
+                Public (N/A)
+              
+            </a>
+        </li>
+      
+    </ul>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

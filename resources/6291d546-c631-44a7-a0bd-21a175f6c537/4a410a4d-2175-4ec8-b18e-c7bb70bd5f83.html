@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      POST http://localhost:8000/wp-admin/admin-ajax.php
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/1f53ced3-3dc8-4617-bd9b-017a4e44b94a.html">http://localhost:8000/wp-admin/customize.php?autofocus[panel]=themes</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>accept:</b> */*<br/>
+      
+        <b>referer:</b> http://localhost:8000/wp-admin/customize.php?autofocus[panel]=themes<br/>
+      
+        <b>x-requested-with:</b> XMLHttpRequest<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> cors<br/>
+      
+        <b>content-type:</b> application/x-www-form-urlencoded; charset=UTF-8<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:21 GMT<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>content-type:</b> application/json; charset=UTF-8<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>x-robots-tag:</b> noindex<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=33<br/>
+        
+          <b>content-length:</b> 4553<br/>
+        
+          <b>x-content-type-options:</b> nosniff<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="{&#34;success&#34;:true,&#34;data&#34;:{&#34;themes&#34;:[{&#34;id&#34;:&#34;twentysixteen&#34;,&#34;name&#34;:&#34;Twenty Sixteen&#34;,&#34;screenshot&#34;:[&#34;http:\/\/localhost:8000\/wp-content\/themes\/twentysixteen\/screenshot.png&#34;],&#34;description&#34;:&#34;Twenty Sixteen is a modernized take on an ever-popular WordPress layout \u2014 the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.&#34;,&#34;author&#34;:&#34;the WordPress team&#34;,&#34;authorAndUri&#34;:&#34;&lt;a href=\&#34;https:\/\/wordpress.org\/\&#34;&gt;the WordPress team&lt;\/a&gt;&#34;,&#34;version&#34;:&#34;2.0&#34;,&#34;tags&#34;:&#34;one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog&#34;,&#34;parent&#34;:false,&#34;active&#34;:true,&#34;hasUpdate&#34;:false,&#34;hasPackage&#34;:false,&#34;update&#34;:&#34;&#34;,&#34;actions&#34;:{&#34;activate&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;amp;stylesheet=twentysixteen&amp;amp;_wpnonce=7adb1d57a8&#34;,&#34;customize&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=twentysixteen&amp;#038;return=%2Fwp-admin%2Fadmin-ajax.php&#34;,&#34;delete&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=delete&amp;amp;stylesheet=twentysixteen&amp;amp;_wpnonce=d449659f90&#34;},&#34;type&#34;:&#34;installed&#34;},{&#34;id&#34;:&#34;twentynineteen&#34;,&#34;name&#34;:&#34;Twenty Nineteen&#34;,&#34;screenshot&#34;:[&#34;http:\/\/localhost:8000\/wp-content\/themes\/twentynineteen\/screenshot.png&#34;],&#34;description&#34;:&#34;Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you&amp;#8217;ll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you\u2019re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it&amp;#8217;s built to be beautiful on all screen sizes.&#34;,&#34;author&#34;:&#34;the WordPress team&#34;,&#34;authorAndUri&#34;:&#34;&lt;a href=\&#34;https:\/\/wordpress.org\/\&#34;&gt;the WordPress team&lt;\/a&gt;&#34;,&#34;version&#34;:&#34;1.4&#34;,&#34;tags&#34;:&#34;one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready&#34;,&#34;parent&#34;:false,&#34;active&#34;:false,&#34;hasUpdate&#34;:false,&#34;hasPackage&#34;:false,&#34;update&#34;:&#34;&#34;,&#34;actions&#34;:{&#34;activate&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;amp;stylesheet=twentynineteen&amp;amp;_wpnonce=78525889a3&#34;,&#34;customize&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=twentynineteen&amp;#038;return=%2Fwp-admin%2Fadmin-ajax.php&#34;,&#34;delete&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=delete&amp;amp;stylesheet=twentynineteen&amp;amp;_wpnonce=054a5d812f&#34;},&#34;type&#34;:&#34;installed&#34;},{&#34;id&#34;:&#34;twentyseventeen&#34;,&#34;name&#34;:&#34;Twenty Seventeen&#34;,&#34;screenshot&#34;:[&#34;http:\/\/localhost:8000\/wp-content\/themes\/twentyseventeen\/screenshot.png&#34;],&#34;description&#34;:&#34;Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.&#34;,&#34;author&#34;:&#34;the WordPress team&#34;,&#34;authorAndUri&#34;:&#34;&lt;a href=\&#34;https:\/\/wordpress.org\/\&#34;&gt;the WordPress team&lt;\/a&gt;&#34;,&#34;version&#34;:&#34;2.2&#34;,&#34;tags&#34;:&#34;one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready&#34;,&#34;parent&#34;:false,&#34;active&#34;:false,&#34;hasUpdate&#34;:false,&#34;hasPackage&#34;:false,&#34;update&#34;:&#34;&#34;,&#34;actions&#34;:{&#34;activate&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;amp;stylesheet=twentyseventeen&amp;amp;_wpnonce=8b7c47e217&#34;,&#34;customize&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=twentyseventeen&amp;#038;return=%2Fwp-admin%2Fadmin-ajax.php&#34;,&#34;delete&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=delete&amp;amp;stylesheet=twentyseventeen&amp;amp;_wpnonce=e41aa5d075&#34;},&#34;type&#34;:&#34;installed&#34;}]}}" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

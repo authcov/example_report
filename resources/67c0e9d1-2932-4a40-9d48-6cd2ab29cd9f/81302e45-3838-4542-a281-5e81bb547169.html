@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/plugin-editor.php
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/bff4d203-714b-42db-93fe-931c63ab08cc.html">http://localhost:8000/wp-admin/plugin-editor.php</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:12 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>set-cookie:</b> wp-settings-1=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+wp-settings-time-1=1566224052; expires=Tue, 18-Aug-2020 14:14:12 GMT; Max-Age=31536000; path=/<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 10797<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=10<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;Edit Plugins &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;plugin-editor&#39;,
+	typenow = &#39;&#39;,
+	adminpage = &#39;plugin-editor-php&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,code-editor,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-poi&amp;amp;load%5B%5D=nter,widgets,site-icon,l10n,buttons,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;wp-codemirror-css&#39;  href=&#39;http://localhost:8000/wp-includes/js/codemirror/codemirror.min.css?ver=5.29.1-alpha-ee20357&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224052&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils,wp-codemirror,underscore&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/js/code-editor.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+jQuery.extend( wp.codeEditor.defaultSettings, {&#34;codemirror&#34;:{&#34;indentUnit&#34;:4,&#34;indentWithTabs&#34;:true,&#34;inputStyle&#34;:&#34;contenteditable&#34;,&#34;lineNumbers&#34;:true,&#34;lineWrapping&#34;:true,&#34;styleActiveLine&#34;:true,&#34;continueComments&#34;:true,&#34;extraKeys&#34;:{&#34;Ctrl-Space&#34;:&#34;autocomplete&#34;,&#34;Ctrl-\/&#34;:&#34;toggleComment&#34;,&#34;Cmd-\/&#34;:&#34;toggleComment&#34;,&#34;Alt-F&#34;:&#34;findPersistent&#34;,&#34;Ctrl-F&#34;:&#34;findPersistent&#34;,&#34;Cmd-F&#34;:&#34;findPersistent&#34;},&#34;direction&#34;:&#34;ltr&#34;,&#34;gutters&#34;:[],&#34;mode&#34;:&#34;php&#34;,&#34;autoCloseBrackets&#34;:true,&#34;autoCloseTags&#34;:true,&#34;matchBrackets&#34;:true,&#34;matchTags&#34;:{&#34;bothTags&#34;:true}},&#34;csslint&#34;:{&#34;errors&#34;:true,&#34;box-model&#34;:true,&#34;display-property-grouping&#34;:true,&#34;duplicate-properties&#34;:true,&#34;known-properties&#34;:true,&#34;outline-none&#34;:true},&#34;jshint&#34;:{&#34;boss&#34;:true,&#34;curly&#34;:true,&#34;eqeqeq&#34;:true,&#34;eqnull&#34;:true,&#34;es3&#34;:true,&#34;expr&#34;:true,&#34;immed&#34;:true,&#34;noarg&#34;:true,&#34;nonbsp&#34;:true,&#34;onevar&#34;:true,&#34;quotmark&#34;:&#34;single&#34;,&#34;trailing&#34;:true,&#34;undef&#34;:true,&#34;unused&#34;:true,&#34;browser&#34;:true,&#34;globals&#34;:{&#34;_&#34;:false,&#34;Backbone&#34;:false,&#34;jQuery&#34;:false,&#34;JSON&#34;:false,&#34;wp&#34;:false}},&#34;htmlhint&#34;:{&#34;tagname-lowercase&#34;:true,&#34;attr-lowercase&#34;:true,&#34;attr-value-double-quotes&#34;:false,&#34;doctype-first&#34;:false,&#34;tag-pair&#34;:true,&#34;spec-char-escape&#34;:true,&#34;id-unique&#34;:true,&#34;src-not-empty&#34;:true,&#34;attr-no-duplication&#34;:true,&#34;alt-require&#34;:true,&#34;space-tab-mixed-disabled&#34;:&#34;tab&#34;,&#34;attr-unsafe-chars&#34;:true}} );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var _wpUtilSettings = {&#34;ajax&#34;:{&#34;url&#34;:&#34;\/wp-admin\/admin-ajax.php&#34;}};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-util.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-sanitize.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-a11y.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/js/theme-plugin-editor.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+wp.themePluginEditor.l10n = {&#34;saveAlert&#34;:&#34;The changes you made will be lost if you navigate away from this page.&#34;,&#34;saveError&#34;:&#34;Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP.&#34;,&#34;lintError&#34;:{&#34;singular&#34;:&#34;There is %d error which must be fixed before you can update this file.&#34;,&#34;plural&#34;:&#34;There are %d errors which must be fixed before you can update this file.&#34;}};
+jQuery( function( $ ) { wp.themePluginEditor.init( $( &#34;#template&#34; ), {&#34;codeEditor&#34;:{&#34;codemirror&#34;:{&#34;indentUnit&#34;:4,&#34;indentWithTabs&#34;:true,&#34;inputStyle&#34;:&#34;contenteditable&#34;,&#34;lineNumbers&#34;:true,&#34;lineWrapping&#34;:true,&#34;styleActiveLine&#34;:true,&#34;continueComments&#34;:true,&#34;extraKeys&#34;:{&#34;Ctrl-Space&#34;:&#34;autocomplete&#34;,&#34;Ctrl-\/&#34;:&#34;toggleComment&#34;,&#34;Cmd-\/&#34;:&#34;toggleComment&#34;,&#34;Alt-F&#34;:&#34;findPersistent&#34;,&#34;Ctrl-F&#34;:&#34;findPersistent&#34;,&#34;Cmd-F&#34;:&#34;findPersistent&#34;},&#34;direction&#34;:&#34;ltr&#34;,&#34;gutters&#34;:[],&#34;mode&#34;:&#34;php&#34;,&#34;autoCloseBrackets&#34;:true,&#34;autoCloseTags&#34;:true,&#34;matchBrackets&#34;:true,&#34;matchTags&#34;:{&#34;bothTags&#34;:true}},&#34;csslint&#34;:{&#34;errors&#34;:true,&#34;box-model&#34;:true,&#34;display-property-grouping&#34;:true,&#34;duplicate-properties&#34;:true,&#34;known-properties&#34;:true,&#34;outline-none&#34;:true},&#34;jshint&#34;:{&#34;boss&#34;:true,&#34;curly&#34;:true,&#34;eqeqeq&#34;:true,&#34;eqnull&#34;:true,&#34;es3&#34;:true,&#34;expr&#34;:true,&#34;immed&#34;:true,&#34;noarg&#34;:true,&#34;nonbsp&#34;:true,&#34;onevar&#34;:true,&#34;quotmark&#34;:&#34;single&#34;,&#34;trailing&#34;:true,&#34;undef&#34;:true,&#34;unused&#34;:true,&#34;browser&#34;:true,&#34;globals&#34;:{&#34;_&#34;:false,&#34;Backbone&#34;:false,&#34;jQuery&#34;:false,&#34;JSON&#34;:false,&#34;wp&#34;:false}},&#34;htmlhint&#34;:{&#34;tagname-lowercase&#34;:true,&#34;attr-lowercase&#34;:true,&#34;attr-value-double-quotes&#34;:false,&#34;doctype-first&#34;:false,&#34;tag-pair&#34;:true,&#34;spec-char-escape&#34;:true,&#34;id-unique&#34;:true,&#34;src-not-empty&#34;:true,&#34;attr-no-duplication&#34;:true,&#34;alt-require&#34;:true,&#34;space-tab-mixed-disabled&#34;:&#34;tab&#34;,&#34;attr-unsafe-chars&#34;:true}}} ); } )
+wp.themePluginEditor.themeOrPlugin = &#34;plugin&#34;;
+&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/plugin-editor.php&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js plugin-editor-php auto-fold admin-bar branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fplugin-editor.php&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fplugin-editor.php&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fplugin-editor.php&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-background&#39;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;current&#34;&gt;&lt;a href=&#39;plugin-editor.php&#39; class=&#34;current&#34; aria-current=&#34;page&#34;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+						
+							&lt;li id=&#34;tab-link-overview&#34; class=&#34;active&#34;&gt;
+								&lt;a href=&#34;#tab-panel-overview&#34; aria-controls=&#34;tab-panel-overview&#34;&gt;
+									Overview								&lt;/a&gt;
+							&lt;/li&gt;
+													&lt;/ul&gt;
+					&lt;/div&gt;
+
+										&lt;div class=&#34;contextual-help-sidebar&#34;&gt;
+						&lt;p&gt;&lt;strong&gt;For more information:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Plugins_Editor_Screen&#34;&gt;Documentation on Editing Plugins&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Writing_a_Plugin&#34;&gt;Documentation on Writing Plugins&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://wordpress.org/support/&#34;&gt;Support&lt;/a&gt;&lt;/p&gt;					&lt;/div&gt;
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+						
+							&lt;div id=&#34;tab-panel-overview&#34; class=&#34;help-tab-content active&#34;&gt;
+								&lt;p&gt;You can use the plugin editor to make changes to any of your plugins&amp;#8217; individual PHP files. Be aware that if you make changes, plugins updates will overwrite your customizations.&lt;/p&gt;&lt;p&gt;Choose a plugin to edit from the dropdown menu and click the Select button. Click once on any file name to load it in the editor, and make your changes. Don&amp;#8217;t forget to save your changes (Update File) when you&amp;#8217;re finished.&lt;/p&gt;&lt;p&gt;The Documentation menu below the editor lists the PHP functions recognized in the plugin file. Clicking Look Up takes you to a web page about that particular function.&lt;/p&gt;&lt;p id=&#34;editor-keyboard-trap-help-1&#34;&gt;When using a keyboard to navigate:&lt;/p&gt;&lt;ul&gt;&lt;li id=&#34;editor-keyboard-trap-help-2&#34;&gt;In the editing area, the Tab key enters a tab character.&lt;/li&gt;&lt;li id=&#34;editor-keyboard-trap-help-3&#34;&gt;To move away from this area, press the Esc key followed by the Tab key.&lt;/li&gt;&lt;li id=&#34;editor-keyboard-trap-help-4&#34;&gt;Screen reader users: when in forms mode, you may need to press the Esc key twice.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If you want to make changes but don&amp;#8217;t want them to be overwritten when the plugin is updated, you may be ready to think about writing your own plugin. For information on how to edit plugins, write your own from scratch, or just better understand their anatomy, check out the links below.&lt;/p&gt;							&lt;/div&gt;
+												&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&#34;screen-meta-links&#34;&gt;
+					&lt;div id=&#34;contextual-help-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;contextual-help-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;contextual-help-wrap&#34; aria-expanded=&#34;false&#34;&gt;Help&lt;/button&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		&lt;div class=&#34;wrap&#34;&gt;
+&lt;h1&gt;Edit Plugins&lt;/h1&gt;
+
+
+&lt;div class=&#34;fileedit-sub&#34;&gt;
+&lt;div class=&#34;alignleft&#34;&gt;
+&lt;h2&gt;
+	Editing &lt;strong&gt;akismet/akismet.php&lt;/strong&gt; (inactive)&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alignright&#34;&gt;
+	&lt;form action=&#34;plugin-editor.php&#34; method=&#34;get&#34;&gt;
+		&lt;strong&gt;&lt;label for=&#34;plugin&#34;&gt;Select plugin to edit: &lt;/label&gt;&lt;/strong&gt;
+		&lt;select name=&#34;plugin&#34; id=&#34;plugin&#34;&gt;
+
+	&lt;option value=&#34;akismet/akismet.php&#34;  selected=&#39;selected&#39;&gt;Akismet Anti-Spam&lt;/option&gt;
+	&lt;option value=&#34;hello.php&#34; &gt;Hello Dolly&lt;/option&gt;		&lt;/select&gt;
+		&lt;input type=&#34;submit&#34; name=&#34;Submit&#34; id=&#34;Submit&#34; class=&#34;button&#34; value=&#34;Select&#34;  /&gt;	&lt;/form&gt;
+&lt;/div&gt;
+&lt;br class=&#34;clear&#34; /&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;templateside&#34;&gt;
+	&lt;h2 id=&#34;plugin-files-label&#34;&gt;Plugin Files&lt;/h2&gt;
+
+		&lt;ul role=&#34;tree&#34; aria-labelledby=&#34;plugin-files-label&#34;&gt;
+	&lt;li role=&#34;treeitem&#34; tabindex=&#34;-1&#34; aria-expanded=&#34;true&#34; aria-level=&#34;1&#34; aria-posinset=&#34;1&#34; aria-setsize=&#34;1&#34;&gt;
+		&lt;ul role=&#34;group&#34;&gt;
+					&lt;li role=&#34;none&#34; class=&#34;current-file&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;0&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fakismet.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;1&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				&lt;span class=&#34;notice notice-info&#34;&gt;akismet.php&lt;/span&gt;			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fwrapper.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;2&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				wrapper.php			&lt;/a&gt;
+		&lt;/li&gt;
+					&lt;li role=&#34;treeitem&#34; aria-expanded=&#34;true&#34; tabindex=&#34;-1&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;12&#34;
+				aria-posinset=&#34;3&#34;&gt;
+				&lt;span class=&#34;folder-label&#34;&gt;_inc &lt;span class=&#34;screen-reader-text&#34;&gt;folder&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;icon&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+				&lt;ul role=&#34;group&#34; class=&#34;tree-folder&#34;&gt;		&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2F_inc%2Fakismet.css&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;1&#34;
+				aria-posinset=&#34;3&#34;&gt;
+				akismet.css			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2F_inc%2Fform.js&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;2&#34;
+				aria-posinset=&#34;3&#34;&gt;
+				form.js			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2F_inc%2Fakismet.js&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;3&#34;
+				aria-posinset=&#34;3&#34;&gt;
+				akismet.js			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;/ul&gt;
+			&lt;/li&gt;
+					&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fclass.akismet-widget.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;4&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				class.akismet-widget.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Findex.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;5&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				index.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fclass.akismet-rest-api.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;6&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				class.akismet-rest-api.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Freadme.txt&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;7&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				readme.txt			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fclass.akismet-cli.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;8&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				class.akismet-cli.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fclass.akismet-admin.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;9&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				class.akismet-admin.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fclass.akismet.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;10&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				class.akismet.php			&lt;/a&gt;
+		&lt;/li&gt;
+					&lt;li role=&#34;treeitem&#34; aria-expanded=&#34;true&#34; tabindex=&#34;-1&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;12&#34;
+				aria-posinset=&#34;11&#34;&gt;
+				&lt;span class=&#34;folder-label&#34;&gt;views &lt;span class=&#34;screen-reader-text&#34;&gt;folder&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;icon&#34;&gt;&lt;/span&gt;&lt;/span&gt;
+				&lt;ul role=&#34;group&#34; class=&#34;tree-folder&#34;&gt;		&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fviews%2Fconfig.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;1&#34;
+				aria-posinset=&#34;5&#34;&gt;
+				config.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fviews%2Fstats.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;2&#34;
+				aria-posinset=&#34;5&#34;&gt;
+				stats.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fviews%2Fnotice.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;3&#34;
+				aria-posinset=&#34;5&#34;&gt;
+				notice.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fviews%2Fget.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;4&#34;
+				aria-posinset=&#34;5&#34;&gt;
+				get.php			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2Fviews%2Fstart.php&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;3&#34;
+				aria-setsize=&#34;5&#34;
+				aria-posinset=&#34;5&#34;&gt;
+				start.php			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;/ul&gt;
+			&lt;/li&gt;
+					&lt;li role=&#34;none&#34; class=&#34;&#34;&gt;
+			&lt;a role=&#34;treeitem&#34; tabindex=&#34;-1&#34;
+				href=&#34;http://localhost:8000/wp-admin/plugin-editor.php?file=akismet%2FLICENSE.txt&amp;#038;plugin=akismet%2Fakismet.php&#34;
+				aria-level=&#34;2&#34;
+				aria-setsize=&#34;12&#34;
+				aria-posinset=&#34;12&#34;&gt;
+				LICENSE.txt			&lt;/a&gt;
+		&lt;/li&gt;
+				&lt;/ul&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;form name=&#34;template&#34; id=&#34;template&#34; action=&#34;plugin-editor.php&#34; method=&#34;post&#34;&gt;
+	&lt;input type=&#34;hidden&#34; id=&#34;nonce&#34; name=&#34;nonce&#34; value=&#34;888d860169&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/plugin-editor.php&#34; /&gt;		&lt;div&gt;
+			&lt;label for=&#34;newcontent&#34; id=&#34;theme-plugin-editor-label&#34;&gt;Selected file content:&lt;/label&gt;
+			&lt;textarea cols=&#34;70&#34; rows=&#34;25&#34; name=&#34;newcontent&#34; id=&#34;newcontent&#34; aria-describedby=&#34;editor-keyboard-trap-help-1 editor-keyboard-trap-help-2 editor-keyboard-trap-help-3 editor-keyboard-trap-help-4&#34;&gt;&amp;lt;?php
+/**
+ * @package Akismet
+ */
+/*
+Plugin Name: Akismet Anti-Spam
+Plugin URI: https://akismet.com/
+Description: Used by millions, Akismet is quite possibly the best way in the world to &amp;lt;strong&amp;gt;protect your blog from spam&amp;lt;/strong&amp;gt;. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
+Version: 4.1.2
+Author: Automattic
+Author URI: https://automattic.com/wordpress-plugins/
+License: GPLv2 or later
+Text Domain: akismet
+*/
+
+/*
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Copyright 2005-2015 Automattic, Inc.
+*/
+
+// Make sure we don&amp;#039;t expose any info if called directly
+if ( !function_exists( &amp;#039;add_action&amp;#039; ) ) {
+	echo &amp;#039;Hi there!  I\&amp;#039;m just a plugin, not much I can do when called directly.&amp;#039;;
+	exit;
+}
+
+define( &amp;#039;AKISMET_VERSION&amp;#039;, &amp;#039;4.1.2&amp;#039; );
+define( &amp;#039;AKISMET__MINIMUM_WP_VERSION&amp;#039;, &amp;#039;4.0&amp;#039; );
+define( &amp;#039;AKISMET__PLUGIN_DIR&amp;#039;, plugin_dir_path( __FILE__ ) );
+define( &amp;#039;AKISMET_DELETE_LIMIT&amp;#039;, 100000 );
+
+register_activation_hook( __FILE__, array( &amp;#039;Akismet&amp;#039;, &amp;#039;plugin_activation&amp;#039; ) );
+register_deactivation_hook( __FILE__, array( &amp;#039;Akismet&amp;#039;, &amp;#039;plugin_deactivation&amp;#039; ) );
+
+require_once( AKISMET__PLUGIN_DIR . &amp;#039;class.akismet.php&amp;#039; );
+require_once( AKISMET__PLUGIN_DIR . &amp;#039;class.akismet-widget.php&amp;#039; );
+require_once( AKISMET__PLUGIN_DIR . &amp;#039;class.akismet-rest-api.php&amp;#039; );
+
+add_action( &amp;#039;init&amp;#039;, array( &amp;#039;Akismet&amp;#039;, &amp;#039;init&amp;#039; ) );
+
+add_action( &amp;#039;rest_api_init&amp;#039;, array( &amp;#039;Akismet_REST_API&amp;#039;, &amp;#039;init&amp;#039; ) );
+
+if ( is_admin() || ( defined( &amp;#039;WP_CLI&amp;#039; ) &amp;amp;&amp;amp; WP_CLI ) ) {
+	require_once( AKISMET__PLUGIN_DIR . &amp;#039;class.akismet-admin.php&amp;#039; );
+	add_action( &amp;#039;init&amp;#039;, array( &amp;#039;Akismet_Admin&amp;#039;, &amp;#039;init&amp;#039; ) );
+}
+
+//add wrapper class around deprecated akismet functions that are referenced elsewhere
+require_once( AKISMET__PLUGIN_DIR . &amp;#039;wrapper.php&amp;#039; );
+
+if ( defined( &amp;#039;WP_CLI&amp;#039; ) &amp;amp;&amp;amp; WP_CLI ) {
+	require_once( AKISMET__PLUGIN_DIR . &amp;#039;class.akismet-cli.php&amp;#039; );
+}
+&lt;/textarea&gt;
+			&lt;input type=&#34;hidden&#34; name=&#34;action&#34; value=&#34;update&#34; /&gt;
+			&lt;input type=&#34;hidden&#34; name=&#34;file&#34; value=&#34;akismet/akismet.php&#34; /&gt;
+			&lt;input type=&#34;hidden&#34; name=&#34;plugin&#34; value=&#34;akismet/akismet.php&#34; /&gt;
+		&lt;/div&gt;
+				&lt;div id=&#34;documentation&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;label for=&#34;docs-list&#34;&gt;Documentation:&lt;/label&gt; &lt;select name=&#34;docs-list&#34; id=&#34;docs-list&#34;&gt;&lt;option value=&#34;&#34;&gt;Function Name&amp;hellip;&lt;/option&gt;&lt;option value=&#34;add_action&#34;&gt;add_action()&lt;/option&gt;&lt;option value=&#34;define&#34;&gt;define()&lt;/option&gt;&lt;option value=&#34;defined&#34;&gt;defined()&lt;/option&gt;&lt;option value=&#34;function_exists&#34;&gt;function_exists()&lt;/option&gt;&lt;option value=&#34;is_admin&#34;&gt;is_admin()&lt;/option&gt;&lt;option value=&#34;plugin_dir_path&#34;&gt;plugin_dir_path()&lt;/option&gt;&lt;option value=&#34;register_activation_hook&#34;&gt;register_activation_hook()&lt;/option&gt;&lt;option value=&#34;register_deactivation_hook&#34;&gt;register_deactivation_hook()&lt;/option&gt;&lt;/select&gt; &lt;input disabled id=&#34;docs-lookup&#34; type=&#34;button&#34; class=&#34;button&#34; value=&#34;Look Up &#34; onclick=&#34;if ( &#39;&#39; != jQuery(&#39;#docs-list&#39;).val() ) { window.open( &#39;https://api.wordpress.org/core/handbook/1.0/?function=&#39; + escape( jQuery( &#39;#docs-list&#39; ).val() ) + &#39;&amp;amp;locale=en_US&amp;amp;version=5.2.2&amp;amp;redirect=true&#39;); }&#34; /&gt;&lt;/div&gt;
+			&lt;div class=&#34;editor-notices&#34;&gt;
+			&lt;/div&gt;
+	&lt;p class=&#34;submit&#34;&gt;
+		&lt;input type=&#34;submit&#34; name=&#34;submit&#34; id=&#34;submit&#34; class=&#34;button button-primary&#34; value=&#34;Update File&#34;  /&gt;		&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+	&lt;/p&gt;
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-wp-file-editor-notice&#34;&gt;
+		&lt;div class=&#34;notice inline notice-{{ data.type || &#39;info&#39; }} {{ data.alt ? &#39;notice-alt&#39; : &#39;&#39; }} {{ data.dismissible ? &#39;is-dismissible&#39; : &#39;&#39; }} {{ data.classes || &#39;&#39; }}&#34;&gt;
+			&lt;# if ( &#39;php_error&#39; === data.code ) { #&gt;
+				&lt;p&gt;
+					Your PHP code changes were rolled back due to an error on line {{ data.line }} of file {{ data.file }}. Please fix and try saving again.				&lt;/p&gt;
+				&lt;pre&gt;{{ data.message }}&lt;/pre&gt;
+			&lt;# } else if ( &#39;file_not_writable&#39; === data.code ) { #&gt;
+				&lt;p&gt;You need to make this file writable before you can save your changes. See &lt;a href=&#34;https://codex.wordpress.org/Changing_File_Permissions&#34;&gt;the Codex&lt;/a&gt; for more information.&lt;/p&gt;
+			&lt;# } else { #&gt;
+				&lt;p&gt;{{ data.message || data.code }}&lt;/p&gt;
+
+				&lt;# if ( &#39;lint_errors&#39; === data.code ) { #&gt;
+					&lt;p&gt;
+						&lt;# var elementId = &#39;el-&#39; + String( Math.random() ); #&gt;
+						&lt;input id=&#34;{{ elementId }}&#34;  type=&#34;checkbox&#34;&gt;
+						&lt;label for=&#34;{{ elementId }}&#34;&gt;Update anyway, even though it might break your site?&lt;/label&gt;
+					&lt;/p&gt;
+				&lt;# } #&gt;
+			&lt;# } #&gt;
+			&lt;# if ( data.dismissible ) { #&gt;
+				&lt;button type=&#34;button&#34; class=&#34;notice-dismiss&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Dismiss&lt;/span&gt;&lt;/button&gt;
+			&lt;# } #&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+	&lt;/form&gt;
+&lt;br class=&#34;clear&#34; /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;file-editor-warning&#34; class=&#34;notification-dialog-wrap file-editor-warning hide-if-no-js hidden&#34;&gt;
+	&lt;div class=&#34;notification-dialog-background&#34;&gt;&lt;/div&gt;
+	&lt;div class=&#34;notification-dialog&#34;&gt;
+		&lt;div class=&#34;file-editor-warning-content&#34;&gt;
+			&lt;div class=&#34;file-editor-warning-message&#34;&gt;
+				&lt;h1&gt;Heads up!&lt;/h1&gt;
+				&lt;p&gt;You appear to be making direct edits to your plugin in the WordPress dashboard. We recommend that you don&amp;#8217;t! Editing plugins directly may introduce incompatibilities that break your site and your changes may be lost in future updates.&lt;/p&gt;
+				&lt;p&gt;If you absolutely have to make direct edits to this plugin, use a file manager to create a copy with a new name and hang on to the original. That way, you can re-enable a functional version if something goes wrong.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;p&gt;
+				&lt;a class=&#34;button file-editor-warning-go-back&#34; href=&#34;http://localhost:8000/wp-admin/&#34;&gt;Go back&lt;/a&gt;
+				&lt;button type=&#34;button&#34; class=&#34;file-editor-warning-dismiss button button-primary&#34;&gt;I understand&lt;/button&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang=en_US&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

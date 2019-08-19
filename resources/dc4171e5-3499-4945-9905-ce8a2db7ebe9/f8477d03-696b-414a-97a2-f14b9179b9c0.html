@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/credits.php
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/415853bc-13be-4d23-8da1-a5016c399647.html">http://localhost:8000/wp-admin/credits.php</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:56 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 15294<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=71<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;Credits &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;credits&#39;,
+	typenow = &#39;&#39;,
+	adminpage = &#39;credits-php&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;amp;load%5B%5D=,site-icon,l10n,buttons,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224096&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/credits.php&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js credits-php auto-fold admin-bar branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fcredits.php&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fcredits.php&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fcredits.php&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-background&#39;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-editor.php&#39;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden no-sidebar&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+												&lt;/ul&gt;
+					&lt;/div&gt;
+
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+											&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		&lt;div class=&#34;wrap about-wrap full-width-layout&#34;&gt;
+
+&lt;h1&gt;
+	Welcome to WordPress&amp;nbsp;5.2.2&lt;/h1&gt;
+
+&lt;p class=&#34;about-text&#34;&gt;
+	Congratulations on updating to WordPress 5.2.2! This update makes it easier than ever to fix your site if something goes wrong.&lt;/p&gt;
+
+&lt;div class=&#34;wp-badge&#34;&gt;
+	Version 5.2.2&lt;/div&gt;
+
+&lt;nav class=&#34;nav-tab-wrapper wp-clearfix&#34; aria-label=&#34;Secondary menu&#34;&gt;
+	&lt;a href=&#34;about.php&#34; class=&#34;nav-tab&#34;&gt;What&amp;#8217;s New&lt;/a&gt;
+	&lt;a href=&#34;credits.php&#34; class=&#34;nav-tab nav-tab-active&#34; aria-current=&#34;page&#34;&gt;Credits&lt;/a&gt;
+	&lt;a href=&#34;freedoms.php&#34; class=&#34;nav-tab&#34;&gt;Freedoms&lt;/a&gt;
+	&lt;a href=&#34;freedoms.php?privacy-notice&#34; class=&#34;nav-tab&#34;&gt;Privacy&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;div class=&#34;about-wrap-content&#34;&gt;
+&lt;p class=&#34;about-description&#34;&gt;WordPress is created by a worldwide team of passionate individuals.&lt;/p&gt;
+&lt;p&gt;Want to see your name in lights on this page? &lt;a href=&#34;https://make.wordpress.org/&#34;&gt;Get involved in WordPress&lt;/a&gt;.&lt;/p&gt;&lt;h2 class=&#34;wp-people-group&#34;&gt;Noteworthy Contributors&lt;/h2&gt;
+&lt;ul class=&#34;wp-people-group &#34; id=&#34;wp-people-group-core-developers&#34;&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-matt&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/matt&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Matt Mullenweg&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Release Lead&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-chanthaboune&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/chanthaboune&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/da526066c9f187ca1e16263158d2e9a3?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/da526066c9f187ca1e16263158d2e9a3?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Josepha Haden&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Release Lead&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-pento&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/pento&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/1ad9e5c98d81c6815a65dab5b6e1f669?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/1ad9e5c98d81c6815a65dab5b6e1f669?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Gary Pendergast&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Release Lead&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-dd32&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/dd32&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/fb9c9768f1824f91d15dcbf3257ddc9a?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/fb9c9768f1824f91d15dcbf3257ddc9a?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Dion Hulse&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Lead Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-desrosj&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/desrosj&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/f22c0ec09eb5a6df4da4239a37dbdf9d?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/f22c0ec09eb5a6df4da4239a37dbdf9d?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jonathan Desrosiers&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-audrasjb&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/audrasjb&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/f5679c32509d3a0f9821da8ba4843a75?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/f5679c32509d3a0f9821da8ba4843a75?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jean-Baptiste Audras&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-SergeyBiryukov&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/SergeyBiryukov&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/750b7b0fcd855389264c2b1294d61bd6?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/750b7b0fcd855389264c2b1294d61bd6?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Sergey Biryukov&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-youknowriad&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/youknowriad&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/9929daa7594d5afa910a777ccb9e88e4?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/9929daa7594d5afa910a777ccb9e88e4?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Riad Benguella&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-flixos90&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/flixos90&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/311f5b078f20df54be55cbe1a5a45f1e?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/311f5b078f20df54be55cbe1a5a45f1e?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Felix Arntz&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-iseulde&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/iseulde&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/9e149207a0e0818abed0edbb1fb2d0bf?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/9e149207a0e0818abed0edbb1fb2d0bf?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Ella Van Durpe&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-jorgefilipecosta&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/jorgefilipecosta&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/44d0cd19ecea711a6e2625b5858e268b?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/44d0cd19ecea711a6e2625b5858e268b?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jorge Costa&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-afercia&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/afercia&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/074af62ea5ff218b6a6eeab89104f616?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/074af62ea5ff218b6a6eeab89104f616?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andrea Fercia&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;Core Developer&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-Clorith&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/Clorith&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/8f2a6a1a5388876ac51cd6dde3b4a1d0?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/8f2a6a1a5388876ac51cd6dde3b4a1d0?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Marius Jensen&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-hedgefield&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/hedgefield&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/4c607454438b9d26895f046dfc857113?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/4c607454438b9d26895f046dfc857113?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Tim Hedgefield&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-mapk&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/mapk&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/ddec3a334a9333761e1e6dfb227e976f?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/ddec3a334a9333761e1e6dfb227e976f?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Mark Uraine&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-JeffPaul&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/JeffPaul&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/8ac4ec4b1f9cb342e59ed5127f050d24?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/8ac4ec4b1f9cb342e59ed5127f050d24?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jeff Paul&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-earnjam&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/earnjam&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/d8264882e57b4da1a8b55d15f35d4566?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/d8264882e57b4da1a8b55d15f35d4566?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+William Earnhardt&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-Viper007Bond&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/Viper007Bond&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/b51d05d023485f5ef7bcd2a3b6dec207?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/b51d05d023485f5ef7bcd2a3b6dec207?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Alex Mills&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&#34;wp-people-group &#34; id=&#34;wp-people-group-contributing-developers&#34;&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-kjellr&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/kjellr&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/115aabd707fe985c79744d3e7df8fade?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/115aabd707fe985c79744d3e7df8fade?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Kjell Reigstad&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-tellyworth&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/tellyworth&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/88de7e0be9f793ed162ffa78b9cd4a12?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/88de7e0be9f793ed162ffa78b9cd4a12?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Alex Shiels&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-jeremyfelt&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/jeremyfelt&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/d1759b1c669981b7c52ec9a97d19e6bd?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/d1759b1c669981b7c52ec9a97d19e6bd?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jeremy Felt&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-johnbillion&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/johnbillion&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/23e12888dcd87d07434b7621bc164958?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/23e12888dcd87d07434b7621bc164958?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+John Blackbourn&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-karmatosed&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/karmatosed&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/ca7d4273a689cdbf524d8332771bb1ca?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Tammie Lister&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-davidbaumwald&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/davidbaumwald&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/9945bf5c3f49038409fbdf0e068934df?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/9945bf5c3f49038409fbdf0e068934df?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+David Baumwald&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-azaozz&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/azaozz&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/4e84843ebff0918d72ade21c6ee7b1e4?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/4e84843ebff0918d72ade21c6ee7b1e4?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andrew Ozz&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-chetan200891&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/chetan200891&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/d28f0d98adcac80aed75ae73fe3e3661?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/d28f0d98adcac80aed75ae73fe3e3661?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Chetan Prajapati&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-dswebsme&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/dswebsme&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/3cf41e32218450324b7b639bd7b21292?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/3cf41e32218450324b7b639bd7b21292?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+D.S. Webster&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-kraftbj&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/kraftbj&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/6e238edcb0664c975ccb9e8e80abb307?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/6e238edcb0664c975ccb9e8e80abb307?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Brandon Kraft&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-adamsilverstein&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/adamsilverstein&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/fddbd6c3e1c3d971aa732b9346aeb433?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/fddbd6c3e1c3d971aa732b9346aeb433?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Adam Silverstein&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-schlessera&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/schlessera&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/a686099e5d041a8825ef01d71513c2db?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/a686099e5d041a8825ef01d71513c2db?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Alain Schlesser&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-Soean&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/Soean&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/3a7ad55bf9a0bf121d1b8239741065d6?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/3a7ad55bf9a0bf121d1b8239741065d6?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Soren Wrede&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-david.binda&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/david.binda&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/d207b81ad412114ae32e23364edfe275?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/d207b81ad412114ae32e23364edfe275?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+David Binovec&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-mkaz&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/mkaz&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/560eddebcdf845e77003dacd11eec960?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/560eddebcdf845e77003dacd11eec960?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Marcus Kazmierczak&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-nosolosw&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/nosolosw&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/9c6c8ec5f786df66d3559dbca38e5817?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/9c6c8ec5f786df66d3559dbca38e5817?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andrés Maneiro&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-ocean90&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/ocean90&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/616b56a9c5898a427304425af0966c07?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/616b56a9c5898a427304425af0966c07?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Dominik Schilling&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-afragen&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/afragen&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/68d806db1b31ae8e9464b583e2aa29c6?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/68d806db1b31ae8e9464b583e2aa29c6?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andy Fragen&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-aduth&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/aduth&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/a7ce947b6c1e30a4857068628ada24e1?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/a7ce947b6c1e30a4857068628ada24e1?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andrew Duthie&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-obenland&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/obenland&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/2370ea5912750f4cb0f3c51ae1cbca55?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/2370ea5912750f4cb0f3c51ae1cbca55?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Konstantin Obenland&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-dimadin&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/dimadin&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/5635d8b9af0ca5efef1b5ff7d20b73a9?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/5635d8b9af0ca5efef1b5ff7d20b73a9?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Milan Dinić&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-welcher&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/welcher&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/4fa43ab689984fbeb7792dfa32ead017?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/4fa43ab689984fbeb7792dfa32ead017?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Ryan Welcher&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-ianbelanger&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/ianbelanger&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/fe745f6713827db156b021ec83dcf6dd?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/fe745f6713827db156b021ec83dcf6dd?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Ian Belanger&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-swissspidy&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/swissspidy&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/609d6ee54dc13a51270cb99769535b82?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/609d6ee54dc13a51270cb99769535b82?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Pascal Birchler&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-spacedmonkey&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/spacedmonkey&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/061dae59ebf801552726985eb808306e?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/061dae59ebf801552726985eb808306e?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jonny Harris&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-mikeschroder&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/mikeschroder&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/46fa959634a063abefcac94eaf191eca?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/46fa959634a063abefcac94eaf191eca?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Mike Schroder&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-andizer&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/andizer&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/f58fe1b6a555b160e718df2252e13ae9?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/f58fe1b6a555b160e718df2252e13ae9?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Andy Meerwaldt&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-xkon&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/xkon&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/03b52598966360b480d1b8abdee58b9e?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/03b52598966360b480d1b8abdee58b9e?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Konstantinos Xenos&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-subrataemfluence&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/subrataemfluence&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/4ca5416772e8f4fe1c80586e98393f27?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/4ca5416772e8f4fe1c80586e98393f27?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Subrata Sarkar&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-melchoyce&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/melchoyce&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/9ffb8027a6f8cb090148a2ea8310b64f?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/9ffb8027a6f8cb090148a2ea8310b64f?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Mel Choyce&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-jorbin&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/jorbin&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/b3e2b94eb305bf95a1bee11bc7705fb7?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/b3e2b94eb305bf95a1bee11bc7705fb7?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Aaron Jorbin&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-etoledom&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/etoledom&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/1171fe0dc415abbb41d4bc09ce6b0d01?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/1171fe0dc415abbb41d4bc09ce6b0d01?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Eduardo Toledo&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-gziolo&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/gziolo&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/475d323ceec2e73597729eef1c5bf263?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/475d323ceec2e73597729eef1c5bf263?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Grzegorz Ziółkowski&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-garrett-eclipse&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/garrett-eclipse&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/162eb6b7137a1d51b56d73b9a3ba8b8a?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/162eb6b7137a1d51b56d73b9a3ba8b8a?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Garrett Hyder&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-TimothyBlynJacobs&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/TimothyBlynJacobs&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/596003127e013031dd5299a3879827e9?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/596003127e013031dd5299a3879827e9?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Timothy Jacobs&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-Joen&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/Joen&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://1.gravatar.com/avatar/7fda1da9c34e978d5990afd7f58ca0f4?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://1.gravatar.com/avatar/7fda1da9c34e978d5990afd7f58ca0f4?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Joen Asmussen&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-nerrad&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/nerrad&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/82c44d1ed35aec5d4a7252da502eb04b?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/82c44d1ed35aec5d4a7252da502eb04b?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Darren Ethier&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-man4toman&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/man4toman&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/0223bc303222e11c85b7e780e929bafa?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/0223bc303222e11c85b7e780e929bafa?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Morteza Geransayeh&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-ramiy&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/ramiy&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/ce2a269e424156d79cb0c4e1d4d82db1?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/ce2a269e424156d79cb0c4e1d4d82db1?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Rami Yushuvaev&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-miss_jwo&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/miss_jwo&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/81db3448fb911de1f34e6f0b6ac523be?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/81db3448fb911de1f34e6f0b6ac523be?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Jenny Wong&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-pbiron&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/pbiron&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/5cd273e4f1cd8daec06a75e7d0c8bf36?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/5cd273e4f1cd8daec06a75e7d0c8bf36?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Paul Biron&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-talldanwp&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/talldanwp&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/f6bc0d9c563bc9e993608e443fd5126f?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/f6bc0d9c563bc9e993608e443fd5126f?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Daniel Richards&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-paragoninitiativeenterprises&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/paragoninitiativeenterprises&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://2.gravatar.com/avatar/8a846002523f0b5157d9a10d9434290e?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://2.gravatar.com/avatar/8a846002523f0b5157d9a10d9434290e?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Scott Arciszewski&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-birgire&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/birgire&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/c52e94b32934ec08c573b1c850a7a8a3?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/c52e94b32934ec08c573b1c850a7a8a3?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Birgir Erlendsson&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;li class=&#34;wp-person&#34; id=&#34;wp-person-mukesh27&#34;&gt;
+	&lt;a href=&#34;https://profiles.wordpress.org/mukesh27&#34; class=&#34;web&#34;&gt;&lt;img src=&#34;http://0.gravatar.com/avatar/c419d36c6019043feff7d7da2ee44b64?s=60&amp;#038;d=mm&amp;#038;r=g&#34; srcset=&#34;http://0.gravatar.com/avatar/c419d36c6019043feff7d7da2ee44b64?s=120&amp;#038;d=mm&amp;#038;r=g 2x&#34; class=&#34;gravatar&#34; alt=&#34;&#34; /&gt;
+Mukesh Panchal&lt;/a&gt;
+	&lt;span class=&#34;title&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class=&#34;wp-people-group&#34;&gt;Core Contributors to WordPress 5.2&lt;/h2&gt;
+&lt;p class=&#34;wp-credits-list&#34;&gt;&lt;a href=&#34;https://profiles.wordpress.org/aaroncampbell&#34;&gt;Aaron D. Campbell&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/adamsoucie&#34;&gt;Adam Soucie&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/oztaser&#34;&gt;Adil &amp;#214;ztaşer&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ajitbohra&#34;&gt;Ajit Bohra&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/aldavigdis&#34;&gt;Alda Vigd&amp;#237;s&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/alexdenning&#34;&gt;Alex Denning&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/xavortm&#34;&gt;Alex Dimitrov&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lexiqueen&#34;&gt;Alexis&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/alexislloyd&#34;&gt;Alexis Lloyd&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/akirk&#34;&gt;Alex Kirk&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/allancole&#34;&gt;allancole&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/allendav&#34;&gt;Allen Snook&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/arena&#34;&gt;Andr?&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/andraganescu&#34;&gt;andraganescu&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/andreamiddleton&#34;&gt;Andrea Middleton&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/euthelup&#34;&gt;Andrei Lupu&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/aandrewdixon&#34;&gt;Andrew Dixon&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nacin&#34;&gt;Andrew Nacin&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/rarst&#34;&gt;Andrey &amp;quot;Rarst&amp;quot; Savchenko&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/aniketpatel&#34;&gt;Aniket Patel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/anischarolia&#34;&gt;anischarolia&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/avillegasn&#34;&gt;Antonio Villegas&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/atimmer&#34;&gt;Anton Timmermans&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/vanyukov&#34;&gt;Anton Vanyukov&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/antonypuckey&#34;&gt;antonypuckey&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/aristath&#34;&gt;Ari Stathopoulos&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wpboss&#34;&gt;Aslam Shekh&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/axaak&#34;&gt;axaak&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pixolin&#34;&gt;Bego Mario Garde&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/empireoflight&#34;&gt;Ben Dunkle&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bfintal&#34;&gt;Benjamin Intal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/britner&#34;&gt;Ben Ritner - Kadence WP&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/billerickson&#34;&gt;Bill Erickson&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bodohugobarwich&#34;&gt;Bodo (Hugo) Barwich&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/gitlost&#34;&gt;bonger&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/boonebgorges&#34;&gt;Boone Gorges&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bradleyt&#34;&gt;Bradley Taylor&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/brentswisher&#34;&gt;Brent Swisher&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/burhandodhy&#34;&gt;Burhan Nasir&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/cathibosco1&#34;&gt;Cathi Bosco&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/chiaralovelaces&#34;&gt;Chiara Magnani&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/chouby&#34;&gt;Chouby&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/chrisvanpatten&#34;&gt;Chris Van Patten&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/colorful-tones&#34;&gt;Damon Cook&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/danielbachhuber&#34;&gt;Daniel Bachhuber&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mte90&#34;&gt;Daniele Scasciafratte&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/danieltj&#34;&gt;Daniel James&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/diddledan&#34;&gt;Daniel Llewellyn&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/davefx&#34;&gt;DaveFX&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/davetgreen&#34;&gt;davetgreen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/drw158&#34;&gt;Dave Whitley&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/davidbinda&#34;&gt;David Binovec&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/folletto&#34;&gt;Davide &amp;#039;Folletto&amp;#039; Casali&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dlh&#34;&gt;David Herrera&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dgroddick&#34;&gt;David Roddick&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/get_dave&#34;&gt;David Smith&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/daxelrod&#34;&gt;daxelrod&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dkarfa&#34;&gt;Debabrata Karfa&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dekervit&#34;&gt;dekervit&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/denis-de-bernardy&#34;&gt;Denis de Bernardy&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dmsnell&#34;&gt;Dennis Snell&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/valendesigns&#34;&gt;Derek Herman&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pcfreak30&#34;&gt;Derrick Hammer&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/designsimply&#34;&gt;designsimply&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dhanukanuwan&#34;&gt;Dhanukanuwan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dharm1025&#34;&gt;Dharmesh Patel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dianeco&#34;&gt;Diane&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/diegoreymendez&#34;&gt;diegoreymendez&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dilipbheda&#34;&gt;Dilip Bheda&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/odminstudios&#34;&gt;Dima&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dency&#34;&gt;Dixita Dusara&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/iamdmitrymayorov&#34;&gt;Dmitry Mayorov&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/drewapicture&#34;&gt;Drew Jaynes&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/dsifford&#34;&gt;dsifford&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/seedsca&#34;&gt;EcoTechie&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/edocev&#34;&gt;Emil Dotsev&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/fabiankaegy&#34;&gt;fabiankaegy&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/faisal03&#34;&gt;Faisal Alvi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/parsmizban&#34;&gt;Farhad Sakhaei&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/peaceablewhale&#34;&gt;Franklin Tse&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/fuegas&#34;&gt;Fuegas&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/garyj&#34;&gt;Gary Jones&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/soulseekah&#34;&gt;Gennady Kovshenin&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sachyya-sachet&#34;&gt;ghoul&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/girishpanchal&#34;&gt;Girish Panchal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wido&#34;&gt;Guido Scialfa&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/gutendev&#34;&gt;GutenDev ✍㊙&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/gwwar&#34;&gt;gwwar&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/hannahmalcolm&#34;&gt;Hannah Malcolm&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/hardik-amipara&#34;&gt;Hardik Amipara&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/thakkarhardik&#34;&gt;Hardik Thakkar&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/luehrsen&#34;&gt;Hendrik Luehrsen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/henrywright-1&#34;&gt;Henry&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/henrywright&#34;&gt;Henry Wright&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ryanshoover&#34;&gt;Hoover&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/iandunn&#34;&gt;Ian Dunn&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ice9js&#34;&gt;ice9js&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/zinigor&#34;&gt;Igor Zinovyev&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/imath&#34;&gt;imath&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ixium&#34;&gt;Ixium&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jdgrimes&#34;&gt;J.D. Grimes&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jakeparis&#34;&gt;jakeparis&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/cc0a&#34;&gt;James&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/janak007&#34;&gt;janak Kaneriya&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jankimoradiya&#34;&gt;Janki Moradiya&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jarred-kennedy&#34;&gt;Jarred Kennedy&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/vengisss&#34;&gt;Javier Villanueva&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jaydeep-rami&#34;&gt;Jaydip Rami&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/parkcityj&#34;&gt;Jaye Simons&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jaymanpandya&#34;&gt;Jayman Pandya&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jayupadhyay01&#34;&gt;Jay Upadhyay&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jdeeburke&#34;&gt;jdeeburke&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/cheffheid&#34;&gt;Jeffrey de Wit&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/endocreative&#34;&gt;Jeremy Green&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jeherve&#34;&gt;Jeremy Herve&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jitendrabanjara1991&#34;&gt;jitendrabanjara1991&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joedolson&#34;&gt;Joe Dolson&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joemcgill&#34;&gt;Joe McGill&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/j-falk&#34;&gt;Johan Falk&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/johannadevos&#34;&gt;Johanna de Vos&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/johnjamesjacoby&#34;&gt;John James Jacoby&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jonathandejong&#34;&gt;Jonathandejong&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joneiseman&#34;&gt;joneiseman&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jonnybojangles&#34;&gt;jonnybojangles&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joostdevalk&#34;&gt;Joost de Valk&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jordesign&#34;&gt;jordesign&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/koke&#34;&gt;Jorge Bernal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/keraweb&#34;&gt;Jory Hogeveen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jcastaneda&#34;&gt;Jose Castaneda&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/josephwa&#34;&gt;josephwa&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/builtbynorthby&#34;&gt;Josh Feck&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joshuawold&#34;&gt;JoshuaWold&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/joyously&#34;&gt;Joy&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jplojohn&#34;&gt;jplo&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jrf&#34;&gt;jrf&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jrtashjian&#34;&gt;JR Tashjian&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/juiiee8487&#34;&gt;Juhi Patel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/juliarrr&#34;&gt;juliarrr&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/justinahinon&#34;&gt;Justin Ahinon&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/kadamwhite&#34;&gt;K. Adam White&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/kamataryo&#34;&gt;KamataRyo&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/karinedo&#34;&gt;Karine Do&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/katyatina&#34;&gt;Katyatina&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/kelin1003&#34;&gt;Kelin Chauhan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ryelle&#34;&gt;Kelly Dwan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/itzmekhokan&#34;&gt;Khokan Sardar&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/killua99&#34;&gt;killua99&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ixkaito&#34;&gt;Kite&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/knutsp&#34;&gt;Knut Sparhell&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/olein&#34;&gt;Koji Kuno&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/codemascot&#34;&gt;Kʜᴀɴ (ಠ_ಠ)&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/laurelfulford&#34;&gt;laurelfulford&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lkraav&#34;&gt;lkraav&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lovingboth&#34;&gt;lovingboth&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lukecarbis&#34;&gt;Luke Carbis&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lgedeon&#34;&gt;Luke Gedeon&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lukepettway&#34;&gt;Luke Pettway&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/palmiak&#34;&gt;Maciej Palmowski&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/maedahbatool&#34;&gt;Maedah Batool&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/travel_girl&#34;&gt;Maja Benke&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/malae&#34;&gt;Malae&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/manzoorwanijk&#34;&gt;Manzoor Wani&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/robobot3000&#34;&gt;Marcin&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/iworks&#34;&gt;Marcin Pietrzak&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/marcofernandes&#34;&gt;Marco Fernandes&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/marco-peralta&#34;&gt;Marco Peralta&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/marekhrabe&#34;&gt;marekhrabe&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mbelchev&#34;&gt;Mariyan Belchev&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/markcallen&#34;&gt;markcallen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mechter&#34;&gt;Markus Echterhoff&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/m-e-h&#34;&gt;Marty Helmick&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/marybaum&#34;&gt;Mary Baum&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mattnyeus&#34;&gt;mattnyeus&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mdwolinski&#34;&gt;mdwolinski&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/immeet94&#34;&gt;Meet Makadia&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mheikkila&#34;&gt;mheikkila&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wpscholar&#34;&gt;Micah Wood&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/michelleweber&#34;&gt;michelleweber&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mcsf&#34;&gt;Miguel Fonseca&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mmtr86&#34;&gt;Miguel Torres&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/simison&#34;&gt;Mikael Korpela&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mauteri&#34;&gt;Mike Auteri&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mikengarrett&#34;&gt;MikeNGarrett&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mikeschinkel&#34;&gt;Mike Schinkel [WPLib Box project lead]&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mikeselander&#34;&gt;Mike Selander&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/0mirka00&#34;&gt;mirka&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/lord_viper&#34;&gt;Mobin Ghasempoor&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mohadeseghasemi&#34;&gt;Mohadese Ghasemi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/saimonh&#34;&gt;Mohammed Saimon&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mor10&#34;&gt;Morten Rand-Hendriksen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mmuhsin&#34;&gt;Muhammad Muhsin&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/m_uysl&#34;&gt;Mustafa Uysal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/mzorz&#34;&gt;mzorz&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nfmohit&#34;&gt;Nahid&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/naoki0h&#34;&gt;Naoki Ohashi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nateallen&#34;&gt;Nate Allen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/greatislander&#34;&gt;Ned Zimmerman&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/neobabis&#34;&gt;Neokazis Charalampos&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/modernnerd&#34;&gt;Nick Cernis&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ndiego&#34;&gt;Nick Diego&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/celloexpressions&#34;&gt;Nick Halsey&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/jainnidhi&#34;&gt;Nidhi Jain&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nielsdeblaauw&#34;&gt;Niels de Blaauw&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nielslange&#34;&gt;Niels Lange&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/nnikolov&#34;&gt;Nikolay Nikolov&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/rabmalin&#34;&gt;Nilambar Sharma&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ninio&#34;&gt;ninio&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/notnownikki&#34;&gt;notnownikki&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bulletdigital&#34;&gt;Oliver Sadler&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/onlanka&#34;&gt;onlanka&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pandelisz&#34;&gt;pandelisz&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pbearne&#34;&gt;Paul Bearne&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pedromendonca&#34;&gt;Pedro Mendon&amp;#231;a&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/peterbooker&#34;&gt;Peter Booker&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/peterwilsoncc&#34;&gt;Peter Wilson&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pfiled&#34;&gt;pfiled&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pilou69&#34;&gt;pilou69&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pranalipatel&#34;&gt;Pranali Patel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pratikthink&#34;&gt;Pratik&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/pratikkry&#34;&gt;Pratik K. Yadav&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/presskopp&#34;&gt;Presskopp&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/psealock&#34;&gt;psealock&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/punit5658&#34;&gt;Punit Patel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bamadesigner&#34;&gt;Rachel Cherry&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/rahmon&#34;&gt;Rahmon&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/superpoincare&#34;&gt;Ramanan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ramizmanked&#34;&gt;Ramiz Manked&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ramonopoly&#34;&gt;ramonopoly&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/rinatkhaziev&#34;&gt;Rinat Khaziev&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/noisysocks&#34;&gt;Robert Anderson&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/rsusanto&#34;&gt;Rudy Susanto&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ryan&#34;&gt;Ryan Boren&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sebastienserre&#34;&gt;S&amp;#233;bastien SERRE&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/saeedfard&#34;&gt;Saeed Fard&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/salar6990&#34;&gt;Salar Gholizadeh&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/salcode&#34;&gt;Sal Ferrarello&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/samanehmirrajabi&#34;&gt;Samaneh Mirrajabi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/samikeijonen&#34;&gt;Sami Keijonen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/elhardoum&#34;&gt;Samuel Elh&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sgarza&#34;&gt;Santiago Garza&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/saracope&#34;&gt;Sara Cope&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/saracup&#34;&gt;saracup&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tinkerbelly&#34;&gt;sarah semark&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/coffee2code&#34;&gt;Scott Reilly&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sebastianpisula&#34;&gt;Sebastian Pisula&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ebrahimzadeh&#34;&gt;Sekineh Ebrahimzadeh&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sergioestevao&#34;&gt;SergioEstevao&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sgastard&#34;&gt;sgastard&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sharifkiberu&#34;&gt;sharifkiberu&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/shashank3105&#34;&gt;Shashank Panchal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/shazdeh&#34;&gt;shazdeh&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/shital-patel&#34;&gt;Shital Marakana&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sky_76&#34;&gt;sky_76&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/netweb&#34;&gt;Stephen Edgar&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/stevenkword&#34;&gt;Steven Word&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sudar&#34;&gt;Sudar Muthu&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/sudhiryadav&#34;&gt;Sudhir Yadav&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/szepeviktor&#34;&gt;szepe.viktor&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/miyauchi&#34;&gt;Takayuki Miyauchi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/themonic&#34;&gt;Themonic&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/thomstark&#34;&gt;thomstark&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tfrommen&#34;&gt;Thorsten Frommen&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/thrijith&#34;&gt;Thrijith Thankachan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/timph&#34;&gt;timph&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/timwright12&#34;&gt;Tim Wright&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tmatsuur&#34;&gt;tmatsuur&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/ohiosierra&#34;&gt;tmdesigned&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tmdesigned&#34;&gt;tmdesigned&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tobiasbg&#34;&gt;TobiasBg&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tz-media&#34;&gt;Tobias Zimpel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tomharrigan&#34;&gt;TomHarrigan&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tonybogdanov&#34;&gt;tonybogdanov&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/tobifjellner&#34;&gt;Tor-Bjorn Fjellner&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/toro_unit&#34;&gt;Toro_Unit (Hiroshi Urabe)&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/torres126&#34;&gt;torres126&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/zodiac1978&#34;&gt;Torsten Landsiedel&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/itowhid06&#34;&gt;Towhidul Islam&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/liljimmi&#34;&gt;Tracy Levesque&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/umang7&#34;&gt;Umang Bhanvadia&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/vaishalipanchal&#34;&gt;Vaishali Panchal&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/vrimill&#34;&gt;vrimill&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/webfactory&#34;&gt;WebFactory&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/westonruter&#34;&gt;Weston Ruter&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wfmattr&#34;&gt;WFMattR&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/bahia0019&#34;&gt;William &amp;#039;Bahia&amp;#039; Bay&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/williampatton&#34;&gt;williampatton&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/willscrlt&#34;&gt;Willscrlt&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wolly&#34;&gt;Wolly aka Paolo Valenti&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/wrwrwr0&#34;&gt;wrwrwr0&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/yoavf&#34;&gt;Yoav Farhi&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/fierevere&#34;&gt;Yui&lt;/a&gt;, &lt;a href=&#34;https://profiles.wordpress.org/zebulan&#34;&gt;Zebulan Stanphill&lt;/a&gt;, and &lt;a href=&#34;https://profiles.wordpress.org/chesio&#34;&gt;Česlav Przywara&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 class=&#34;wp-people-group&#34;&gt;External Libraries&lt;/h2&gt;
+&lt;p class=&#34;wp-credits-list&#34;&gt;&lt;a href=&#34;https://babeljs.io/docs/en/babel-polyfill&#34;&gt;Babel Polyfill&lt;/a&gt;, &lt;a href=&#34;http://backbonejs.org/&#34;&gt;Backbone.js&lt;/a&gt;, &lt;a href=&#34;https://squirrelmail.org/&#34;&gt;Class POP3&lt;/a&gt;, &lt;a href=&#34;https://clipboardjs.com/&#34;&gt;clipboard.js&lt;/a&gt;, &lt;a href=&#34;https://github.com/jonathantneal/closest&#34;&gt;Closest&lt;/a&gt;, &lt;a href=&#34;https://codemirror.net/&#34;&gt;CodeMirror&lt;/a&gt;, &lt;a href=&#34;https://plugins.jquery.com/color/&#34;&gt;Color Animations&lt;/a&gt;, &lt;a href=&#34;http://getid3.sourceforge.net/&#34;&gt;getID3()&lt;/a&gt;, &lt;a href=&#34;https://github.com/jimmywarting/FormData&#34;&gt;FormData&lt;/a&gt;, &lt;a href=&#34;https://pear.horde.org/&#34;&gt;Horde Text Diff&lt;/a&gt;, &lt;a href=&#34;http://cherne.net/brian/resources/jquery.hoverIntent.html&#34;&gt;hoverIntent&lt;/a&gt;, &lt;a href=&#34;http://odyniec.net/projects/imgareaselect/&#34;&gt;imgAreaSelect&lt;/a&gt;, &lt;a href=&#34;https://github.com/Automattic/Iris&#34;&gt;Iris&lt;/a&gt;, &lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt;, &lt;a href=&#34;https://jqueryui.com/&#34;&gt;jQuery UI&lt;/a&gt;, &lt;a href=&#34;https://github.com/tzuryby/jquery.hotkeys&#34;&gt;jQuery Hotkeys&lt;/a&gt;, &lt;a href=&#34;http://benalman.com/projects/jquery-misc-plugins/&#34;&gt;jQuery serializeObject&lt;/a&gt;, &lt;a href=&#34;https://plugins.jquery.com/query-object/&#34;&gt;jQuery.query&lt;/a&gt;, &lt;a href=&#34;https://github.com/pvulgaris/jquery.suggest&#34;&gt;jQuery.suggest&lt;/a&gt;, &lt;a href=&#34;http://touchpunch.furf.com/&#34;&gt;jQuery UI Touch Punch&lt;/a&gt;, &lt;a href=&#34;https://github.com/douglascrockford/JSON-js&#34;&gt;json2&lt;/a&gt;, &lt;a href=&#34;https://lodash.com/&#34;&gt;Lodash&lt;/a&gt;, &lt;a href=&#34;http://masonry.desandro.com/&#34;&gt;Masonry&lt;/a&gt;, &lt;a href=&#34;http://mediaelementjs.com/&#34;&gt;MediaElement.js&lt;/a&gt;, &lt;a href=&#34;http://momentjs.com/&#34;&gt;Moment&lt;/a&gt;, &lt;a href=&#34;http://www.phpconcept.net/pclzip/&#34;&gt;PclZip&lt;/a&gt;, &lt;a href=&#34;https://www.phpclasses.org/package/1743-PHP-FTP-client-in-pure-PHP.html&#34;&gt;PemFTP&lt;/a&gt;, &lt;a href=&#34;http://www.openwall.com/phpass/&#34;&gt;phpass&lt;/a&gt;, &lt;a href=&#34;https://github.com/PHPMailer/PHPMailer&#34;&gt;PHPMailer&lt;/a&gt;, &lt;a href=&#34;http://www.plupload.com/&#34;&gt;Plupload&lt;/a&gt;, &lt;a href=&#34;https://github.com/paragonie/random_compat&#34;&gt;random_compat&lt;/a&gt;, &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt;, &lt;a href=&#34;https://redux.js.org/&#34;&gt;Redux&lt;/a&gt;, &lt;a href=&#34;http://requests.ryanmccue.info/&#34;&gt;Requests&lt;/a&gt;, &lt;a href=&#34;http://simplepie.org/&#34;&gt;SimplePie&lt;/a&gt;, &lt;a href=&#34;http://scripts.incutio.com/xmlrpc/&#34;&gt;The Incutio XML-RPC Library&lt;/a&gt;, &lt;a href=&#34;http://codylindley.com/thickbox/&#34;&gt;Thickbox&lt;/a&gt;, &lt;a href=&#34;https://www.tinymce.com/&#34;&gt;TinyMCE&lt;/a&gt;, &lt;a href=&#34;https://github.com/twitter/twemoji&#34;&gt;Twemoji&lt;/a&gt;, &lt;a href=&#34;http://underscorejs.org/&#34;&gt;Underscore.js&lt;/a&gt;, &lt;a href=&#34;https://github.com/github/fetch&#34;&gt;whatwg-fetch&lt;/a&gt;, and &lt;a href=&#34;https://github.com/dropbox/zxcvbn&#34;&gt;zxcvbn&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang=en_US&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

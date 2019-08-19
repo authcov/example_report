@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="./dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="./index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Authorization Groups</h1>
+  </div>
+
+  <div class="table-responsive">
+    
+      <p>
+        <b>Accessible to everyone</b>
+      </p>
+
+      <ul>
+        
+          <li>
+              <a href="resources/2b38d094-1db3-43bd-9bd1-f48498b6538b.html">
+                GET http://localhost:8000/
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d4addf5b-58c7-406a-b4d4-f40ddffb543a.html">
+                GET http://localhost:8000/?author=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/4e93a843-268f-4e21-8913-96e71dc82eb6.html">
+                GET http://localhost:8000/?cat=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/8e52fe9d-21bc-4fe1-8e8e-d2368b8d5fa7.html">
+                GET http://localhost:8000/?feed=comments-rss2
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/43feeb7e-0a4a-4f7b-a7ff-d9cd1d56b0b8.html">
+                GET http://localhost:8000/?feed=rss2
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/ca9712e4-ec59-4cdf-ab65-676e3fb414e3.html">
+                GET http://localhost:8000/?m=201908
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/93b103bb-e8a4-4b5a-991b-450bdf8ce30e.html">
+                GET http://localhost:8000/?p=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/40ed8d97-099b-4cf9-9d32-881e2b3ec880.html">
+                GET http://localhost:8000/?p=1&amp;replytocom=1
+              </a>
+          </li>
+        
+      </ul>
+    
+      <p>
+        <b>Accessible to only admin</b>
+      </p>
+
+      <ul>
+        
+          <li>
+              <a href="resources/63e2407d-bd97-4c3a-9293-79a3bbba5019.html">
+                GET http://localhost:8000/index.php?rest_route=%2Fwp%2Fv2%2Ftaxonomies&amp;per_page=100&amp;context=edit&amp;_locale=user
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/41f23749-5d09-4951-b671-f2ad18bdc1da.html">
+                GET http://localhost:8000/index.php?rest_route=%2Fwp%2Fv2%2Fusers%2F&amp;who=authors&amp;per_page=100&amp;_locale=user
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/6291d546-c631-44a7-a0bd-21a175f6c537.html">
+                POST http://localhost:8000/wp-admin/admin-ajax.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f0902f5a-24a4-471c-ab46-83b5ce419bb1.html">
+                GET http://localhost:8000/wp-admin/customize.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/99446dca-79b6-472b-a24f-855ba6a60007.html">
+                GET http://localhost:8000/wp-admin/customize.php?autofocus%5Bpanel%5D=nav_menus&amp;return=%2Fwp-admin%2Fnav-menus.php%3Faction%3Dedit%26menu%3D0
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/bbb69606-3c24-48ac-bc6f-1ca0a1926d49.html">
+                GET http://localhost:8000/wp-admin/customize.php?autofocus%5Bpanel%5D=widgets&amp;return=%2Fwp-admin%2Fwidgets.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/be7b0661-d353-4f89-95e7-61abc40adf34.html">
+                GET http://localhost:8000/wp-admin/customize.php?autofocus[panel]=themes
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/3c91810c-c9ae-4ae8-97e2-86e686273178.html">
+                GET http://localhost:8000/wp-admin/customize.php?autofocus[section]=static_front_page
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/b299fca6-4731-471d-9931-702f1ad4049f.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2F
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/34f79151-de73-4627-a127-59d9d7308969.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fabout.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/dce4a6f1-c94b-4e68-97e5-57fd7ca7e16d.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fedit-comments.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/cc938bc7-9d1f-47a3-b01f-4f081367ed78.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fnav-menus.php%3Faction%3Dedit%26menu%3D0
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/4660fc03-e152-48e3-b9fa-3724fde36829.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fpost-new.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/4c3a505f-18b5-41c3-a407-e5e64962f63e.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fpost-new.php%3Fpost_type%3Dpage
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/3ab4116e-30de-4c5e-91aa-9d19acb82f8f.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fpost.php%3Fpost%3D1%26action%3Dedit
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5d137278-84d7-4a63-abb5-57123bcc7bb7.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fprofile.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a6e7faa2-63f9-4b92-a6d7-72188b0f9100.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fprofile.php&amp;autofocus%5Bcontrol%5D=background_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/712fa19e-9afb-44c7-9d61-670fcc7301cd.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fprofile.php&amp;autofocus%5Bcontrol%5D=header_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/036ec0fa-9a96-4fe2-aa8a-42b4079dde7e.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fthemes.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/6a58dd3d-d406-45aa-b373-2ffafc9013de.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fuser-new.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/539b2e19-47ac-4f3d-a80d-2041131ce5e3.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fuser-new.php&amp;autofocus%5Bcontrol%5D=background_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/61bcd026-8dbf-4527-aab8-225961ca0a03.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fuser-new.php&amp;autofocus%5Bcontrol%5D=header_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/01cc5e8f-8860-4ba7-a8a2-944557948161.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fwidgets.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/9de5fa60-8524-4b61-8245-2434210677ab.html">
+                GET http://localhost:8000/wp-admin/customize.php?theme=twentynineteen&amp;return=%2Fwp-admin%2Fthemes.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/625cf025-3147-447c-a34b-2fa568fba7e3.html">
+                GET http://localhost:8000/wp-admin/customize.php?theme=twentyseventeen&amp;return=%2Fwp-admin%2Fthemes.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/00e4be85-8fc6-4e36-a744-a511766e33b7.html">
+                GET http://localhost:8000/wp-admin/customize.php?theme=twentysixteen&amp;return=%2Fwp-admin%2Fthemes.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c5c3f82a-ae3e-4783-80c4-41a21c63d8a7.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/e740fd5e-1c6b-4338-99e7-dbb343ed18fb.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F%3Fauthor%3D1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/3f63aa75-2a35-447a-9c88-ee77ae2818ca.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F%3Fcat%3D1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/0424f09e-11ce-4f40-9581-7321a2559258.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F%3Fm%3D201908
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/2b1feac6-4412-4e5e-8fff-8869aebfe6f8.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F%3Fp%3D1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/41a98d0e-dc2c-47aa-87e1-c57b0c688de8.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=archives-2&amp;addnew=1&amp;num=3&amp;base=archives
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a3cb745f-a611-45be-a06c-61c62ad91c28.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=calendar-1&amp;addnew=1&amp;num=2&amp;base=calendar
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/0b4d4046-2249-4129-a7e6-8376f8d1c13f.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=categories-2&amp;addnew=1&amp;num=3&amp;base=categories
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/ccd6ae48-7990-4a4a-8b4c-52caefb9d353.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=custom_html-1&amp;addnew=1&amp;num=2&amp;base=custom_html
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/156cdb7f-7bc3-4d69-b567-13aa47497070.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=media_audio-1&amp;addnew=1&amp;num=2&amp;base=media_audio
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/b7735d79-b6ab-436d-909a-d7f2b2bcbe58.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=media_gallery-1&amp;addnew=1&amp;num=2&amp;base=media_gallery
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/dc675e4f-2446-477e-980a-3241d878bb4b.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=media_image-1&amp;addnew=1&amp;num=2&amp;base=media_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/fe4af7c0-202b-4c25-b9e2-c644b6c43ac1.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=media_video-1&amp;addnew=1&amp;num=2&amp;base=media_video
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f7ee97ec-b95e-4e31-b1ca-22989aae14f4.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=meta-2&amp;addnew=1&amp;num=3&amp;base=meta
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5b80f001-f936-451b-8bc7-808988355b98.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=nav_menu-1&amp;addnew=1&amp;num=2&amp;base=nav_menu
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/cb8f8c16-9ea5-4b08-a846-79eee9da8fa2.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=pages-1&amp;addnew=1&amp;num=2&amp;base=pages
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/407859bb-9c4b-4344-b2c1-d74cea2207ea.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=recent-comments-2&amp;addnew=1&amp;num=3&amp;base=recent-comments
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f2931a6f-e2af-4bd5-b062-498f2bb54761.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=recent-posts-2&amp;addnew=1&amp;num=3&amp;base=recent-posts
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f10bef2d-a195-4316-b4e6-2157013aea88.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=rss-1&amp;addnew=1&amp;num=2&amp;base=rss
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/05032b8f-95f5-4e40-a63e-ce0d132e84da.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=search-2&amp;addnew=1&amp;num=3&amp;base=search
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a031ca9b-30fa-4744-8905-4059732d5f51.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=tag_cloud-1&amp;addnew=1&amp;num=2&amp;base=tag_cloud
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/46505d51-26c1-4014-890d-bae234653eb4.html">
+                GET http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&amp;editwidget=text-1&amp;addnew=1&amp;num=2&amp;base=text
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/520e4e6f-da7f-4005-a772-2c7fd475dcaf.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d37014ed-dc2e-45e1-bf94-6d0401c2de69.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=all
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/de188525-b745-4195-8178-a8e16e76a88d.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=approved
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/0964b2df-adca-4739-b0e4-b0953c588609.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=mine&amp;user_id=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/56eacb23-770f-442e-9a34-a682b164a119.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=moderated
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/051e7670-1bd0-45af-8c60-6838f0c725b5.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=spam
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/49ca22bd-5c5c-4eee-b03e-824ff2210a6a.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?comment_status=trash
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5931b2ea-b41c-4419-90c2-90b420c9e365.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;order=asc
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/e23b6c0a-55db-47d1-b28b-0ab5303e402c.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_date&amp;order=asc
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/de245ddd-f248-4197-94b7-1d792bace892.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_post_ID&amp;order=asc
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/2fe0eb70-34bf-4b5d-b620-fa8e49fe2148.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?p=1&amp;approved=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/50a4e802-87b9-4994-9740-c6f3caec744a.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?p=1&amp;comment_status=approved
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/60abd052-b36e-4a4f-9c22-9842eb81e664.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?p=1&amp;unapproved=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d1779b43-c3aa-4d4d-9ca4-8744f254d67a.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?spammed=1&amp;ids=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a002100e-a7d6-4b77-93ce-05fdf9be198f.html">
+                GET http://localhost:8000/wp-admin/edit-comments.php?trashed=1&amp;ids=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/410130a9-a4ac-4c3a-81d7-2285292d0a09.html">
+                GET http://localhost:8000/wp-admin/edit.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/80d7121a-ff01-44d0-ac8a-bb0718336dc6.html">
+                GET http://localhost:8000/wp-admin/edit.php?post_type=page
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c850c3c0-d88c-4128-ba62-a56f7d222192.html">
+                GET http://localhost:8000/wp-admin/edit.php?post_type=post
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/ad25f082-c39a-49c2-83be-ae6e83bca16e.html">
+                GET http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a4c73c58-7850-4f78-89a4-3f462ac5a75a.html">
+                GET http://localhost:8000/wp-admin/edit-tags.php?taxonomy=post_tag
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c506cb61-4e38-49dd-842a-ab2361f847a8.html">
+                GET http://localhost:8000/wp-admin/export.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5ab74ac2-a0be-41d2-ba5f-fda686942fe6.html">
+                GET http://localhost:8000/wp-admin/import.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/9e7066ec-407e-4b31-9e7a-13a6b32b4492.html">
+                GET http://localhost:8000/wp-admin/media-new.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/37ea44ef-21b2-454d-b405-379191a50e33.html">
+                GET http://localhost:8000/wp-admin/media-new.php?browser-uploader
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c2e624c6-fb48-48c4-883b-60e0e7b60c3e.html">
+                GET http://localhost:8000/wp-admin/nav-menus.php?action=edit&amp;menu=0
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/1f53f1db-13d7-4438-a080-e4f875aa3a4b.html">
+                GET http://localhost:8000/wp-admin/options-discussion.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/a90d1031-9386-49dd-9a04-00ed01ece91a.html">
+                GET http://localhost:8000/wp-admin/options-general.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/743cf874-43bf-4a3c-b1fb-6650f25cf8c9.html">
+                GET http://localhost:8000/wp-admin/options-media.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5d0daab7-e130-43e6-b94b-f0eebf81d977.html">
+                GET http://localhost:8000/wp-admin/options-permalink.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/dc141816-305f-4be9-a3c5-e29663a75b5b.html">
+                GET http://localhost:8000/wp-admin/options-reading.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/fdba02e6-6952-4c7f-a2bf-92db2ec39201.html">
+                GET http://localhost:8000/wp-admin/options-writing.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/67c0e9d1-2932-4a40-9d48-6cd2ab29cd9f.html">
+                GET http://localhost:8000/wp-admin/plugin-editor.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/43b4aef9-98ec-4d7e-9b4e-800e41d62fda.html">
+                GET http://localhost:8000/wp-admin/plugin-install.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/579d096c-d840-4d3d-b1b4-237c8ddc5d7b.html">
+                GET http://localhost:8000/wp-admin/plugins.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/5ec46f6a-8bb8-49ca-8827-afec138459a5.html">
+                GET http://localhost:8000/wp-admin/post-new.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/955360d7-5c65-4215-a933-3b78f6cf1669.html">
+                GET http://localhost:8000/wp-admin/post-new.php?post_type=page
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/0d1c6aa5-7dda-43b0-8b00-4c6d2bb796c4.html">
+                GET http://localhost:8000/wp-admin/post.php?post=1&amp;action=edit
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/fde79a5d-3152-4f8a-94ea-a602f35d4838.html">
+                GET http://localhost:8000/wp-admin/privacy.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/84acefe0-3318-419f-a46f-6840cf9806c9.html">
+                GET http://localhost:8000/wp-admin/site-health.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/0b7472b9-7978-45d0-92c2-9500937c6a4c.html">
+                GET http://localhost:8000/wp-admin/site-health.php?tab=debug
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/711c5ff6-87e1-4d17-af5d-530f455541d0.html">
+                GET http://localhost:8000/wp-admin/term.php?taxonomy=category&amp;tag_ID=1&amp;post_type=post
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d44008c8-3593-450b-bcff-e1bc1ea8725c.html">
+                GET http://localhost:8000/wp-admin/theme-editor.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/14aa3c9d-3316-43fb-888b-0e1f3da13579.html">
+                GET http://localhost:8000/wp-admin/theme-install.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/274b0eac-a2ba-43dc-8e44-f9e04a0610a7.html">
+                GET http://localhost:8000/wp-admin/themes.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/44e61362-80b7-4931-9349-558efadf91ba.html">
+                GET http://localhost:8000/wp-admin/themes.php?activated=true
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/4513cfdf-de10-4bf9-9376-2946d97a46fe.html">
+                GET http://localhost:8000/wp-admin/themes.php?page=custom-background
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/74b66bbd-f312-44dd-8f8c-62d39adb4575.html">
+                GET http://localhost:8000/wp-admin/tools.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/23cef345-9484-4e98-90ed-ab922c02f31a.html">
+                GET http://localhost:8000/wp-admin/tools.php?page=export_personal_data
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/b359de41-1e94-46e6-9a16-c34e8f46f90b.html">
+                GET http://localhost:8000/wp-admin/tools.php?page=remove_personal_data
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c7a2cf92-63a4-4b72-a14e-f545f723326c.html">
+                GET http://localhost:8000/wp-admin/update-core.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/fd134e0e-dfb2-4a01-9102-7a39f3aeb12c.html">
+                GET http://localhost:8000/wp-admin/upload.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d37ce6fe-610f-425d-9f6c-eb7fba5abd9e.html">
+                GET http://localhost:8000/wp-admin/user-new.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/ac2a5083-8079-4598-88de-72414c6b82dc.html">
+                GET http://localhost:8000/wp-admin/users.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/7aa6f2a6-ec1d-45e9-b26a-5f0e909de81c.html">
+                GET http://localhost:8000/wp-admin/widgets.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/759908dc-4d0f-44f8-b9e9-8eead87c00f7.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=archives-2&amp;addnew=1&amp;num=3&amp;base=archives
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/dde2f028-f1c7-4bac-90b5-3ebda474d340.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=archives-2&amp;sidebar=sidebar-1&amp;key=3
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/43d25e80-86fe-42dd-a2f5-543b5c27f503.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=calendar-1&amp;addnew=1&amp;num=2&amp;base=calendar
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/8ef2e7b8-80a7-4935-8d2b-564d0b129f97.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=categories-2&amp;addnew=1&amp;num=3&amp;base=categories
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/6db47477-7087-49e1-97cf-38732f730fb6.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=categories-2&amp;sidebar=sidebar-1&amp;key=4
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/9980ac53-1741-4ed3-bbaa-4e015f23947f.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=custom_html-1&amp;addnew=1&amp;num=2&amp;base=custom_html
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/134566bd-788b-42da-b0c3-b1c1368f7344.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=media_audio-1&amp;addnew=1&amp;num=2&amp;base=media_audio
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/3f9c699a-bd9f-4f7a-8ba9-b8391e6e464b.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=media_gallery-1&amp;addnew=1&amp;num=2&amp;base=media_gallery
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/307aeae9-78a6-4d51-8d36-b00687adf7ee.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=media_image-1&amp;addnew=1&amp;num=2&amp;base=media_image
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/38d877bf-f45a-44a7-af09-dec32b253bf7.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=media_video-1&amp;addnew=1&amp;num=2&amp;base=media_video
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/3ead46fc-ef43-4dd3-8da0-ba9f8c7309f3.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=meta-2&amp;addnew=1&amp;num=3&amp;base=meta
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/7e5f49db-c847-4f9e-b221-1e5d483d5796.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=meta-2&amp;sidebar=sidebar-1&amp;key=5
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/d5d5c09a-56c7-4742-b217-9366500126bb.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=nav_menu-1&amp;addnew=1&amp;num=2&amp;base=nav_menu
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/be2047f9-8b36-4648-b6df-c2943f67d80d.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=pages-1&amp;addnew=1&amp;num=2&amp;base=pages
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/35678944-1ff7-465e-ad22-94e5a1c7d390.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=recent-comments-2&amp;addnew=1&amp;num=3&amp;base=recent-comments
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/106d9c31-9f70-4cf5-8f6b-33c7c10e32b4.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=recent-comments-2&amp;sidebar=sidebar-1&amp;key=2
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/8da9d2f8-6935-44c2-b8bf-30ab44cf2d51.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=recent-posts-2&amp;addnew=1&amp;num=3&amp;base=recent-posts
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/05794125-6992-400f-9b2b-debb7c847161.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=recent-posts-2&amp;sidebar=sidebar-1&amp;key=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/9fe3caee-3134-4b58-a1f4-262d1700c324.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=rss-1&amp;addnew=1&amp;num=2&amp;base=rss
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/c3b5649a-13a8-4c1b-9ec2-b9beeab87faf.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=search-2&amp;addnew=1&amp;num=3&amp;base=search
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/7b05af84-30dc-424d-b197-79fb2747ed56.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=search-2&amp;sidebar=sidebar-1&amp;key=0
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f500a21b-a75a-4346-8ea1-b8314f26b341.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=tag_cloud-1&amp;addnew=1&amp;num=2&amp;base=tag_cloud
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/e1ff14e7-b555-4fbe-aa64-4e2ec0bd3a60.html">
+                GET http://localhost:8000/wp-admin/widgets.php?editwidget=text-1&amp;addnew=1&amp;num=2&amp;base=text
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/09afe22e-75ef-417f-a528-d67c98cbbed2.html">
+                GET http://localhost:8000/wp-admin/widgets.php?widgets-access=off&amp;_wpnonce=19e9f259ec
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/563dcf3f-3c82-4c55-b577-11f2e2305dbe.html">
+                GET http://localhost:8000/wp-admin/widgets.php?widgets-access=on&amp;_wpnonce=19e9f259ec
+              </a>
+          </li>
+        
+      </ul>
+    
+      <p>
+        <b>Accessible to admin, contributor</b>
+      </p>
+
+      <ul>
+        
+          <li>
+              <a href="resources/7d3a9f6d-cf46-4beb-ab40-923bccd8b586.html">
+                GET http://localhost:8000/wp-admin/
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/f9c9a725-5f7b-4b80-9e49-8e5ac420a109.html">
+                GET http://localhost:8000/wp-admin/about.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/ee55c2f1-304f-4ecd-ac16-615d637e872a.html">
+                GET http://localhost:8000/wp-admin/comment.php?action=editcomment&amp;c=1
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/dc4171e5-3499-4945-9905-ce8a2db7ebe9.html">
+                GET http://localhost:8000/wp-admin/credits.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/36358076-2133-4662-b1be-231ac2678d46.html">
+                GET http://localhost:8000/wp-admin/freedoms.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/1f2169ea-557e-4092-973d-75fe4b7d24a8.html">
+                GET http://localhost:8000/wp-admin/freedoms.php?privacy-notice
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/10018736-6225-48f3-bf09-8b493ec180a9.html">
+                GET http://localhost:8000/wp-admin/index.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/05998aa9-faf4-4fba-b058-361c90f53e7e.html">
+                GET http://localhost:8000/wp-admin/profile.php
+              </a>
+          </li>
+        
+          <li>
+              <a href="resources/8cd57526-95c5-4c72-9472-a36d7fa14d53.html">
+                GET http://localhost:8000/wp-admin/?welcome=0
+              </a>
+          </li>
+        
+      </ul>
+    
+      <p>
+        <b>Accessible to no one</b>
+      </p>
+
+      <ul>
+        
+          <li>
+              <a href="resources/25b83a46-7257-4bff-9f00-c4f0ec5e68d4.html">
+                GET http://localhost:8000/wp-admin/customize.php?return=%2Fwp-admin%2Fmedia-new.php
+              </a>
+          </li>
+        
+      </ul>
+    
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

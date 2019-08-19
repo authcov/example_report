@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/b05e87c6-7541-48f3-8e63-5b4fa78a7e39.html">http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:09 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>set-cookie:</b> wp-settings-1=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+wp-settings-time-1=1566224049; expires=Tue, 18-Aug-2020 14:14:09 GMT; Max-Age=31536000; path=/<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 9472<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=50<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;Categories &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;edit-category&#39;,
+	typenow = &#39;post&#39;,
+	adminpage = &#39;edit-tags-php&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;amp;load%5B%5D=,site-icon,l10n,buttons,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224049&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js edit-tags-php auto-fold admin-bar post-type-post taxonomy-category branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-post open-if-no-js menu-top-first&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;current&#34;&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39; class=&#34;current&#34; aria-current=&#34;page&#34;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-background&#39;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-editor.php&#39;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+						
+							&lt;li id=&#34;tab-link-overview&#34; class=&#34;active&#34;&gt;
+								&lt;a href=&#34;#tab-panel-overview&#34; aria-controls=&#34;tab-panel-overview&#34;&gt;
+									Overview								&lt;/a&gt;
+							&lt;/li&gt;
+							
+							&lt;li id=&#34;tab-link-adding-terms&#34;&gt;
+								&lt;a href=&#34;#tab-panel-adding-terms&#34; aria-controls=&#34;tab-panel-adding-terms&#34;&gt;
+									Adding Categories								&lt;/a&gt;
+							&lt;/li&gt;
+													&lt;/ul&gt;
+					&lt;/div&gt;
+
+										&lt;div class=&#34;contextual-help-sidebar&#34;&gt;
+						&lt;p&gt;&lt;strong&gt;For more information:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Posts_Categories_Screen&#34;&gt;Documentation on Categories&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://wordpress.org/support/&#34;&gt;Support&lt;/a&gt;&lt;/p&gt;					&lt;/div&gt;
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+						
+							&lt;div id=&#34;tab-panel-overview&#34; class=&#34;help-tab-content active&#34;&gt;
+								&lt;p&gt;You can use categories to define sections of your site and group related posts. The default category is &amp;#8220;Uncategorized&amp;#8221; until you change it in your &lt;a href=&#34;options-writing.php&#34;&gt;writing settings&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;What&amp;#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index.&lt;/p&gt;							&lt;/div&gt;
+							
+							&lt;div id=&#34;tab-panel-adding-terms&#34; class=&#34;help-tab-content&#34;&gt;
+								&lt;p&gt;When adding a new category on this screen, you&amp;#8217;ll fill in the following fields:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; &amp;mdash; The name is how it appears on your site.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Slug&lt;/strong&gt; &amp;mdash; The &amp;#8220;slug&amp;#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Parent&lt;/strong&gt; &amp;mdash; Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have child categories for Bebop and Big Band. Totally optional. To create a subcategory, just choose another category from the Parent dropdown.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt; &amp;mdash; The description is not prominent by default; however, some themes may display it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;You can change the display of this screen using the Screen Options tab to set how many items are displayed per screen and to display/hide columns in the table.&lt;/p&gt;							&lt;/div&gt;
+												&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div id=&#34;screen-options-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Screen Options Tab&#34;&gt;
+&lt;form id=&#39;adv-settings&#39; method=&#39;post&#39;&gt;
+		&lt;fieldset class=&#34;metabox-prefs&#34;&gt;
+		&lt;legend&gt;Columns&lt;/legend&gt;
+		&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;description-hide&#34; type=&#34;checkbox&#34; id=&#34;description-hide&#34; value=&#34;description&#34; checked=&#39;checked&#39; /&gt;Description&lt;/label&gt;
+&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;slug-hide&#34; type=&#34;checkbox&#34; id=&#34;slug-hide&#34; value=&#34;slug&#34; checked=&#39;checked&#39; /&gt;Slug&lt;/label&gt;
+&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;posts-hide&#34; type=&#34;checkbox&#34; id=&#34;posts-hide&#34; value=&#34;posts&#34; checked=&#39;checked&#39; /&gt;Count&lt;/label&gt;
+		&lt;/fieldset&gt;
+				&lt;fieldset class=&#34;screen-options&#34;&gt;
+		&lt;legend&gt;Pagination&lt;/legend&gt;
+							&lt;label for=&#34;edit_category_per_page&#34;&gt;Number of items per page:&lt;/label&gt;
+				&lt;input type=&#34;number&#34; step=&#34;1&#34; min=&#34;1&#34; max=&#34;999&#34; class=&#34;screen-per-page&#34; name=&#34;wp_screen_options[value]&#34;
+					id=&#34;edit_category_per_page&#34; maxlength=&#34;3&#34;
+					value=&#34;20&#34; /&gt;
+							&lt;input type=&#34;hidden&#34; name=&#34;wp_screen_options[option]&#34; value=&#34;edit_category_per_page&#34; /&gt;
+		&lt;/fieldset&gt;
+		&lt;p class=&#34;submit&#34;&gt;&lt;input type=&#34;submit&#34; name=&#34;screen-options-apply&#34; id=&#34;screen-options-apply&#34; class=&#34;button button-primary&#34; value=&#34;Apply&#34;  /&gt;&lt;/p&gt;
+&lt;input type=&#34;hidden&#34; id=&#34;screenoptionnonce&#34; name=&#34;screenoptionnonce&#34; value=&#34;3b864fc925&#34; /&gt;
+&lt;/form&gt;
+&lt;/div&gt;		&lt;/div&gt;
+				&lt;div id=&#34;screen-meta-links&#34;&gt;
+					&lt;div id=&#34;screen-options-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;show-settings-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;screen-options-wrap&#34; aria-expanded=&#34;false&#34;&gt;Screen Options&lt;/button&gt;
+			&lt;/div&gt;
+						&lt;div id=&#34;contextual-help-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;contextual-help-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;contextual-help-wrap&#34; aria-expanded=&#34;false&#34;&gt;Help&lt;/button&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		
+&lt;div class=&#34;wrap nosubsub&#34;&gt;
+&lt;h1 class=&#34;wp-heading-inline&#34;&gt;Categories&lt;/h1&gt;
+
+
+&lt;hr class=&#34;wp-header-end&#34;&gt;
+
+&lt;div id=&#34;ajax-response&#34;&gt;&lt;/div&gt;
+
+&lt;form class=&#34;search-form wp-clearfix&#34; method=&#34;get&#34;&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;taxonomy&#34; value=&#34;category&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;post_type&#34; value=&#34;post&#34; /&gt;
+
+&lt;p class=&#34;search-box&#34;&gt;
+	&lt;label class=&#34;screen-reader-text&#34; for=&#34;tag-search-input&#34;&gt;Search Categories:&lt;/label&gt;
+	&lt;input type=&#34;search&#34; id=&#34;tag-search-input&#34; name=&#34;s&#34; value=&#34;&#34; /&gt;
+		&lt;input type=&#34;submit&#34; id=&#34;search-submit&#34; class=&#34;button&#34; value=&#34;Search Categories&#34;  /&gt;&lt;/p&gt;
+		
+&lt;/form&gt;
+
+&lt;div id=&#34;col-container&#34; class=&#34;wp-clearfix&#34;&gt;
+
+&lt;div id=&#34;col-left&#34;&gt;
+&lt;div class=&#34;col-wrap&#34;&gt;
+
+	
+&lt;div class=&#34;form-wrap&#34;&gt;
+&lt;h2&gt;Add New Category&lt;/h2&gt;
+&lt;form id=&#34;addtag&#34; method=&#34;post&#34; action=&#34;edit-tags.php&#34; class=&#34;validate&#34;
+	&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;action&#34; value=&#34;add-tag&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;screen&#34; value=&#34;edit-category&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;taxonomy&#34; value=&#34;category&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;post_type&#34; value=&#34;post&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce_add-tag&#34; name=&#34;_wpnonce_add-tag&#34; value=&#34;95e3d13631&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/edit-tags.php?taxonomy=category&#34; /&gt;
+&lt;div class=&#34;form-field form-required term-name-wrap&#34;&gt;
+	&lt;label for=&#34;tag-name&#34;&gt;Name&lt;/label&gt;
+	&lt;input name=&#34;tag-name&#34; id=&#34;tag-name&#34; type=&#34;text&#34; value=&#34;&#34; size=&#34;40&#34; aria-required=&#34;true&#34; /&gt;
+	&lt;p&gt;The name is how it appears on your site.&lt;/p&gt;
+&lt;/div&gt;
+	&lt;div class=&#34;form-field term-slug-wrap&#34;&gt;
+	&lt;label for=&#34;tag-slug&#34;&gt;Slug&lt;/label&gt;
+	&lt;input name=&#34;slug&#34; id=&#34;tag-slug&#34; type=&#34;text&#34; value=&#34;&#34; size=&#34;40&#34; /&gt;
+	&lt;p&gt;The &amp;#8220;slug&amp;#8221; is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.&lt;/p&gt;
+&lt;/div&gt;
+	&lt;div class=&#34;form-field term-parent-wrap&#34;&gt;
+	&lt;label for=&#34;parent&#34;&gt;Parent Category&lt;/label&gt;
+		&lt;select  name=&#39;parent&#39; id=&#39;parent&#39; class=&#39;postform&#39; &gt;
+	&lt;option value=&#39;-1&#39;&gt;None&lt;/option&gt;
+	&lt;option class=&#34;level-0&#34; value=&#34;1&#34;&gt;Uncategorized&lt;/option&gt;
+&lt;/select&gt;
+				&lt;p&gt;Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&#34;form-field term-description-wrap&#34;&gt;
+	&lt;label for=&#34;tag-description&#34;&gt;Description&lt;/label&gt;
+	&lt;textarea name=&#34;description&#34; id=&#34;tag-description&#34; rows=&#34;5&#34; cols=&#34;40&#34;&gt;&lt;/textarea&gt;
+	&lt;p&gt;The description is not prominent by default; however, some themes may show it.&lt;/p&gt;
+&lt;/div&gt;
+
+	&lt;p class=&#34;submit&#34;&gt;&lt;input type=&#34;submit&#34; name=&#34;submit&#34; id=&#34;submit&#34; class=&#34;button button-primary&#34; value=&#34;Add New Category&#34;  /&gt;&lt;/p&gt;&lt;/form&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /col-left --&gt;
+
+&lt;div id=&#34;col-right&#34;&gt;
+&lt;div class=&#34;col-wrap&#34;&gt;
+
+
+&lt;form id=&#34;posts-filter&#34; method=&#34;post&#34;&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;taxonomy&#34; value=&#34;category&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;post_type&#34; value=&#34;post&#34; /&gt;
+
+&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce&#34; name=&#34;_wpnonce&#34; value=&#34;b9687c4754&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/edit-tags.php?taxonomy=category&#34; /&gt;	&lt;div class=&#34;tablenav top&#34;&gt;
+
+				&lt;div class=&#34;alignleft actions bulkactions&#34;&gt;
+			&lt;label for=&#34;bulk-action-selector-top&#34; class=&#34;screen-reader-text&#34;&gt;Select bulk action&lt;/label&gt;&lt;select name=&#34;action&#34; id=&#34;bulk-action-selector-top&#34;&gt;
+&lt;option value=&#34;-1&#34;&gt;Bulk Actions&lt;/option&gt;
+	&lt;option value=&#34;delete&#34;&gt;Delete&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type=&#34;submit&#34; id=&#34;doaction&#34; class=&#34;button action&#34; value=&#34;Apply&#34;  /&gt;
+		&lt;/div&gt;
+			&lt;div class=&#39;tablenav-pages one-page&#39;&gt;&lt;span class=&#34;displaying-num&#34;&gt;1 item&lt;/span&gt;
+&lt;span class=&#39;pagination-links&#39;&gt;&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;laquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;lsaquo;&lt;/span&gt;
+&lt;span class=&#34;paging-input&#34;&gt;&lt;label for=&#34;current-page-selector&#34; class=&#34;screen-reader-text&#34;&gt;Current Page&lt;/label&gt;&lt;input class=&#39;current-page&#39; id=&#39;current-page-selector&#39; type=&#39;text&#39; name=&#39;paged&#39; value=&#39;1&#39; size=&#39;1&#39; aria-describedby=&#39;table-paging&#39; /&gt;&lt;span class=&#39;tablenav-paging-text&#39;&gt; of &lt;span class=&#39;total-pages&#39;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;rsaquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;raquo;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;br class=&#34;clear&#34; /&gt;
+	&lt;/div&gt;
+		&lt;h2 class=&#39;screen-reader-text&#39;&gt;Categories list&lt;/h2&gt;&lt;table class=&#34;wp-list-table widefat fixed striped tags&#34;&gt;
+	&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;td  id=&#39;cb&#39; class=&#39;manage-column column-cb check-column&#39;&gt;&lt;label class=&#34;screen-reader-text&#34; for=&#34;cb-select-all-1&#34;&gt;Select All&lt;/label&gt;&lt;input id=&#34;cb-select-all-1&#34; type=&#34;checkbox&#34; /&gt;&lt;/td&gt;&lt;th scope=&#34;col&#34; id=&#39;name&#39; class=&#39;manage-column column-name column-primary sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=name&amp;#038;order=asc&#34;&gt;&lt;span&gt;Name&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;description&#39; class=&#39;manage-column column-description sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=description&amp;#038;order=asc&#34;&gt;&lt;span&gt;Description&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;slug&#39; class=&#39;manage-column column-slug sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=slug&amp;#038;order=asc&#34;&gt;&lt;span&gt;Slug&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;posts&#39; class=&#39;manage-column column-posts num sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=count&amp;#038;order=asc&#34;&gt;&lt;span&gt;Count&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;	&lt;/tr&gt;
+	&lt;/thead&gt;
+
+	&lt;tbody id=&#34;the-list&#34;
+		 data-wp-lists=&#39;list:tag&#39;		&gt;
+			&lt;tr id=&#34;tag-1&#34; class=&#34;level-0&#34;&gt;&lt;th scope=&#34;row&#34; class=&#34;check-column&#34;&gt;&amp;nbsp;&lt;/th&gt;&lt;td class=&#39;name column-name has-row-actions column-primary&#39; data-colname=&#34;Name&#34;&gt;&lt;strong&gt;&lt;a class=&#34;row-title&#34; href=&#34;http://localhost:8000/wp-admin/term.php?taxonomy=category&amp;#038;tag_ID=1&amp;#038;post_type=post&amp;#038;wp_http_referer=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory&#34; aria-label=&#34;&amp;#8220;Uncategorized&amp;#8221; (Edit)&#34;&gt;Uncategorized&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;&lt;div class=&#34;hidden&#34; id=&#34;inline_1&#34;&gt;&lt;div class=&#34;name&#34;&gt;Uncategorized&lt;/div&gt;&lt;div class=&#34;slug&#34;&gt;uncategorized&lt;/div&gt;&lt;div class=&#34;parent&#34;&gt;0&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;row-actions&#34;&gt;&lt;span class=&#39;edit&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/term.php?taxonomy=category&amp;#038;tag_ID=1&amp;#038;post_type=post&amp;#038;wp_http_referer=%2Fwp-admin%2Fedit-tags.php%3Ftaxonomy%3Dcategory&#34; aria-label=&#34;Edit &amp;#8220;Uncategorized&amp;#8221;&#34;&gt;Edit&lt;/a&gt; | &lt;/span&gt;&lt;span class=&#39;inline hide-if-no-js&#39;&gt;&lt;button type=&#34;button&#34; class=&#34;button-link editinline&#34; aria-label=&#34;Quick edit &amp;#8220;Uncategorized&amp;#8221; inline&#34; aria-expanded=&#34;false&#34;&gt;Quick&amp;nbsp;Edit&lt;/button&gt; | &lt;/span&gt;&lt;span class=&#39;view&#39;&gt;&lt;a href=&#34;http://localhost:8000/?cat=1&#34; aria-label=&#34;View &amp;#8220;Uncategorized&amp;#8221; archive&#34;&gt;View&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;button type=&#34;button&#34; class=&#34;toggle-row&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Show more details&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;&lt;td class=&#39;description column-description&#39; data-colname=&#34;Description&#34;&gt;&lt;span aria-hidden=&#34;true&#34;&gt;&amp;#8212;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;No description&lt;/span&gt;&lt;/td&gt;&lt;td class=&#39;slug column-slug&#39; data-colname=&#34;Slug&#34;&gt;uncategorized&lt;/td&gt;&lt;td class=&#39;posts column-posts&#39; data-colname=&#34;Count&#34;&gt;&lt;a href=&#39;edit.php?category_name=uncategorized&#39;&gt;1&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;	&lt;/tbody&gt;
+
+	&lt;tfoot&gt;
+	&lt;tr&gt;
+		&lt;td   class=&#39;manage-column column-cb check-column&#39;&gt;&lt;label class=&#34;screen-reader-text&#34; for=&#34;cb-select-all-2&#34;&gt;Select All&lt;/label&gt;&lt;input id=&#34;cb-select-all-2&#34; type=&#34;checkbox&#34; /&gt;&lt;/td&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-name column-primary sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=name&amp;#038;order=asc&#34;&gt;&lt;span&gt;Name&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-description sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=description&amp;#038;order=asc&#34;&gt;&lt;span&gt;Description&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-slug sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=slug&amp;#038;order=asc&#34;&gt;&lt;span&gt;Slug&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-posts num sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-tags.php?taxonomy=category&amp;#038;orderby=count&amp;#038;order=asc&#34;&gt;&lt;span&gt;Count&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;	&lt;/tr&gt;
+	&lt;/tfoot&gt;
+
+&lt;/table&gt;
+			&lt;div class=&#34;tablenav bottom&#34;&gt;
+
+				&lt;div class=&#34;alignleft actions bulkactions&#34;&gt;
+			&lt;label for=&#34;bulk-action-selector-bottom&#34; class=&#34;screen-reader-text&#34;&gt;Select bulk action&lt;/label&gt;&lt;select name=&#34;action2&#34; id=&#34;bulk-action-selector-bottom&#34;&gt;
+&lt;option value=&#34;-1&#34;&gt;Bulk Actions&lt;/option&gt;
+	&lt;option value=&#34;delete&#34;&gt;Delete&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type=&#34;submit&#34; id=&#34;doaction2&#34; class=&#34;button action&#34; value=&#34;Apply&#34;  /&gt;
+		&lt;/div&gt;
+			&lt;div class=&#39;tablenav-pages one-page&#39;&gt;&lt;span class=&#34;displaying-num&#34;&gt;1 item&lt;/span&gt;
+&lt;span class=&#39;pagination-links&#39;&gt;&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;laquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;lsaquo;&lt;/span&gt;
+&lt;span class=&#34;screen-reader-text&#34;&gt;Current Page&lt;/span&gt;&lt;span id=&#34;table-paging&#34; class=&#34;paging-input&#34;&gt;&lt;span class=&#34;tablenav-paging-text&#34;&gt;1 of &lt;span class=&#39;total-pages&#39;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;rsaquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;raquo;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;br class=&#34;clear&#34; /&gt;
+	&lt;/div&gt;
+		
+&lt;/form&gt;
+
+&lt;div class=&#34;form-wrap edit-term-notes&#34;&gt;
+&lt;p&gt;
+	Deleting a category does not delete the posts in that category. Instead, posts that were only assigned to the deleted category are set to the default category &lt;strong&gt;Uncategorized&lt;/strong&gt;. The default category cannot be deleted.&lt;/p&gt;
+		&lt;p&gt;
+		Categories can be selectively converted to tags using the &lt;a href=&#34;http://localhost:8000/wp-admin/import.php&#34;&gt;category to tag converter&lt;/a&gt;.	&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /col-right --&gt;
+
+&lt;/div&gt;&lt;!-- /col-container --&gt;
+
+&lt;/div&gt;&lt;!-- /wrap --&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+try{document.forms.addtag[&#39;tag-name&#39;].focus();}catch(e){}
+&lt;/script&gt;
+	
+	&lt;form method=&#34;get&#34;&gt;&lt;table style=&#34;display: none&#34;&gt;&lt;tbody id=&#34;inlineedit&#34;&gt;
+		&lt;tr id=&#34;inline-edit&#34; class=&#34;inline-edit-row&#34; style=&#34;display: none&#34;&gt;&lt;td colspan=&#34;5&#34; class=&#34;colspanchange&#34;&gt;
+
+			&lt;fieldset&gt;
+				&lt;legend class=&#34;inline-edit-legend&#34;&gt;Quick Edit&lt;/legend&gt;
+				&lt;div class=&#34;inline-edit-col&#34;&gt;
+				&lt;label&gt;
+					&lt;span class=&#34;title&#34;&gt;Name&lt;/span&gt;
+					&lt;span class=&#34;input-text-wrap&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;name&#34; class=&#34;ptitle&#34; value=&#34;&#34; /&gt;&lt;/span&gt;
+				&lt;/label&gt;
+						&lt;label&gt;
+					&lt;span class=&#34;title&#34;&gt;Slug&lt;/span&gt;
+					&lt;span class=&#34;input-text-wrap&#34;&gt;&lt;input type=&#34;text&#34; name=&#34;slug&#34; class=&#34;ptitle&#34; value=&#34;&#34; /&gt;&lt;/span&gt;
+				&lt;/label&gt;
+				&lt;/div&gt;&lt;/fieldset&gt;
+		
+		&lt;div class=&#34;inline-edit-save submit&#34;&gt;
+			&lt;button type=&#34;button&#34; class=&#34;cancel button alignleft&#34;&gt;Cancel&lt;/button&gt;
+			&lt;button type=&#34;button&#34; class=&#34;save button button-primary alignright&#34;&gt;Update Category&lt;/button&gt;
+			&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+			&lt;input type=&#34;hidden&#34; id=&#34;_inline_edit&#34; name=&#34;_inline_edit&#34; value=&#34;f745f38699&#34; /&gt;			&lt;input type=&#34;hidden&#34; name=&#34;taxonomy&#34; value=&#34;category&#34; /&gt;
+			&lt;input type=&#34;hidden&#34; name=&#34;post_type&#34; value=&#34;post&#34; /&gt;
+			&lt;br class=&#34;clear&#34; /&gt;
+			&lt;div class=&#34;notice notice-error notice-alt inline hidden&#34;&gt;
+				&lt;p class=&#34;error&#34;&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;/td&gt;&lt;/tr&gt;
+		&lt;/tbody&gt;&lt;/table&gt;&lt;/form&gt;
+		
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang=en_US&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};var wpAjax = {&#34;noPerm&#34;:&#34;Sorry, you are not allowed to do that.&#34;,&#34;broken&#34;:&#34;Something went wrong.&#34;};var tagsl10n = {&#34;noPerm&#34;:&#34;Sorry, you are not allowed to do that.&#34;,&#34;broken&#34;:&#34;Something went wrong.&#34;};var inlineEditL10n = {&#34;error&#34;:&#34;Error while saving the changes.&#34;,&#34;saved&#34;:&#34;Changes saved.&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,wp-ajax-response,admin-tags,wp-a11y,inline-edit-tax,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

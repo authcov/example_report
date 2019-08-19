@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/index.php?rest_route=%2Fwp%2Fv2%2Ftaxonomies&amp;per_page=100&amp;context=edit&amp;_locale=user
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/45f8f7cd-7200-44e4-9296-6b23b3413273.html">http://localhost:8000/wp-admin/post-new.php</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>accept:</b> application/json, */*;q=0.1<br/>
+      
+        <b>referer:</b> http://localhost:8000/wp-admin/post-new.php<br/>
+      
+        <b>x-wp-nonce:</b> 17cbdf462b<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> cors<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:13:40 GMT<br/>
+        
+          <b>x-content-type-options:</b> nosniff<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-length:</b> 2844<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=10<br/>
+        
+          <b>link:</b> &lt;http://localhost:8000/index.php?rest_route=/&gt;; rel=&#34;https://api.w.org/&#34;<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-wp-nonce:</b> 17cbdf462b<br/>
+        
+          <b>allow:</b> GET<br/>
+        
+          <b>content-type:</b> application/json; charset=UTF-8<br/>
+        
+          <b>access-control-expose-headers:</b> X-WP-Total, X-WP-TotalPages<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-robots-tag:</b> noindex<br/>
+        
+          <b>access-control-allow-headers:</b> Authorization, Content-Type<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="{&#34;category&#34;:{&#34;name&#34;:&#34;Categories&#34;,&#34;slug&#34;:&#34;category&#34;,&#34;capabilities&#34;:{&#34;manage_terms&#34;:&#34;manage_categories&#34;,&#34;edit_terms&#34;:&#34;edit_categories&#34;,&#34;delete_terms&#34;:&#34;delete_categories&#34;,&#34;assign_terms&#34;:&#34;assign_categories&#34;},&#34;description&#34;:&#34;&#34;,&#34;labels&#34;:{&#34;name&#34;:&#34;Categories&#34;,&#34;singular_name&#34;:&#34;Category&#34;,&#34;search_items&#34;:&#34;Search Categories&#34;,&#34;popular_items&#34;:null,&#34;all_items&#34;:&#34;All Categories&#34;,&#34;parent_item&#34;:&#34;Parent Category&#34;,&#34;parent_item_colon&#34;:&#34;Parent Category:&#34;,&#34;edit_item&#34;:&#34;Edit Category&#34;,&#34;view_item&#34;:&#34;View Category&#34;,&#34;update_item&#34;:&#34;Update Category&#34;,&#34;add_new_item&#34;:&#34;Add New Category&#34;,&#34;new_item_name&#34;:&#34;New Category Name&#34;,&#34;separate_items_with_commas&#34;:null,&#34;add_or_remove_items&#34;:null,&#34;choose_from_most_used&#34;:null,&#34;not_found&#34;:&#34;No categories found.&#34;,&#34;no_terms&#34;:&#34;No categories&#34;,&#34;items_list_navigation&#34;:&#34;Categories list navigation&#34;,&#34;items_list&#34;:&#34;Categories list&#34;,&#34;most_used&#34;:&#34;Most Used&#34;,&#34;back_to_items&#34;:&#34;&amp;larr; Back to Categories&#34;,&#34;menu_name&#34;:&#34;Categories&#34;,&#34;name_admin_bar&#34;:&#34;category&#34;},&#34;types&#34;:[&#34;post&#34;],&#34;show_cloud&#34;:true,&#34;hierarchical&#34;:true,&#34;rest_base&#34;:&#34;categories&#34;,&#34;visibility&#34;:{&#34;public&#34;:true,&#34;publicly_queryable&#34;:true,&#34;show_admin_column&#34;:true,&#34;show_in_nav_menus&#34;:true,&#34;show_in_quick_edit&#34;:true,&#34;show_ui&#34;:true},&#34;_links&#34;:{&#34;collection&#34;:[{&#34;href&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/wp\/v2\/taxonomies&#34;}],&#34;wp:items&#34;:[{&#34;href&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/wp\/v2\/categories&#34;}],&#34;curies&#34;:[{&#34;name&#34;:&#34;wp&#34;,&#34;href&#34;:&#34;https:\/\/api.w.org\/{rel}&#34;,&#34;templated&#34;:true}]}},&#34;post_tag&#34;:{&#34;name&#34;:&#34;Tags&#34;,&#34;slug&#34;:&#34;post_tag&#34;,&#34;capabilities&#34;:{&#34;manage_terms&#34;:&#34;manage_post_tags&#34;,&#34;edit_terms&#34;:&#34;edit_post_tags&#34;,&#34;delete_terms&#34;:&#34;delete_post_tags&#34;,&#34;assign_terms&#34;:&#34;assign_post_tags&#34;},&#34;description&#34;:&#34;&#34;,&#34;labels&#34;:{&#34;name&#34;:&#34;Tags&#34;,&#34;singular_name&#34;:&#34;Tag&#34;,&#34;search_items&#34;:&#34;Search Tags&#34;,&#34;popular_items&#34;:&#34;Popular Tags&#34;,&#34;all_items&#34;:&#34;All Tags&#34;,&#34;parent_item&#34;:null,&#34;parent_item_colon&#34;:null,&#34;edit_item&#34;:&#34;Edit Tag&#34;,&#34;view_item&#34;:&#34;View Tag&#34;,&#34;update_item&#34;:&#34;Update Tag&#34;,&#34;add_new_item&#34;:&#34;Add New Tag&#34;,&#34;new_item_name&#34;:&#34;New Tag Name&#34;,&#34;separate_items_with_commas&#34;:&#34;Separate tags with commas&#34;,&#34;add_or_remove_items&#34;:&#34;Add or remove tags&#34;,&#34;choose_from_most_used&#34;:&#34;Choose from the most used tags&#34;,&#34;not_found&#34;:&#34;No tags found.&#34;,&#34;no_terms&#34;:&#34;No tags&#34;,&#34;items_list_navigation&#34;:&#34;Tags list navigation&#34;,&#34;items_list&#34;:&#34;Tags list&#34;,&#34;most_used&#34;:&#34;Most Used&#34;,&#34;back_to_items&#34;:&#34;&amp;larr; Back to Tags&#34;,&#34;menu_name&#34;:&#34;Tags&#34;,&#34;name_admin_bar&#34;:&#34;post_tag&#34;},&#34;types&#34;:[&#34;post&#34;],&#34;show_cloud&#34;:true,&#34;hierarchical&#34;:false,&#34;rest_base&#34;:&#34;tags&#34;,&#34;visibility&#34;:{&#34;public&#34;:true,&#34;publicly_queryable&#34;:true,&#34;show_admin_column&#34;:true,&#34;show_in_nav_menus&#34;:true,&#34;show_in_quick_edit&#34;:true,&#34;show_ui&#34;:true},&#34;_links&#34;:{&#34;collection&#34;:[{&#34;href&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/wp\/v2\/taxonomies&#34;}],&#34;wp:items&#34;:[{&#34;href&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/wp\/v2\/tags&#34;}],&#34;curies&#34;:[{&#34;name&#34;:&#34;wp&#34;,&#34;href&#34;:&#34;https:\/\/api.w.org\/{rel}&#34;,&#34;templated&#34;:true}]}}}" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

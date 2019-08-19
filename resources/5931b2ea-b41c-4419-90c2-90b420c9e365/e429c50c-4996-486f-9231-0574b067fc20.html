@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;order=asc
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/a87c8d65-65d5-4146-ac45-1c042a88a1f3.html">http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;order=asc</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:14:57 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 11000<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=74<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;Comments &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;edit-comments&#39;,
+	typenow = &#39;&#39;,
+	adminpage = &#39;edit-comments-php&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;amp;load%5B%5D=,site-icon,l10n,buttons,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224097&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=asc&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js edit-comments-php auto-fold admin-bar branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;current menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;current menu-top menu-icon-comments menu-top-last&#34; aria-current=&#34;page&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-comments.php%3Forderby%3Dcomment_author%26order%3Dasc&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-comments.php%3Forderby%3Dcomment_author%26order%3Dasc&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fedit-comments.php%3Forderby%3Dcomment_author%26order%3Dasc&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-background&#39;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-editor.php&#39;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+						
+							&lt;li id=&#34;tab-link-overview&#34; class=&#34;active&#34;&gt;
+								&lt;a href=&#34;#tab-panel-overview&#34; aria-controls=&#34;tab-panel-overview&#34;&gt;
+									Overview								&lt;/a&gt;
+							&lt;/li&gt;
+							
+							&lt;li id=&#34;tab-link-moderating-comments&#34;&gt;
+								&lt;a href=&#34;#tab-panel-moderating-comments&#34; aria-controls=&#34;tab-panel-moderating-comments&#34;&gt;
+									Moderating Comments								&lt;/a&gt;
+							&lt;/li&gt;
+													&lt;/ul&gt;
+					&lt;/div&gt;
+
+										&lt;div class=&#34;contextual-help-sidebar&#34;&gt;
+						&lt;p&gt;&lt;strong&gt;For more information:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Administration_Screens#Comments&#34;&gt;Documentation on Comments&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Comment_Spam&#34;&gt;Documentation on Comment Spam&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Keyboard_Shortcuts&#34;&gt;Documentation on Keyboard Shortcuts&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://wordpress.org/support/&#34;&gt;Support&lt;/a&gt;&lt;/p&gt;					&lt;/div&gt;
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+						
+							&lt;div id=&#34;tab-panel-overview&#34; class=&#34;help-tab-content active&#34;&gt;
+								&lt;p&gt;You can manage comments made on your site similar to the way you manage posts and other content. This screen is customizable in the same ways as other management screens, and you can act on comments using the on-hover action links or the Bulk Actions.&lt;/p&gt;							&lt;/div&gt;
+							
+							&lt;div id=&#34;tab-panel-moderating-comments&#34; class=&#34;help-tab-content&#34;&gt;
+								&lt;p&gt;A red bar on the left means the comment is waiting for you to moderate it.&lt;/p&gt;&lt;p&gt;In the &lt;strong&gt;Author&lt;/strong&gt; column, in addition to the author&amp;#8217;s name, email address, and blog URL, the commenter&amp;#8217;s IP address is shown. Clicking on this link will show you all the comments made from this IP address.&lt;/p&gt;&lt;p&gt;In the &lt;strong&gt;Comment&lt;/strong&gt; column, hovering over any comment gives you options to approve, reply (and approve), quick edit, edit, spam mark, or trash that comment.&lt;/p&gt;&lt;p&gt;In the &lt;strong&gt;In Response To&lt;/strong&gt; column, there are three elements. The text is the name of the post that inspired the comment, and links to the post editor for that entry. The View Post link leads to that post on your live site. The small bubble with the number in it shows the number of approved comments that post has received. If there are pending comments, a red notification circle with the number of pending comments is displayed. Clicking the notification circle will filter the comments screen to show only pending comments on that post.&lt;/p&gt;&lt;p&gt;In the &lt;strong&gt;Submitted On&lt;/strong&gt; column, the date and time the comment was left on your site appears. Clicking on the date/time link will take you to that comment on your live site.&lt;/p&gt;&lt;p&gt;Many people take advantage of keyboard shortcuts to moderate their comments more quickly. Use the link to the side to learn more.&lt;/p&gt;							&lt;/div&gt;
+												&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div id=&#34;screen-options-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Screen Options Tab&#34;&gt;
+&lt;form id=&#39;adv-settings&#39; method=&#39;post&#39;&gt;
+		&lt;fieldset class=&#34;metabox-prefs&#34;&gt;
+		&lt;legend&gt;Columns&lt;/legend&gt;
+		&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;author-hide&#34; type=&#34;checkbox&#34; id=&#34;author-hide&#34; value=&#34;author&#34; checked=&#39;checked&#39; /&gt;Author&lt;/label&gt;
+&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;response-hide&#34; type=&#34;checkbox&#34; id=&#34;response-hide&#34; value=&#34;response&#34; checked=&#39;checked&#39; /&gt;In Response To&lt;/label&gt;
+&lt;label&gt;&lt;input class=&#34;hide-column-tog&#34; name=&#34;date-hide&#34; type=&#34;checkbox&#34; id=&#34;date-hide&#34; value=&#34;date&#34; checked=&#39;checked&#39; /&gt;Submitted On&lt;/label&gt;
+		&lt;/fieldset&gt;
+				&lt;fieldset class=&#34;screen-options&#34;&gt;
+		&lt;legend&gt;Pagination&lt;/legend&gt;
+							&lt;label for=&#34;edit_comments_per_page&#34;&gt;Number of items per page:&lt;/label&gt;
+				&lt;input type=&#34;number&#34; step=&#34;1&#34; min=&#34;1&#34; max=&#34;999&#34; class=&#34;screen-per-page&#34; name=&#34;wp_screen_options[value]&#34;
+					id=&#34;edit_comments_per_page&#34; maxlength=&#34;3&#34;
+					value=&#34;20&#34; /&gt;
+							&lt;input type=&#34;hidden&#34; name=&#34;wp_screen_options[option]&#34; value=&#34;edit_comments_per_page&#34; /&gt;
+		&lt;/fieldset&gt;
+		&lt;p class=&#34;submit&#34;&gt;&lt;input type=&#34;submit&#34; name=&#34;screen-options-apply&#34; id=&#34;screen-options-apply&#34; class=&#34;button button-primary&#34; value=&#34;Apply&#34;  /&gt;&lt;/p&gt;
+&lt;input type=&#34;hidden&#34; id=&#34;screenoptionnonce&#34; name=&#34;screenoptionnonce&#34; value=&#34;3b864fc925&#34; /&gt;
+&lt;/form&gt;
+&lt;/div&gt;		&lt;/div&gt;
+				&lt;div id=&#34;screen-meta-links&#34;&gt;
+					&lt;div id=&#34;screen-options-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;show-settings-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;screen-options-wrap&#34; aria-expanded=&#34;false&#34;&gt;Screen Options&lt;/button&gt;
+			&lt;/div&gt;
+						&lt;div id=&#34;contextual-help-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;contextual-help-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;contextual-help-wrap&#34; aria-expanded=&#34;false&#34;&gt;Help&lt;/button&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		
+&lt;div class=&#34;wrap&#34;&gt;
+&lt;h1 class=&#34;wp-heading-inline&#34;&gt;
+Comments&lt;/h1&gt;
+
+
+&lt;hr class=&#34;wp-header-end&#34;&gt;
+
+
+&lt;h2 class=&#39;screen-reader-text&#39;&gt;Filter comments list&lt;/h2&gt;&lt;ul class=&#39;subsubsub&#39;&gt;
+	&lt;li class=&#39;all&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=all&#39; class=&#34;current&#34; aria-current=&#34;page&#34;&gt;All &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;all-count&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt; |&lt;/li&gt;
+	&lt;li class=&#39;mine&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=mine&amp;user_id=1&#39;&gt;Mine &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;mine-count&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt; |&lt;/li&gt;
+	&lt;li class=&#39;moderated&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=moderated&#39;&gt;Pending &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;pending-count&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt; |&lt;/li&gt;
+	&lt;li class=&#39;approved&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=approved&#39;&gt;Approved &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;approved-count&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt; |&lt;/li&gt;
+	&lt;li class=&#39;spam&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=spam&#39;&gt;Spam &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;spam-count&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt; |&lt;/li&gt;
+	&lt;li class=&#39;trash&#39;&gt;&lt;a href=&#39;http://localhost:8000/wp-admin/edit-comments.php?comment_status=trash&#39;&gt;Trash &lt;span class=&#34;count&#34;&gt;(&lt;span class=&#34;trash-count&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;form id=&#34;comments-form&#34; method=&#34;get&#34;&gt;
+
+
+&lt;input type=&#34;hidden&#34; name=&#34;comment_status&#34; value=&#34;all&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;pagegen_timestamp&#34; value=&#34;2019-08-19 14:14:57&#34; /&gt;
+
+&lt;input type=&#34;hidden&#34; name=&#34;_total&#34; value=&#34;0&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;_per_page&#34; value=&#34;20&#34; /&gt;
+&lt;input type=&#34;hidden&#34; name=&#34;_page&#34; value=&#34;1&#34; /&gt;
+
+
+&lt;input type=&#34;hidden&#34; id=&#34;_ajax_fetch_list_nonce&#34; name=&#34;_ajax_fetch_list_nonce&#34; value=&#34;83f11a645e&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/edit-comments.php?orderby=comment_author&amp;amp;order=asc&#34; /&gt;&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce&#34; name=&#34;_wpnonce&#34; value=&#34;000bae8453&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/edit-comments.php?orderby=comment_author&amp;amp;order=asc&#34; /&gt;	&lt;div class=&#34;tablenav top&#34;&gt;
+
+				&lt;div class=&#34;alignleft actions&#34;&gt;
+			&lt;label class=&#34;screen-reader-text&#34; for=&#34;filter-by-comment-type&#34;&gt;Filter by comment type&lt;/label&gt;
+	&lt;select id=&#34;filter-by-comment-type&#34; name=&#34;comment_type&#34;&gt;
+		&lt;option value=&#34;&#34;&gt;All comment types&lt;/option&gt;
+				&lt;option value=&#34;comment&#34;&gt;Comments&lt;/option&gt;
+	&lt;option value=&#34;pings&#34;&gt;Pings&lt;/option&gt;
+	&lt;/select&gt;
+			&lt;input type=&#34;submit&#34; name=&#34;filter_action&#34; id=&#34;post-query-submit&#34; class=&#34;button&#34; value=&#34;Filter&#34;  /&gt;&lt;/div&gt;&lt;div class=&#39;tablenav-pages no-pages&#39;&gt;&lt;span class=&#34;displaying-num&#34;&gt;0 items&lt;/span&gt;
+&lt;span class=&#39;pagination-links&#39;&gt;&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;laquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;lsaquo;&lt;/span&gt;
+&lt;span class=&#34;paging-input&#34;&gt;&lt;label for=&#34;current-page-selector&#34; class=&#34;screen-reader-text&#34;&gt;Current Page&lt;/label&gt;&lt;input class=&#39;current-page&#39; id=&#39;current-page-selector&#39; type=&#39;text&#39; name=&#39;paged&#39; value=&#39;1&#39; size=&#39;1&#39; aria-describedby=&#39;table-paging&#39; /&gt;&lt;span class=&#39;tablenav-paging-text&#39;&gt; of &lt;span class=&#39;total-pages&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;a class=&#39;next-page button&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=asc&amp;#038;paged=0&#39;&gt;&lt;span class=&#39;screen-reader-text&#39;&gt;Next page&lt;/span&gt;&lt;span aria-hidden=&#39;true&#39;&gt;&amp;rsaquo;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&#39;last-page button&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=asc&amp;#038;paged=0&#39;&gt;&lt;span class=&#39;screen-reader-text&#39;&gt;Last page&lt;/span&gt;&lt;span aria-hidden=&#39;true&#39;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;br class=&#34;clear&#34; /&gt;
+	&lt;/div&gt;
+		&lt;h2 class=&#39;screen-reader-text&#39;&gt;Comments list&lt;/h2&gt;&lt;table class=&#34;wp-list-table widefat fixed striped comments&#34;&gt;
+	&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;td  id=&#39;cb&#39; class=&#39;manage-column column-cb check-column&#39;&gt;&lt;label class=&#34;screen-reader-text&#34; for=&#34;cb-select-all-1&#34;&gt;Select All&lt;/label&gt;&lt;input id=&#34;cb-select-all-1&#34; type=&#34;checkbox&#34; /&gt;&lt;/td&gt;&lt;th scope=&#34;col&#34; id=&#39;author&#39; class=&#39;manage-column column-author sorted asc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=desc&#34;&gt;&lt;span&gt;Author&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;comment&#39; class=&#39;manage-column column-comment column-primary&#39;&gt;Comment&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;response&#39; class=&#39;manage-column column-response sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_post_ID&amp;#038;order=asc&#34;&gt;&lt;span&gt;In Response To&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34; id=&#39;date&#39; class=&#39;manage-column column-date sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_date&amp;#038;order=asc&#34;&gt;&lt;span&gt;Submitted On&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;	&lt;/tr&gt;
+	&lt;/thead&gt;
+
+	&lt;tbody id=&#34;the-comment-list&#34; data-wp-lists=&#34;list:comment&#34;&gt;
+		&lt;tr class=&#34;no-items&#34;&gt;&lt;td class=&#34;colspanchange&#34; colspan=&#34;5&#34;&gt;No comments found.&lt;/td&gt;&lt;/tr&gt;	&lt;/tbody&gt;
+
+	&lt;tbody id=&#34;the-extra-comment-list&#34; data-wp-lists=&#34;list:comment&#34; style=&#34;display: none;&#34;&gt;
+		&lt;tr class=&#34;no-items&#34;&gt;&lt;td class=&#34;colspanchange&#34; colspan=&#34;5&#34;&gt;No comments found.&lt;/td&gt;&lt;/tr&gt;	&lt;/tbody&gt;
+
+	&lt;tfoot&gt;
+	&lt;tr&gt;
+		&lt;td   class=&#39;manage-column column-cb check-column&#39;&gt;&lt;label class=&#34;screen-reader-text&#34; for=&#34;cb-select-all-2&#34;&gt;Select All&lt;/label&gt;&lt;input id=&#34;cb-select-all-2&#34; type=&#34;checkbox&#34; /&gt;&lt;/td&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-author sorted asc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=desc&#34;&gt;&lt;span&gt;Author&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-comment column-primary&#39;&gt;Comment&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-response sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_post_ID&amp;#038;order=asc&#34;&gt;&lt;span&gt;In Response To&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;&lt;th scope=&#34;col&#34;  class=&#39;manage-column column-date sortable desc&#39;&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_date&amp;#038;order=asc&#34;&gt;&lt;span&gt;Submitted On&lt;/span&gt;&lt;span class=&#34;sorting-indicator&#34;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/th&gt;	&lt;/tr&gt;
+	&lt;/tfoot&gt;
+
+&lt;/table&gt;
+			&lt;div class=&#34;tablenav bottom&#34;&gt;
+
+				&lt;div class=&#34;alignleft actions&#34;&gt;
+		&lt;/div&gt;&lt;div class=&#39;tablenav-pages no-pages&#39;&gt;&lt;span class=&#34;displaying-num&#34;&gt;0 items&lt;/span&gt;
+&lt;span class=&#39;pagination-links&#39;&gt;&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;laquo;&lt;/span&gt;
+&lt;span class=&#34;tablenav-pages-navspan button disabled&#34; aria-hidden=&#34;true&#34;&gt;&amp;lsaquo;&lt;/span&gt;
+&lt;span class=&#34;screen-reader-text&#34;&gt;Current Page&lt;/span&gt;&lt;span id=&#34;table-paging&#34; class=&#34;paging-input&#34;&gt;&lt;span class=&#34;tablenav-paging-text&#34;&gt;1 of &lt;span class=&#39;total-pages&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;a class=&#39;next-page button&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=asc&amp;#038;paged=0&#39;&gt;&lt;span class=&#39;screen-reader-text&#39;&gt;Next page&lt;/span&gt;&lt;span aria-hidden=&#39;true&#39;&gt;&amp;rsaquo;&lt;/span&gt;&lt;/a&gt;
+&lt;a class=&#39;last-page button&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php?orderby=comment_author&amp;#038;order=asc&amp;#038;paged=0&#39;&gt;&lt;span class=&#39;screen-reader-text&#39;&gt;Last page&lt;/span&gt;&lt;span aria-hidden=&#39;true&#39;&gt;&amp;raquo;&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+		&lt;br class=&#34;clear&#34; /&gt;
+	&lt;/div&gt;
+		&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;ajax-response&#34;&gt;&lt;/div&gt;
+
+&lt;form method=&#34;get&#34;&gt;
+	&lt;table style=&#34;display:none;&#34;&gt;&lt;tbody id=&#34;com-reply&#34;&gt;&lt;tr id=&#34;replyrow&#34; class=&#34;inline-edit-row&#34; style=&#34;display:none;&#34;&gt;&lt;td colspan=&#34;5&#34; class=&#34;colspanchange&#34;&gt;
+	&lt;fieldset class=&#34;comment-reply&#34;&gt;
+	&lt;legend&gt;
+		&lt;span class=&#34;hidden&#34; id=&#34;editlegend&#34;&gt;Edit Comment&lt;/span&gt;
+		&lt;span class=&#34;hidden&#34; id=&#34;replyhead&#34;&gt;Reply to Comment&lt;/span&gt;
+		&lt;span class=&#34;hidden&#34; id=&#34;addhead&#34;&gt;Add new Comment&lt;/span&gt;
+	&lt;/legend&gt;
+
+	&lt;div id=&#34;replycontainer&#34;&gt;
+	&lt;label for=&#34;replycontent&#34; class=&#34;screen-reader-text&#34;&gt;Comment&lt;/label&gt;
+	&lt;div id=&#34;wp-replycontent-wrap&#34; class=&#34;wp-core-ui wp-editor-wrap html-active&#34;&gt;&lt;link rel=&#39;stylesheet&#39; id=&#39;editor-buttons-css&#39;  href=&#39;http://localhost:8000/wp-includes/css/editor.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;div id=&#34;wp-replycontent-editor-container&#34; class=&#34;wp-editor-container&#34;&gt;&lt;div id=&#34;qt_replycontent_toolbar&#34; class=&#34;quicktags-toolbar&#34;&gt;&lt;/div&gt;&lt;textarea class=&#34;wp-editor-area&#34; rows=&#34;20&#34; cols=&#34;40&#34; name=&#34;replycontent&#34; id=&#34;replycontent&#34;&gt;&lt;/textarea&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+
+	&lt;div id=&#34;edithead&#34; style=&#34;display:none;&#34;&gt;
+		&lt;div class=&#34;inside&#34;&gt;
+		&lt;label for=&#34;author-name&#34;&gt;Name&lt;/label&gt;
+		&lt;input type=&#34;text&#34; name=&#34;newcomment_author&#34; size=&#34;50&#34; value=&#34;&#34; id=&#34;author-name&#34; /&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&#34;inside&#34;&gt;
+		&lt;label for=&#34;author-email&#34;&gt;Email&lt;/label&gt;
+		&lt;input type=&#34;text&#34; name=&#34;newcomment_author_email&#34; size=&#34;50&#34; value=&#34;&#34; id=&#34;author-email&#34; /&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&#34;inside&#34;&gt;
+		&lt;label for=&#34;author-url&#34;&gt;URL&lt;/label&gt;
+		&lt;input type=&#34;text&#34; id=&#34;author-url&#34; name=&#34;newcomment_author_url&#34; class=&#34;code&#34; size=&#34;103&#34; value=&#34;&#34; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&#34;replysubmit&#34; class=&#34;submit&#34;&gt;
+		&lt;p class=&#34;reply-submit-buttons&#34;&gt;
+			&lt;button type=&#34;button&#34; class=&#34;save button button-primary&#34;&gt;
+				&lt;span id=&#34;addbtn&#34; style=&#34;display: none;&#34;&gt;Add Comment&lt;/span&gt;
+				&lt;span id=&#34;savebtn&#34; style=&#34;display: none;&#34;&gt;Update Comment&lt;/span&gt;
+				&lt;span id=&#34;replybtn&#34; style=&#34;display: none;&#34;&gt;Submit Reply&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;button type=&#34;button&#34; class=&#34;cancel button&#34;&gt;Cancel&lt;/button&gt;
+			&lt;span class=&#34;waiting spinner&#34;&gt;&lt;/span&gt;
+		&lt;/p&gt;
+		&lt;div class=&#34;notice notice-error notice-alt inline hidden&#34;&gt;
+			&lt;p class=&#34;error&#34;&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;input type=&#34;hidden&#34; name=&#34;action&#34; id=&#34;action&#34; value=&#34;&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;comment_ID&#34; id=&#34;comment_ID&#34; value=&#34;&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;comment_post_ID&#34; id=&#34;comment_post_ID&#34; value=&#34;&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;status&#34; id=&#34;status&#34; value=&#34;&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;position&#34; id=&#34;position&#34; value=&#34;-1&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;checkbox&#34; id=&#34;checkbox&#34; value=&#34;1&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; name=&#34;mode&#34; id=&#34;mode&#34; value=&#34;detail&#34; /&gt;
+	&lt;input type=&#34;hidden&#34; id=&#34;_ajax_nonce-replyto-comment&#34; name=&#34;_ajax_nonce-replyto-comment&#34; value=&#34;946065dc29&#34; /&gt;&lt;input type=&#34;hidden&#34; id=&#34;_wp_unfiltered_html_comment&#34; name=&#34;_wp_unfiltered_html_comment&#34; value=&#34;21ae7f4ee1&#34; /&gt;	&lt;/fieldset&gt;
+	&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+	&lt;/form&gt;
+	&lt;div class=&#34;hidden&#34; id=&#34;trash-undo-holder&#34;&gt;
+	&lt;div class=&#34;trash-undo-inside&#34;&gt;Comment by &lt;strong&gt;&lt;/strong&gt; moved to the trash. &lt;span class=&#34;undo untrash&#34;&gt;&lt;a href=&#34;#&#34;&gt;Undo&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;hidden&#34; id=&#34;spam-undo-holder&#34;&gt;
+	&lt;div class=&#34;spam-undo-inside&#34;&gt;Comment by &lt;strong&gt;&lt;/strong&gt; marked as spam. &lt;span class=&#34;undo unspam&#34;&gt;&lt;a href=&#34;#&#34;&gt;Undo&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+	
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;list_args = {&#34;class&#34;:&#34;WP_Comments_List_Table&#34;,&#34;screen&#34;:{&#34;id&#34;:&#34;edit-comments&#34;,&#34;base&#34;:&#34;edit-comments&#34;}};&lt;/script&gt;
+	&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang=en_US&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};var wpAjax = {&#34;noPerm&#34;:&#34;Sorry, you are not allowed to do that.&#34;,&#34;broken&#34;:&#34;Something went wrong.&#34;};var quicktagsL10n = {&#34;closeAllOpenTags&#34;:&#34;Close all open tags&#34;,&#34;closeTags&#34;:&#34;close tags&#34;,&#34;enterURL&#34;:&#34;Enter the URL&#34;,&#34;enterImageURL&#34;:&#34;Enter the URL of the image&#34;,&#34;enterImageDescription&#34;:&#34;Enter a description of the image&#34;,&#34;textdirection&#34;:&#34;text direction&#34;,&#34;toggleTextdirection&#34;:&#34;Toggle Editor Text Direction&#34;,&#34;dfw&#34;:&#34;Distraction-free writing mode&#34;,&#34;strong&#34;:&#34;Bold&#34;,&#34;strongClose&#34;:&#34;Close bold tag&#34;,&#34;em&#34;:&#34;Italic&#34;,&#34;emClose&#34;:&#34;Close italic tag&#34;,&#34;link&#34;:&#34;Insert link&#34;,&#34;blockquote&#34;:&#34;Blockquote&#34;,&#34;blockquoteClose&#34;:&#34;Close blockquote tag&#34;,&#34;del&#34;:&#34;Deleted text (strikethrough)&#34;,&#34;delClose&#34;:&#34;Close deleted text tag&#34;,&#34;ins&#34;:&#34;Inserted text&#34;,&#34;insClose&#34;:&#34;Close inserted text tag&#34;,&#34;image&#34;:&#34;Insert image&#34;,&#34;ul&#34;:&#34;Bulleted list&#34;,&#34;ulClose&#34;:&#34;Close bulleted list tag&#34;,&#34;ol&#34;:&#34;Numbered list&#34;,&#34;olClose&#34;:&#34;Close numbered list tag&#34;,&#34;li&#34;:&#34;List item&#34;,&#34;liClose&#34;:&#34;Close list item tag&#34;,&#34;code&#34;:&#34;Code&#34;,&#34;codeClose&#34;:&#34;Close code tag&#34;,&#34;more&#34;:&#34;Insert Read More tag&#34;};var adminCommentsL10n = {&#34;hotkeys_highlight_first&#34;:&#34;&#34;,&#34;hotkeys_highlight_last&#34;:&#34;&#34;,&#34;replyApprove&#34;:&#34;Approve and Reply&#34;,&#34;reply&#34;:&#34;Reply&#34;,&#34;warnQuickEdit&#34;:&#34;Are you sure you want to edit this comment?\nThe changes you made will be lost.&#34;,&#34;warnCommentChanges&#34;:&#34;Are you sure you want to do this?\nThe comment changes you made will be lost.&#34;,&#34;docTitleComments&#34;:&#34;Comments&#34;,&#34;docTitleCommentsCount&#34;:&#34;Comments (%s)&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,wp-ajax-response,jquery-color,wp-lists,quicktags,jquery-query,admin-comments,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-a11y.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var wpLinkL10n = {&#34;title&#34;:&#34;Insert\/edit link&#34;,&#34;update&#34;:&#34;Update&#34;,&#34;save&#34;:&#34;Add Link&#34;,&#34;noTitle&#34;:&#34;(no title)&#34;,&#34;noMatchesFound&#34;:&#34;No results found.&#34;,&#34;linkSelected&#34;:&#34;Link selected.&#34;,&#34;linkInserted&#34;:&#34;Link inserted.&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wplink.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var uiAutocompleteL10n = {&#34;noResults&#34;:&#34;No results found.&#34;,&#34;oneResult&#34;:&#34;1 result found. Use up and down arrow keys to navigate.&#34;,&#34;manyResults&#34;:&#34;%d results found. Use up and down arrow keys to navigate.&#34;,&#34;itemSelected&#34;:&#34;Item selected.&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4&#39;&gt;&lt;/script&gt;
+
+		&lt;script type=&#34;text/javascript&#34;&gt;
+		tinyMCEPreInit = {
+			baseURL: &#34;http://localhost:8000/wp-includes/js/tinymce&#34;,
+			suffix: &#34;.min&#34;,
+						mceInit: {},
+			qtInit: {&#39;replycontent&#39;:{id:&#34;replycontent&#34;,buttons:&#34;strong,em,link,block,del,ins,img,ul,ol,li,code,close&#34;}},
+			ref: {plugins:&#34;&#34;,theme:&#34;modern&#34;,language:&#34;&#34;},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+&#39;/langs/&#39;+lang+&#39;.js&#39;);sl.markDone(url+&#39;/langs/&#39;+lang+&#39;_dlg.js&#39;);}
+		};
+		&lt;/script&gt;
+				&lt;script type=&#34;text/javascript&#34;&gt;
+		
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== &#39;undefined&#39; ) {
+				if ( tinymce.Env.ie &amp;&amp; tinymce.Env.ie &lt; 11 ) {
+					tinymce.$( &#39;.wp-editor-wrap &#39; ).removeClass( &#39;tmce-active&#39; ).addClass( &#39;html-active&#39; );
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( &#39;#wp-&#39; + id + &#39;-wrap&#39; );
+
+					if ( ( $wrap.hasClass( &#39;tmce-active&#39; ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) &amp;&amp; ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== &#39;undefined&#39; ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		&lt;/script&gt;
+				&lt;div id=&#34;wp-link-backdrop&#34; style=&#34;display: none&#34;&gt;&lt;/div&gt;
+		&lt;div id=&#34;wp-link-wrap&#34; class=&#34;wp-core-ui&#34; style=&#34;display: none&#34; role=&#34;dialog&#34; aria-labelledby=&#34;link-modal-title&#34;&gt;
+		&lt;form id=&#34;wp-link&#34; tabindex=&#34;-1&#34;&gt;
+		&lt;input type=&#34;hidden&#34; id=&#34;_ajax_linking_nonce&#34; name=&#34;_ajax_linking_nonce&#34; value=&#34;07977b2eed&#34; /&gt;		&lt;h1 id=&#34;link-modal-title&#34;&gt;Insert/edit link&lt;/h1&gt;
+		&lt;button type=&#34;button&#34; id=&#34;wp-link-close&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close&lt;/span&gt;&lt;/button&gt;
+		&lt;div id=&#34;link-selector&#34;&gt;
+			&lt;div id=&#34;link-options&#34;&gt;
+				&lt;p class=&#34;howto&#34; id=&#34;wplink-enter-url&#34;&gt;Enter the destination URL&lt;/p&gt;
+				&lt;div&gt;
+					&lt;label&gt;&lt;span&gt;URL&lt;/span&gt;
+					&lt;input id=&#34;wp-link-url&#34; type=&#34;text&#34; aria-describedby=&#34;wplink-enter-url&#34; /&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;wp-link-text-field&#34;&gt;
+					&lt;label&gt;&lt;span&gt;Link Text&lt;/span&gt;
+					&lt;input id=&#34;wp-link-text&#34; type=&#34;text&#34; /&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;link-target&#34;&gt;
+					&lt;label&gt;&lt;span&gt;&lt;/span&gt;
+					&lt;input type=&#34;checkbox&#34; id=&#34;wp-link-target&#34; /&gt; Open link in a new tab&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;p class=&#34;howto&#34; id=&#34;wplink-link-existing-content&#34;&gt;Or link to existing content&lt;/p&gt;
+			&lt;div id=&#34;search-panel&#34;&gt;
+				&lt;div class=&#34;link-search-wrapper&#34;&gt;
+					&lt;label&gt;
+						&lt;span class=&#34;search-label&#34;&gt;Search&lt;/span&gt;
+						&lt;input type=&#34;search&#34; id=&#34;wp-link-search&#34; class=&#34;link-search-field&#34; autocomplete=&#34;off&#34; aria-describedby=&#34;wplink-link-existing-content&#34; /&gt;
+						&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div id=&#34;search-results&#34; class=&#34;query-results&#34; tabindex=&#34;0&#34;&gt;
+					&lt;ul&gt;&lt;/ul&gt;
+					&lt;div class=&#34;river-waiting&#34;&gt;
+						&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&#34;most-recent-results&#34; class=&#34;query-results&#34; tabindex=&#34;0&#34;&gt;
+					&lt;div class=&#34;query-notice&#34; id=&#34;query-notice-message&#34;&gt;
+						&lt;em class=&#34;query-notice-default&#34;&gt;No search term specified. Showing recent items.&lt;/em&gt;
+						&lt;em class=&#34;query-notice-hint screen-reader-text&#34;&gt;Search or use up and down arrow keys to select an item.&lt;/em&gt;
+					&lt;/div&gt;
+					&lt;ul&gt;&lt;/ul&gt;
+					&lt;div class=&#34;river-waiting&#34;&gt;
+						&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				 &lt;/div&gt;
+			 &lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;submitbox&#34;&gt;
+			&lt;div id=&#34;wp-link-cancel&#34;&gt;
+				&lt;button type=&#34;button&#34; class=&#34;button&#34;&gt;Cancel&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div id=&#34;wp-link-update&#34;&gt;
+				&lt;input type=&#34;submit&#34; value=&#34;Add Link&#34; class=&#34;button button-primary&#34; id=&#34;wp-link-submit&#34; name=&#34;wp-link-submit&#34;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;/form&gt;
+		&lt;/div&gt;
+		
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      POST http://localhost:8000/wp-admin/admin-ajax.php
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/16110ce8-e078-48f7-bb46-7b1bcdf66231.html">http://localhost:8000/wp-admin/theme-install.php</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>accept:</b> */*<br/>
+      
+        <b>referer:</b> http://localhost:8000/wp-admin/theme-install.php?browse=featured<br/>
+      
+        <b>x-requested-with:</b> XMLHttpRequest<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> cors<br/>
+      
+        <b>content-type:</b> application/x-www-form-urlencoded; charset=UTF-8<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:13:41 GMT<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>content-type:</b> application/json; charset=UTF-8<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>transfer-encoding:</b> chunked<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>x-robots-tag:</b> noindex<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=40<br/>
+        
+          <b>x-content-type-options:</b> nosniff<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="{&#34;success&#34;:true,&#34;data&#34;:{&#34;info&#34;:{&#34;page&#34;:1,&#34;pages&#34;:1,&#34;results&#34;:15},&#34;themes&#34;:[{&#34;name&#34;:&#34;Twenty Nineteen&#34;,&#34;slug&#34;:&#34;twentynineteen&#34;,&#34;version&#34;:&#34;1.4&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/twentynineteen&#34;,&#34;author&#34;:&#34;WordPress.org&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/twentynineteen\/screenshot.png?ver=1.4&#34;,&#34;rating&#34;:72,&#34;num_ratings&#34;:&#34;46&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/twentynineteen\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/twentynineteen\/&#34;,&#34;description&#34;:&#34;Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you&#39;ll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you\u2019re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it&#39;s built to be beautiful on all screen sizes.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=twentynineteen&amp;_wpnonce=1a5efda2d7&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=78525889a3&amp;stylesheet=twentynineteen&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=twentynineteen&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;3.5 rating based on 46 ratings&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-half\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Argent&#34;,&#34;slug&#34;:&#34;argent&#34;,&#34;version&#34;:&#34;1.1.5&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/argent&#34;,&#34;author&#34;:&#34;Automattic&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/argent\/screenshot.png?ver=1.1.5&#34;,&#34;rating&#34;:100,&#34;num_ratings&#34;:&#34;2&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/argent\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/argent\/&#34;,&#34;description&#34;:&#34;Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=argent&amp;_wpnonce=d24fcc4efa&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=4e7e34325d&amp;stylesheet=argent&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=argent&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;5.0 rating based on 2 ratings&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Blush&#34;,&#34;slug&#34;:&#34;blush&#34;,&#34;version&#34;:&#34;1.2.4&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/blush&#34;,&#34;author&#34;:&#34;A WP Life&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/blush\/screenshot.png?ver=1.2.4&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/blush\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/blush\/&#34;,&#34;description&#34;:&#34;Blush is a responsive, multi-purpose WordPress theme. It\u2019s flexible and suitable for agencies, blogs, businesses, finance, accounting, consulting, corporations, or portfolios. Customization is easy and straight-forward, with options provided that allow you to setup your site to perfectly fit your desired online presence. We hope you will find the Blush theme useful. https:\/\/awplife.com\/demo\/blush\/&#34;,&#34;template&#34;:&#34;aneeq&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=blush&amp;_wpnonce=cd60b114b2&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=dd2d819bfc&amp;stylesheet=blush&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=blush&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Chrimbo&#34;,&#34;slug&#34;:&#34;chrimbo&#34;,&#34;version&#34;:&#34;1.0.4&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/chrimbo&#34;,&#34;author&#34;:&#34;eVision Themes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/chrimbo\/screenshot.png?ver=1.0.4&#34;,&#34;rating&#34;:100,&#34;num_ratings&#34;:&#34;1&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/chrimbo\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/chrimbo\/&#34;,&#34;description&#34;:&#34;Chrimbo is a Seasonal WordPress theme that is well organized and it\u2019s very easy to customize and update. This theme is especially designed for Holidays, New Year, feel of festival and other special events. This is fully responsive with a clean design and lots of flexible options in the customizer.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=chrimbo&amp;_wpnonce=001fb0df0a&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=5af454041f&amp;stylesheet=chrimbo&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=chrimbo&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;5.0 rating based on 1 rating&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Zincy Lite&#34;,&#34;slug&#34;:&#34;zincy-lite&#34;,&#34;version&#34;:&#34;1.1.34&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/zincy-lite&#34;,&#34;author&#34;:&#34;8Degree Themes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/zincy-lite\/screenshot.png?ver=1.1.34&#34;,&#34;rating&#34;:96,&#34;num_ratings&#34;:&#34;13&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/zincy-lite\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/zincy-lite\/&#34;,&#34;description&#34;:&#34;Zincy lite is a powerful &amp;amp; feature-rich business theme. It comes up with customizer panel which allows you to live preview your changes, configurations, settings and design! It is super user friendly, lightweight and saves a lot of setup\/configuration time. Features include: access to Google Fonts, unlimited color setting, layout control, logo\/fav icon upload, category slider, sticky (menu) navigation, blog layout, testimonial,  portfolio, several page and post layout and much more. Compatibility: all major browser, fully responsive, WooCommerce, bbPress and all major plugins. Others: Translation ready, SEO friendly, RTL support. Demo Link : http:\/\/8degreethemes.com\/demo\/zincy-lite-v2\/ Support : http:\/\/8degreethemes.com\/support\/ , Email : support@8degreethemes.com&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=zincy-lite&amp;_wpnonce=9977079bab&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=d60ac12048&amp;stylesheet=zincy-lite&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=zincy-lite&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;5.0 rating based on 13 ratings&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Dansal&#34;,&#34;slug&#34;:&#34;dansal&#34;,&#34;version&#34;:&#34;1.0.4&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/dansal&#34;,&#34;author&#34;:&#34;wpneon&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/dansal\/screenshot.jpg?ver=1.0.4&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/dansal\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/dansal\/&#34;,&#34;description&#34;:&#34;Dansal theme is a Twenty Sixteen WordPress child theme. Dansal is a clean, simple and lightweight WordPress theme, featuring a front page with a complete post archive arranged by year rather than a traditional blog flow. It also sports fully customizable background colors for the sidebar and content, responsive design, social network links with icons, Demo: http:\/\/demo.wpneon.com\/dansal\/&#34;,&#34;template&#34;:&#34;twentysixteen&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=dansal&amp;_wpnonce=9c6d3acd08&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=2332ce2f18&amp;stylesheet=dansal&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=dansal&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Life Coach&#34;,&#34;slug&#34;:&#34;life-coach&#34;,&#34;version&#34;:&#34;1.0.3&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/life-coach&#34;,&#34;author&#34;:&#34;Blossom Themes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/life-coach\/screenshot.png?ver=1.0.3&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/life-coach\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/life-coach\/&#34;,&#34;description&#34;:&#34;Life Coach is a free WordPress coaching theme designed to create websites for coach, mentors, speakers and therapists. You can easily use this theme to create stunning website without any knowledge of coding. The theme is designed with features that highlights you and yours services that will help to improve your followings. The theme is also multi-purpose. So you can also use it to build small business (restaurants\/cafe, travel, education, hotel, construction, events, wedding planners, fitness, affiliate, fashion, lawyer, consulting, sport\/medical shops, spa\/temas, political), portfolio, church, online agencies and firms, charity, ecommerce (WooCommerce), and freelancers websites. It is responsive, Schema.org compatible, SEO friendly, RTL compatible, speed optimized, and translation ready. Check theme details at https:\/\/blossomthemes.com\/downloads\/life-coach-free-wordpress-theme\/, demo at https:\/\/demo.blossomthemes.com\/life-coach\/, read the documentation at https:\/\/docs.blossomthemes.com\/docs\/life-coach\/, and get support at https:\/\/blossomthemes.com\/support-ticket\/.&#34;,&#34;template&#34;:&#34;blossom-coach&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=life-coach&amp;_wpnonce=68a4015819&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=8dd1c9a2c1&amp;stylesheet=life-coach&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=life-coach&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Akaka&#34;,&#34;slug&#34;:&#34;akaka&#34;,&#34;version&#34;:&#34;1.0.5&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/akaka&#34;,&#34;author&#34;:&#34;coothemes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/akaka\/screenshot.jpg?ver=1.0.5&#34;,&#34;rating&#34;:40,&#34;num_ratings&#34;:&#34;1&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/akaka\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/akaka\/&#34;,&#34;description&#34;:&#34;Akaka is a fully responsive one page WordPress theme for all type of corporate business, small business, and blogging, etc. Excellent prebuilt sections such as feature section, gallary section, pricing section, can easily and elegantly display all your important content on a single page. Akaka will let you present your business in a professional way.demo:http:\/\/demos.coothemes.com\/\/?theme-demo=theta&#34;,&#34;template&#34;:&#34;theta&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=akaka&amp;_wpnonce=fc1c04a38e&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=639f10adb2&amp;stylesheet=akaka&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=akaka&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;2.0 rating based on 1 rating&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;VW Startup&#34;,&#34;slug&#34;:&#34;vw-startup&#34;,&#34;version&#34;:&#34;0.5.1&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/vw-startup&#34;,&#34;author&#34;:&#34;VW THEMES&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/vw-startup\/screenshot.png?ver=0.5.1&#34;,&#34;rating&#34;:100,&#34;num_ratings&#34;:&#34;1&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/vw-startup\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/vw-startup\/&#34;,&#34;description&#34;:&#34;VW Startup is a creative and stylish WordPress theme for multipurpose and innovative startups. Create your personal website, blog, business ventures or build online startup business or establish yourself as a successful entrepreneur with the help of this theme. The theme is for IT companies and technical startups, agencies and digital marketing companies which can use it as a business theme. It is very well malleable and adaptive according to the purpose it is being used for. The theme is built on Bootstrap framework for its easy usage. It is jam-packed with loads of sophisticated features which are fun to experiment with for newbies and webmasters equally. The VW Startup is a responsive theme which looks stunning on all devices. Its cross-browser compatibility makes it load smoothly on all web browsers. The theme is translation ready and supports RTL writing to reach maximum audience. It is customizable giving you a good chance to change it according to your needs. Banners and sliders are used to make site more impactful. The VW Startup is designed keeping in mind the SEO factor. The theme loads fast and has easy navigation offering a good user experience. With social media integration, content on your site can be made shareable. Demo: https:\/\/www.vwthemes.net\/vw-startup-pro\/&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=vw-startup&amp;_wpnonce=1eaa543814&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=f06bcc39cf&amp;stylesheet=vw-startup&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=vw-startup&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;5.0 rating based on 1 rating&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Tibb&#34;,&#34;slug&#34;:&#34;tibb&#34;,&#34;version&#34;:&#34;1.0.7&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/tibb&#34;,&#34;author&#34;:&#34;Guava Pattern&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/tibb\/screenshot.jpg?ver=1.0.7&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/tibb\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/tibb\/&#34;,&#34;description&#34;:&#34;This theme extend default theme Twenty Seventeen. Also, if you change the background image you can use it on various sites. The top page shows the background image on the full screen.&#34;,&#34;template&#34;:&#34;twentyseventeen&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=tibb&amp;_wpnonce=1a62c22b21&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=805bdee36e&amp;stylesheet=tibb&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=tibb&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Bug Blog&#34;,&#34;slug&#34;:&#34;bug-blog&#34;,&#34;version&#34;:&#34;1.0.19&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/bug-blog&#34;,&#34;author&#34;:&#34;DartThemes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/bug-blog\/screenshot.png?ver=1.0.19&#34;,&#34;rating&#34;:84,&#34;num_ratings&#34;:&#34;5&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/bug-blog\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/bug-blog\/&#34;,&#34;description&#34;:&#34;Bug Blog Created for blogger and writer who love to writing, Bug blog is clean and easy designed made for all kind user with default WordPress user interface. best for personal blog, travel blog, life-style and business website blog.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=bug-blog&amp;_wpnonce=f367905ac9&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=34d049aff9&amp;stylesheet=bug-blog&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=bug-blog&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;4.0 rating based on 5 ratings&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Cleanine&#34;,&#34;slug&#34;:&#34;cleanine&#34;,&#34;version&#34;:&#34;1.2&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/cleanine&#34;,&#34;author&#34;:&#34;afadel&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/cleanine\/screenshot.png?ver=1.2&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/cleanine\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/cleanine\/&#34;,&#34;description&#34;:&#34;Cleanine is a child theme of the new Twenty Nineteen WordPress theme. Twenty Nineteen is a beautiful and elegant WordPress Theme. But the header and appearance of featured images on post pages was something which I could not get used to. Cleanine themes gives Twenty Nineteen a more conservative header with clearly marked boundaries on homepage and post pages. It also changes how the featured images appear. In this child theme, the featured images appear in the old fashioned way below the post title and not as a background. These distinctions make Cleanine a more suitable theme for majority of blogs and bloggers.&#34;,&#34;template&#34;:&#34;twentynineteen&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=cleanine&amp;_wpnonce=52d775abc0&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=4c60051905&amp;stylesheet=cleanine&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=cleanine&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Milestone lite&#34;,&#34;slug&#34;:&#34;milestone-lite&#34;,&#34;version&#34;:&#34;1.0.3&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/milestone-lite&#34;,&#34;author&#34;:&#34;gracethemes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/milestone-lite\/screenshot.png?ver=1.0.3&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/milestone-lite\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/milestone-lite\/&#34;,&#34;description&#34;:&#34;Milestone lite is a Powerful, professional, elegant, flexible Free Responsive Simple WordPress Theme. It is best fit for all kind of Corporate, Professional, medical and multipurpose business. It is user friendly customizer options and Compatible in WordPress Latest Version. also Compatible with WooCommerce, Nextgen gallery ,Contact Form 7 and many WordPress popular plugins. Demo Link: https:\/\/www.gracethemes.com\/demo\/milestonez\/&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=milestone-lite&amp;_wpnonce=62fa8dc225&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=2519cd1495&amp;stylesheet=milestone-lite&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=milestone-lite&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Deep Sea&#34;,&#34;slug&#34;:&#34;deep-sea&#34;,&#34;version&#34;:&#34;1.4&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/deep-sea&#34;,&#34;author&#34;:&#34;webriti&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/deep-sea\/screenshot.png?ver=1.4&#34;,&#34;rating&#34;:0,&#34;num_ratings&#34;:&#34;0&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/deep-sea\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/deep-sea\/&#34;,&#34;description&#34;:&#34;Deep Sea is a responsive theme for bloggers with a clean design.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=deep-sea&amp;_wpnonce=152cf7da32&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=12aade1b40&amp;stylesheet=deep-sea&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=deep-sea&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;0.0 rating&lt;\/span&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-empty\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;},{&#34;name&#34;:&#34;Business Epic&#34;,&#34;slug&#34;:&#34;business-epic&#34;,&#34;version&#34;:&#34;1.3.0&#34;,&#34;preview_url&#34;:&#34;http:\/\/wp-themes.com\/business-epic&#34;,&#34;author&#34;:&#34;amplethemes&#34;,&#34;screenshot_url&#34;:&#34;\/\/ts.w.org\/wp-content\/themes\/business-epic\/screenshot.png?ver=1.3.0&#34;,&#34;rating&#34;:100,&#34;num_ratings&#34;:&#34;8&#34;,&#34;reviews_url&#34;:&#34;https:\/\/wordpress.org\/support\/theme\/business-epic\/reviews\/&#34;,&#34;homepage&#34;:&#34;https:\/\/wordpress.org\/themes\/business-epic\/&#34;,&#34;description&#34;:&#34;Business Epic is a clean, simple and professional business theme with attractive elements and ample of features for business and corporate websites. It is well suited theme for business, corporate, informative, agencies, travel, design, art, personal ,woocommerce shop  and any other creative websites and blogs. It features multiple sections on the front page including favicon, logo, widgets, multiple navigations, address bar, social menus, and customizer to customize theme easily.&#34;,&#34;install_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/update.php?action=install-theme&amp;theme=business-epic&amp;_wpnonce=0f9aed5ce2&#34;,&#34;activate_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/themes.php?action=activate&amp;_wpnonce=2dcaf9d92f&amp;stylesheet=business-epic&#34;,&#34;customize_url&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/customize.php?theme=business-epic&amp;return=%2Fwp-admin%2Ftheme-install.php&#34;,&#34;stars&#34;:&#34;&lt;div class=\&#34;star-rating\&#34;&gt;&lt;span class=\&#34;screen-reader-text\&#34;&gt;5.0 rating based on 8 ratings&lt;\/span&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;div class=\&#34;star star-full\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;\/div&gt;&lt;\/div&gt;&#34;}]}}" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

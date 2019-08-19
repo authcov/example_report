@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/e6adb6cc-73ef-430a-bfb5-620dc404f1d8.html">http://localhost:8000/</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:13:36 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>link:</b> &lt;http://localhost:8000/index.php?rest_route=/&gt;; rel=&#34;https://api.w.org/&#34;<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 5314<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=96<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&#34;en-US&#34;&gt;
+&lt;head&gt;
+	&lt;meta charset=&#34;UTF-8&#34; /&gt;
+	&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+	&lt;link rel=&#34;profile&#34; href=&#34;https://gmpg.org/xfn/11&#34; /&gt;
+	&lt;title&gt;Authcov Blog &amp;#8211; Just another WordPress site&lt;/title&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;link rel=&#34;alternate&#34; type=&#34;application/rss+xml&#34; title=&#34;Authcov Blog &amp;raquo; Feed&#34; href=&#34;http://localhost:8000/?feed=rss2&#34; /&gt;
+&lt;link rel=&#34;alternate&#34; type=&#34;application/rss+xml&#34; title=&#34;Authcov Blog &amp;raquo; Comments Feed&#34; href=&#34;http://localhost:8000/?feed=comments-rss2&#34; /&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; id=&#39;dashicons-css&#39;  href=&#39;http://localhost:8000/wp-includes/css/dashicons.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;admin-bar-css&#39;  href=&#39;http://localhost:8000/wp-includes/css/admin-bar.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;wp-block-library-css&#39;  href=&#39;http://localhost:8000/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;wp-block-library-theme-css&#39;  href=&#39;http://localhost:8000/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;twentynineteen-style-css&#39;  href=&#39;http://localhost:8000/wp-content/themes/twentynineteen/style.css?ver=1.4&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;twentynineteen-print-style-css&#39;  href=&#39;http://localhost:8000/wp-content/themes/twentynineteen/print.css?ver=1.4&#39; type=&#39;text/css&#39; media=&#39;print&#39; /&gt;
+&lt;link rel=&#39;https://api.w.org/&#39; href=&#39;http://localhost:8000/index.php?rest_route=/&#39; /&gt;
+&lt;link rel=&#34;EditURI&#34; type=&#34;application/rsd+xml&#34; title=&#34;RSD&#34; href=&#34;http://localhost:8000/xmlrpc.php?rsd&#34; /&gt;
+&lt;link rel=&#34;wlwmanifest&#34; type=&#34;application/wlwmanifest+xml&#34; href=&#34;http://localhost:8000/wp-includes/wlwmanifest.xml&#34; /&gt; 
+&lt;meta name=&#34;generator&#34; content=&#34;WordPress 5.2.2&#34; /&gt;
+		&lt;style type=&#34;text/css&#34;&gt;.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}&lt;/style&gt;
+		&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+&lt;/style&gt;
+	&lt;/head&gt;
+
+&lt;body class=&#34;home blog logged-in admin-bar no-customize-support wp-embed-responsive hfeed image-filters-enabled&#34;&gt;
+&lt;div id=&#34;page&#34; class=&#34;site&#34;&gt;
+	&lt;a class=&#34;skip-link screen-reader-text&#34; href=&#34;#content&#34;&gt;Skip to content&lt;/a&gt;
+
+		&lt;header id=&#34;masthead&#34; class=&#34;site-header&#34;&gt;
+
+			&lt;div class=&#34;site-branding-container&#34;&gt;
+				&lt;div class=&#34;site-branding&#34;&gt;
+
+								&lt;h1 class=&#34;site-title&#34;&gt;&lt;a href=&#34;http://localhost:8000/&#34; rel=&#34;home&#34;&gt;Authcov Blog&lt;/a&gt;&lt;/h1&gt;
+			
+				&lt;p class=&#34;site-description&#34;&gt;
+				Just another WordPress site			&lt;/p&gt;
+			&lt;/div&gt;&lt;!-- .site-branding --&gt;
+			&lt;/div&gt;&lt;!-- .site-branding-container --&gt;
+
+					&lt;/header&gt;&lt;!-- #masthead --&gt;
+
+	&lt;div id=&#34;content&#34; class=&#34;site-content&#34;&gt;
+
+	&lt;section id=&#34;primary&#34; class=&#34;content-area&#34;&gt;
+		&lt;main id=&#34;main&#34; class=&#34;site-main&#34;&gt;
+
+		
+&lt;article id=&#34;post-1&#34; class=&#34;post-1 post type-post status-publish format-standard hentry category-uncategorized entry&#34;&gt;
+	&lt;header class=&#34;entry-header&#34;&gt;
+		&lt;h2 class=&#34;entry-title&#34;&gt;&lt;a href=&#34;http://localhost:8000/?p=1&#34; rel=&#34;bookmark&#34;&gt;Hello world!&lt;/a&gt;&lt;/h2&gt;	&lt;/header&gt;&lt;!-- .entry-header --&gt;
+
+	
+	&lt;div class=&#34;entry-content&#34;&gt;
+		
+&lt;p&gt;Welcome to WordPress. This is your first post. Edit or delete it, then start writing!&lt;/p&gt;
+	&lt;/div&gt;&lt;!-- .entry-content --&gt;
+
+	&lt;footer class=&#34;entry-footer&#34;&gt;
+		&lt;span class=&#34;byline&#34;&gt;&lt;svg class=&#34;svg-icon&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 0 24 24&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34;&gt;&lt;path d=&#34;M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Posted by&lt;/span&gt;&lt;span class=&#34;author vcard&#34;&gt;&lt;a class=&#34;url fn n&#34; href=&#34;http://localhost:8000/?author=1&#34;&gt;admin&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;posted-on&#34;&gt;&lt;svg class=&#34;svg-icon&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;defs&gt;&lt;path id=&#34;a&#34; d=&#34;M0 0h24v24H0V0z&#34;&gt;&lt;/path&gt;&lt;/defs&gt;&lt;clipPath id=&#34;b&#34;&gt;&lt;use xlink:href=&#34;#a&#34; overflow=&#34;visible&#34;&gt;&lt;/use&gt;&lt;/clipPath&gt;&lt;path clip-path=&#34;url(#b)&#34; d=&#34;M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;a href=&#34;http://localhost:8000/?p=1&#34; rel=&#34;bookmark&#34;&gt;&lt;time class=&#34;entry-date published updated&#34; datetime=&#34;2019-08-19T14:12:59+00:00&#34;&gt;August 19, 2019&lt;/time&gt;&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;cat-links&#34;&gt;&lt;svg class=&#34;svg-icon&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Posted in&lt;/span&gt;&lt;a href=&#34;http://localhost:8000/?cat=1&#34; rel=&#34;category&#34;&gt;Uncategorized&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;comments-link&#34;&gt;&lt;svg class=&#34;svg-icon&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 0 24 24&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34;&gt;&lt;path d=&#34;M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;a href=&#34;http://localhost:8000/?p=1#comments&#34;&gt;1 Comment&lt;span class=&#34;screen-reader-text&#34;&gt; on Hello world!&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;span class=&#34;edit-link&#34;&gt;&lt;svg class=&#34;svg-icon&#34; width=&#34;16&#34; height=&#34;16&#34; aria-hidden=&#34;true&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 0 24 24&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; xmlns:xlink=&#34;http://www.w3.org/1999/xlink&#34;&gt;&lt;path d=&#34;M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;a class=&#34;post-edit-link&#34; href=&#34;http://localhost:8000/wp-admin/post.php?post=1&amp;#038;action=edit&#34;&gt;Edit &lt;span class=&#34;screen-reader-text&#34;&gt;Hello world!&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;	&lt;/footer&gt;&lt;!-- .entry-footer --&gt;
+&lt;/article&gt;&lt;!-- #post-1 --&gt;
+
+		&lt;/main&gt;&lt;!-- .site-main --&gt;
+	&lt;/section&gt;&lt;!-- .content-area --&gt;
+
+
+	&lt;/div&gt;&lt;!-- #content --&gt;
+
+	&lt;footer id=&#34;colophon&#34; class=&#34;site-footer&#34;&gt;
+		
+	&lt;aside class=&#34;widget-area&#34; role=&#34;complementary&#34; aria-label=&#34;Footer&#34;&gt;
+							&lt;div class=&#34;widget-column footer-widget-1&#34;&gt;
+					&lt;section id=&#34;search-2&#34; class=&#34;widget widget_search&#34;&gt;&lt;form role=&#34;search&#34; method=&#34;get&#34; class=&#34;search-form&#34; action=&#34;http://localhost:8000/&#34;&gt;
+				&lt;label&gt;
+					&lt;span class=&#34;screen-reader-text&#34;&gt;Search for:&lt;/span&gt;
+					&lt;input type=&#34;search&#34; class=&#34;search-field&#34; placeholder=&#34;Search &amp;hellip;&#34; value=&#34;&#34; name=&#34;s&#34; /&gt;
+				&lt;/label&gt;
+				&lt;input type=&#34;submit&#34; class=&#34;search-submit&#34; value=&#34;Search&#34; /&gt;
+			&lt;/form&gt;&lt;/section&gt;		&lt;section id=&#34;recent-posts-2&#34; class=&#34;widget widget_recent_entries&#34;&gt;		&lt;h2 class=&#34;widget-title&#34;&gt;Recent Posts&lt;/h2&gt;		&lt;ul&gt;
+											&lt;li&gt;
+					&lt;a href=&#34;http://localhost:8000/?p=1&#34;&gt;Hello world!&lt;/a&gt;
+									&lt;/li&gt;
+					&lt;/ul&gt;
+		&lt;/section&gt;&lt;section id=&#34;recent-comments-2&#34; class=&#34;widget widget_recent_comments&#34;&gt;&lt;h2 class=&#34;widget-title&#34;&gt;Recent Comments&lt;/h2&gt;&lt;ul id=&#34;recentcomments&#34;&gt;&lt;li class=&#34;recentcomments&#34;&gt;&lt;span class=&#34;comment-author-link&#34;&gt;&lt;a href=&#39;https://wordpress.org/&#39; rel=&#39;external nofollow&#39; class=&#39;url&#39;&gt;A WordPress Commenter&lt;/a&gt;&lt;/span&gt; on &lt;a href=&#34;http://localhost:8000/?p=1#comment-1&#34;&gt;Hello world!&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;&lt;section id=&#34;archives-2&#34; class=&#34;widget widget_archive&#34;&gt;&lt;h2 class=&#34;widget-title&#34;&gt;Archives&lt;/h2&gt;		&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&#39;http://localhost:8000/?m=201908&#39;&gt;August 2019&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+			&lt;/section&gt;&lt;section id=&#34;categories-2&#34; class=&#34;widget widget_categories&#34;&gt;&lt;h2 class=&#34;widget-title&#34;&gt;Categories&lt;/h2&gt;		&lt;ul&gt;
+				&lt;li class=&#34;cat-item cat-item-1&#34;&gt;&lt;a href=&#34;http://localhost:8000/?cat=1&#34;&gt;Uncategorized&lt;/a&gt;
+&lt;/li&gt;
+		&lt;/ul&gt;
+			&lt;/section&gt;&lt;section id=&#34;meta-2&#34; class=&#34;widget widget_meta&#34;&gt;&lt;h2 class=&#34;widget-title&#34;&gt;Meta&lt;/h2&gt;			&lt;ul&gt;
+			&lt;li&gt;&lt;a href=&#34;http://localhost:8000/wp-admin/&#34;&gt;Site Admin&lt;/a&gt;&lt;/li&gt;			&lt;li&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log out&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&#34;http://localhost:8000/?feed=rss2&#34;&gt;Entries &lt;abbr title=&#34;Really Simple Syndication&#34;&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&#34;http://localhost:8000/?feed=comments-rss2&#34;&gt;Comments &lt;abbr title=&#34;Really Simple Syndication&#34;&gt;RSS&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&#34;https://wordpress.org/&#34; title=&#34;Powered by WordPress, state-of-the-art semantic personal publishing platform.&#34;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;			&lt;/ul&gt;
+			&lt;/section&gt;					&lt;/div&gt;
+					&lt;/aside&gt;&lt;!-- .widget-area --&gt;
+
+		&lt;div class=&#34;site-info&#34;&gt;
+										&lt;a class=&#34;site-name&#34; href=&#34;http://localhost:8000/&#34; rel=&#34;home&#34;&gt;Authcov Blog&lt;/a&gt;,
+						&lt;a href=&#34;https://wordpress.org/&#34; class=&#34;imprint&#34;&gt;
+				Proudly powered by WordPress.			&lt;/a&gt;
+								&lt;/div&gt;&lt;!-- .site-info --&gt;
+	&lt;/footer&gt;&lt;!-- #colophon --&gt;
+
+&lt;/div&gt;&lt;!-- #page --&gt;
+
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/admin-bar.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-embed.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+	&lt;script&gt;
+	/(trident|msie)/i.test(navigator.userAgent)&amp;&amp;document.getElementById&amp;&amp;window.addEventListener&amp;&amp;window.addEventListener(&#34;hashchange&#34;,function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&amp;&amp;(t=document.getElementById(e))&amp;&amp;(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	&lt;/script&gt;
+		&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+			&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+							&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;#wp-toolbar&#34; tabindex=&#34;1&#34;&gt;Skip to toolbar&lt;/a&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-dashboard&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/&#39;&gt;Dashboard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-appearance&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-themes&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/themes.php&#39;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-widgets&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-menus&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-customize&#39; class=&#34;hide-if-no-customize&#34;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%3A8000%2F&#39;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-search&#39; class=&#34;admin-bar-search&#34;&gt;&lt;div class=&#34;ab-item ab-empty-item&#34; tabindex=&#34;-1&#34;&gt;&lt;form action=&#34;http://localhost:8000/&#34; method=&#34;get&#34; id=&#34;adminbarsearch&#34;&gt;&lt;input class=&#34;adminbar-input&#34; name=&#34;s&#34; id=&#34;adminbar-search&#34; type=&#34;text&#34; value=&#34;&#34; maxlength=&#34;150&#34; /&gt;&lt;label for=&#34;adminbar-search&#34; class=&#34;screen-reader-text&#34;&gt;Search&lt;/label&gt;&lt;input type=&#34;submit&#34; class=&#34;adminbar-button&#34; value=&#34;Search&#34;/&gt;&lt;/form&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+

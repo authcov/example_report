@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap.min.css">
+
+    <title>AuthCov Report</title>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+      <!-- Custom styles for this template -->
+      <link href="../../dashboard.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" style="font-weight: bold;">AuthCov Report</a>
+    </nav>
+
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " href="../../index.html">
+                    Resource Access-Control Table <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../groups.html">
+                    Authorization Groups
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../../pages.html">
+                    Pages Crawled
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h2>Request</h2>
+</div>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Resource:</b>
+    </div>
+    <div class="col-lg-8">
+      GET http://localhost:8000/wp-admin/themes.php?page=custom-background
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>User:</b>
+    </div>
+    <div class="col-lg-8">
+        admin
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Source:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        From crawling page: <a href="../../pages/42275b5e-77fd-48eb-a733-b581f346543f.html">http://localhost:8000/wp-admin/themes.php?page=custom-background</a>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Request Headers:</b>
+    </div>
+    <div class="col-lg-8">
+      
+        <b>upgrade-insecure-requests:</b> 1<br/>
+      
+        <b>user-agent:</b> Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3844.0 Safari/537.36<br/>
+      
+        <b>sec-fetch-mode:</b> navigate<br/>
+      
+        <b>sec-fetch-user:</b> ?1<br/>
+      
+        <b>cookie:</b> wp-settings-time-1=1566224014; wordpress_test_cookie=WP+Cookie+check; wordpress_logged_in_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7Ce9bc48d6dcbc53e3284e88b4a83201f9a98c9bc9a43c332fbc81683bbc0bc9cf; wordpress_70490311fe7c84acda8886406a6d884b=admin%7C1566396814%7C0wvvNXBn17pNQZpaDbLoyLBKkriwsWgLEyJWsMNymwi%7C017b7b3a1b25196c9b11b2fcfacbb42adda7278b84c5983d410ed49a73292ae9<br/>
+      
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <div class="col-lg-2">
+      <b>Authorized?</b>
+    </div>
+    
+      <div class="col-lg-8" style="background-color: #d4edda">
+          Yes
+      </div>
+    
+</div>
+
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Status</b>
+      </div>
+      <div class="col-lg-8">
+          200
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Headers:</b>
+      </div>
+      <div class="col-lg-8">
+        
+          <b>date:</b> Mon, 19 Aug 2019 14:15:14 GMT<br/>
+        
+          <b>server:</b> Apache/2.4.38 (Debian)<br/>
+        
+          <b>x-powered-by:</b> PHP/7.3.8<br/>
+        
+          <b>expires:</b> Wed, 11 Jan 1984 05:00:00 GMT<br/>
+        
+          <b>cache-control:</b> no-cache, must-revalidate, max-age=0<br/>
+        
+          <b>x-frame-options:</b> SAMEORIGIN<br/>
+        
+          <b>referrer-policy:</b> strict-origin-when-cross-origin<br/>
+        
+          <b>vary:</b> Accept-Encoding<br/>
+        
+          <b>content-encoding:</b> gzip<br/>
+        
+          <b>content-length:</b> 18642<br/>
+        
+          <b>keep-alive:</b> timeout=5, max=96<br/>
+        
+          <b>connection:</b> Keep-Alive<br/>
+        
+          <b>content-type:</b> text/html; charset=UTF-8<br/>
+        
+      </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+      <div class="col-lg-2">
+        <b>Response Body:</b>
+      </div>
+      <div class="col-lg-8">
+        <iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;ie8 wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !(IE 8) ]&gt;&lt;!--&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; class=&#34;wp-toolbar&#34;
+	lang=&#34;en-US&#34;	&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;
+	&lt;title&gt;Background &amp;lsaquo; Authcov Blog &amp;#8212; WordPress&lt;/title&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+addLoadEvent = function(func){if(typeof jQuery!=&#34;undefined&#34;)jQuery(document).ready(func);else if(typeof wpOnload!=&#39;function&#39;){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = &#39;/wp-admin/admin-ajax.php&#39;,
+	pagenow = &#39;appearance_page_custom-background&#39;,
+	typenow = &#39;&#39;,
+	adminpage = &#39;appearance_page_custom-background&#39;,
+	thousandsSeparator = &#39;,&#39;,
+	decimalPoint = &#39;.&#39;,
+	isRtl = 0;
+&lt;/script&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width,initial-scale=1.0&#34;&gt;
+&lt;link rel=&#39;dns-prefetch&#39; href=&#39;//s.w.org&#39; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+&lt;/style&gt;
+	&lt;link rel=&#39;stylesheet&#39; href=&#39;http://localhost:8000/wp-admin/load-styles.php?c=0&amp;amp;dir=ltr&amp;amp;load%5B%5D=dashicons,admin-bar,buttons,media-views,wp-color-picker,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,theme&amp;amp;load%5B%5D=s,about,nav-menus,wp-pointer,widgets,site-icon,l10n,wp-auth-check&amp;amp;ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;mediaelement-css&#39;  href=&#39;http://localhost:8000/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;wp-mediaelement-css&#39;  href=&#39;http://localhost:8000/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;imgareaselect-css&#39;  href=&#39;http://localhost:8000/wp-includes/js/imgareaselect/imgareaselect.css?ver=0.9.8&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;!--[if lte IE 7]&gt;
+&lt;link rel=&#39;stylesheet&#39; id=&#39;ie-css&#39;  href=&#39;http://localhost:8000/wp-admin/css/ie.min.css?ver=5.2.2&#39; type=&#39;text/css&#39; media=&#39;all&#39; /&gt;
+&lt;![endif]--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			window._wpemojiSettings = {&#34;baseUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/&#34;,&#34;ext&#34;:&#34;.png&#34;,&#34;svgUrl&#34;:&#34;https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/&#34;,&#34;svgExt&#34;:&#34;.svg&#34;,&#34;source&#34;:{&#34;concatemoji&#34;:&#34;http:\/\/localhost:8000\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2&#34;}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline=&#34;top&#34;,l.font=&#34;600 32px Arial&#34;,a){case&#34;flag&#34;:return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&amp;&amp;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case&#34;emoji&#34;:return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement(&#34;script&#34;);c.src=a,c.defer=c.type=&#34;text/javascript&#34;,b.getElementsByTagName(&#34;head&#34;)[0].appendChild(c)}var g,h,i,j,k=b.createElement(&#34;canvas&#34;),l=k.getContext&amp;&amp;k.getContext(&#34;2d&#34;);for(j=Array(&#34;flag&#34;,&#34;emoji&#34;),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i&lt;j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&amp;&amp;c.supports[j[i]],&#34;flag&#34;!==j[i]&amp;&amp;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&amp;&amp;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener(&#34;DOMContentLoaded&#34;,h,!1),a.addEventListener(&#34;load&#34;,h,!1)):(a.attachEvent(&#34;onload&#34;,h),b.attachEvent(&#34;onreadystatechange&#34;,function(){&#34;complete&#34;===b.readyState&amp;&amp;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&amp;&amp;g.twemoji&amp;&amp;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		&lt;/script&gt;
+		
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var userSettings = {&#34;url&#34;:&#34;\/&#34;,&#34;uid&#34;:&#34;1&#34;,&#34;time&#34;:&#34;1566224114&#34;,&#34;secure&#34;:&#34;&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=jquery-core,jquery-migrate,utils,moxiejs,plupload&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;!--[if lt IE 8]&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/json2.min.js?ver=2015-05-03&#39;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+var mejsL10n = {&#34;language&#34;:&#34;en&#34;,&#34;strings&#34;:{&#34;mejs.install-flash&#34;:&#34;You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/&#34;,&#34;mejs.fullscreen-off&#34;:&#34;Turn off Fullscreen&#34;,&#34;mejs.fullscreen-on&#34;:&#34;Go Fullscreen&#34;,&#34;mejs.download-video&#34;:&#34;Download Video&#34;,&#34;mejs.fullscreen&#34;:&#34;Fullscreen&#34;,&#34;mejs.time-jump-forward&#34;:[&#34;Jump forward 1 second&#34;,&#34;Jump forward %1 seconds&#34;],&#34;mejs.loop&#34;:&#34;Toggle Loop&#34;,&#34;mejs.play&#34;:&#34;Play&#34;,&#34;mejs.pause&#34;:&#34;Pause&#34;,&#34;mejs.close&#34;:&#34;Close&#34;,&#34;mejs.time-slider&#34;:&#34;Time Slider&#34;,&#34;mejs.time-help-text&#34;:&#34;Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.&#34;,&#34;mejs.time-skip-back&#34;:[&#34;Skip back 1 second&#34;,&#34;Skip back %1 seconds&#34;],&#34;mejs.captions-subtitles&#34;:&#34;Captions\/Subtitles&#34;,&#34;mejs.captions-chapters&#34;:&#34;Chapters&#34;,&#34;mejs.none&#34;:&#34;None&#34;,&#34;mejs.mute-toggle&#34;:&#34;Mute Toggle&#34;,&#34;mejs.volume-help-text&#34;:&#34;Use Up\/Down Arrow keys to increase or decrease volume.&#34;,&#34;mejs.unmute&#34;:&#34;Unmute&#34;,&#34;mejs.mute&#34;:&#34;Mute&#34;,&#34;mejs.volume-slider&#34;:&#34;Volume Slider&#34;,&#34;mejs.video-player&#34;:&#34;Video Player&#34;,&#34;mejs.audio-player&#34;:&#34;Audio Player&#34;,&#34;mejs.ad-skip&#34;:&#34;Skip ad&#34;,&#34;mejs.ad-skip-info&#34;:[&#34;Skip in 1 second&#34;,&#34;Skip in %1 seconds&#34;],&#34;mejs.source-chooser&#34;:&#34;Source Chooser&#34;,&#34;mejs.stop&#34;:&#34;Stop&#34;,&#34;mejs.speed-rate&#34;:&#34;Speed Rate&#34;,&#34;mejs.live-broadcast&#34;:&#34;Live Broadcast&#34;,&#34;mejs.afrikaans&#34;:&#34;Afrikaans&#34;,&#34;mejs.albanian&#34;:&#34;Albanian&#34;,&#34;mejs.arabic&#34;:&#34;Arabic&#34;,&#34;mejs.belarusian&#34;:&#34;Belarusian&#34;,&#34;mejs.bulgarian&#34;:&#34;Bulgarian&#34;,&#34;mejs.catalan&#34;:&#34;Catalan&#34;,&#34;mejs.chinese&#34;:&#34;Chinese&#34;,&#34;mejs.chinese-simplified&#34;:&#34;Chinese (Simplified)&#34;,&#34;mejs.chinese-traditional&#34;:&#34;Chinese (Traditional)&#34;,&#34;mejs.croatian&#34;:&#34;Croatian&#34;,&#34;mejs.czech&#34;:&#34;Czech&#34;,&#34;mejs.danish&#34;:&#34;Danish&#34;,&#34;mejs.dutch&#34;:&#34;Dutch&#34;,&#34;mejs.english&#34;:&#34;English&#34;,&#34;mejs.estonian&#34;:&#34;Estonian&#34;,&#34;mejs.filipino&#34;:&#34;Filipino&#34;,&#34;mejs.finnish&#34;:&#34;Finnish&#34;,&#34;mejs.french&#34;:&#34;French&#34;,&#34;mejs.galician&#34;:&#34;Galician&#34;,&#34;mejs.german&#34;:&#34;German&#34;,&#34;mejs.greek&#34;:&#34;Greek&#34;,&#34;mejs.haitian-creole&#34;:&#34;Haitian Creole&#34;,&#34;mejs.hebrew&#34;:&#34;Hebrew&#34;,&#34;mejs.hindi&#34;:&#34;Hindi&#34;,&#34;mejs.hungarian&#34;:&#34;Hungarian&#34;,&#34;mejs.icelandic&#34;:&#34;Icelandic&#34;,&#34;mejs.indonesian&#34;:&#34;Indonesian&#34;,&#34;mejs.irish&#34;:&#34;Irish&#34;,&#34;mejs.italian&#34;:&#34;Italian&#34;,&#34;mejs.japanese&#34;:&#34;Japanese&#34;,&#34;mejs.korean&#34;:&#34;Korean&#34;,&#34;mejs.latvian&#34;:&#34;Latvian&#34;,&#34;mejs.lithuanian&#34;:&#34;Lithuanian&#34;,&#34;mejs.macedonian&#34;:&#34;Macedonian&#34;,&#34;mejs.malay&#34;:&#34;Malay&#34;,&#34;mejs.maltese&#34;:&#34;Maltese&#34;,&#34;mejs.norwegian&#34;:&#34;Norwegian&#34;,&#34;mejs.persian&#34;:&#34;Persian&#34;,&#34;mejs.polish&#34;:&#34;Polish&#34;,&#34;mejs.portuguese&#34;:&#34;Portuguese&#34;,&#34;mejs.romanian&#34;:&#34;Romanian&#34;,&#34;mejs.russian&#34;:&#34;Russian&#34;,&#34;mejs.serbian&#34;:&#34;Serbian&#34;,&#34;mejs.slovak&#34;:&#34;Slovak&#34;,&#34;mejs.slovenian&#34;:&#34;Slovenian&#34;,&#34;mejs.spanish&#34;:&#34;Spanish&#34;,&#34;mejs.swahili&#34;:&#34;Swahili&#34;,&#34;mejs.swedish&#34;:&#34;Swedish&#34;,&#34;mejs.tagalog&#34;:&#34;Tagalog&#34;,&#34;mejs.thai&#34;:&#34;Thai&#34;,&#34;mejs.turkish&#34;:&#34;Turkish&#34;,&#34;mejs.ukrainian&#34;:&#34;Ukrainian&#34;,&#34;mejs.vietnamese&#34;:&#34;Vietnamese&#34;,&#34;mejs.welsh&#34;:&#34;Welsh&#34;,&#34;mejs.yiddish&#34;:&#34;Yiddish&#34;}};
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var _wpmejsSettings = {&#34;pluginPath&#34;:&#34;\/wp-includes\/js\/mediaelement\/&#34;,&#34;classPrefix&#34;:&#34;mejs-&#34;,&#34;stretching&#34;:&#34;responsive&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+	&lt;link id=&#34;wp-admin-canonical&#34; rel=&#34;canonical&#34; href=&#34;http://localhost:8000/wp-admin/themes.php?page=custom-background&#34; /&gt;
+	&lt;script&gt;
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( &#39;wp-admin-canonical&#39; ).href + window.location.hash );
+		}
+	&lt;/script&gt;
+	&lt;script type=&#34;text/javascript&#34;&gt;var _wpColorScheme = {&#34;icons&#34;:{&#34;base&#34;:&#34;#a0a5aa&#34;,&#34;focus&#34;:&#34;#00a0d2&#34;,&#34;current&#34;:&#34;#fff&#34;}};&lt;/script&gt;
+&lt;style type=&#34;text/css&#34; media=&#34;print&#34;&gt;#wpadminbar { display:none; }&lt;/style&gt;
+	&lt;/head&gt;
+&lt;body class=&#34;wp-admin wp-core-ui no-js appearance_page_custom-background auto-fold admin-bar branch-5-2 version-5-2-2 admin-color-fresh locale-en-us no-customize-support no-svg&#34;&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+	document.body.className = document.body.className.replace(&#39;no-js&#39;,&#39;js&#39;);
+&lt;/script&gt;
+
+	&lt;!--[if lte IE 8]&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, &#39;&#39; ) + &#39; no-customize-support&#39;;
+		&lt;/script&gt;
+	&lt;![endif]--&gt;
+	&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+		&lt;script type=&#34;text/javascript&#34;&gt;
+			(function() {
+				var request, b = document.body, c = &#39;className&#39;, cs = &#39;customize-support&#39;, rcs = new RegExp(&#39;(^|\\s+)(no-)?&#39;+cs+&#39;(\\s+|$)&#39;);
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, &#39; &#39; );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage &amp;&amp; request ? &#39; &#39; : &#39; no-&#39; ) + cs;
+			}());
+		&lt;/script&gt;
+	&lt;!--&lt;![endif]--&gt;
+	
+&lt;div id=&#34;wpwrap&#34;&gt;
+
+&lt;div id=&#34;adminmenumain&#34; role=&#34;navigation&#34; aria-label=&#34;Main menu&#34;&gt;
+&lt;a href=&#34;#wpbody-content&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to main content&lt;/a&gt;
+&lt;a href=&#34;#wp-toolbar&#34; class=&#34;screen-reader-shortcut&#34;&gt;Skip to toolbar&lt;/a&gt;
+&lt;div id=&#34;adminmenuback&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;adminmenuwrap&#34;&gt;
+&lt;ul id=&#34;adminmenu&#34;&gt;
+
+
+	&lt;li class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; id=&#34;menu-dashboard&#34;&gt;
+	&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-dashboard&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Dashboard&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Dashboard&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;index.php&#39; class=&#34;wp-first-item&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;update-core.php&#39;&gt;Updates &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;update-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; id=&#34;menu-posts&#34;&gt;
+	&lt;a href=&#39;edit.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-post&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Posts&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Posts&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php&#39; class=&#34;wp-first-item&#34;&gt;All Posts&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=category&#39;&gt;Categories&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;edit-tags.php?taxonomy=post_tag&#39;&gt;Tags&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; id=&#34;menu-media&#34;&gt;
+	&lt;a href=&#39;upload.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-media&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-media&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Media&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Media&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;upload.php&#39; class=&#34;wp-first-item&#34;&gt;Library&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;media-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; id=&#34;menu-pages&#34;&gt;
+	&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-page&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-page&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Pages&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Pages&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;edit.php?post_type=page&#39; class=&#34;wp-first-item&#34;&gt;All Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;post-new.php?post_type=page&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; id=&#34;menu-comments&#34;&gt;
+	&lt;a href=&#39;edit-comments.php&#39; class=&#34;wp-not-current-submenu menu-top menu-icon-comments menu-top-last&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-comments&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Comments &lt;span class=&#34;awaiting-mod count-0&#34;&gt;&lt;span class=&#34;pending-count&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;comments-in-moderation-text screen-reader-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-not-current-submenu wp-menu-separator&#34; aria-hidden=&#34;true&#34;&gt;&lt;div class=&#34;separator&#34;&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first&#34; id=&#34;menu-appearance&#34;&gt;
+	&lt;a href=&#39;themes.php&#39; class=&#34;wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first&#34; &gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-appearance&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Appearance&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Appearance&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;themes.php&#39; class=&#34;wp-first-item&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3Dcustom-background&#39; class=&#34;hide-if-no-customize&#34;&gt;Customize&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;widgets.php&#39;&gt;Widgets&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;nav-menus.php&#39;&gt;Menus&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3Dcustom-background&amp;#038;autofocus%5Bcontrol%5D=header_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;hide-if-no-customize&#34;&gt;&lt;a href=&#39;customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3Dcustom-background&amp;#038;autofocus%5Bcontrol%5D=background_image&#39; class=&#34;hide-if-no-customize&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;themes.php?page=custom-header&#39;&gt;Header&lt;/a&gt;&lt;/li&gt;&lt;li class=&#34;current&#34;&gt;&lt;a href=&#39;themes.php?page=custom-background&#39; class=&#34;current&#34; aria-current=&#34;page&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;theme-editor.php&#39;&gt;Theme Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; id=&#34;menu-plugins&#34;&gt;
+	&lt;a href=&#39;plugins.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-plugins&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Plugins &lt;span class=&#39;update-plugins count-0&#39;&gt;&lt;span class=&#39;plugin-count&#39;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;plugins.php&#39; class=&#34;wp-first-item&#34;&gt;Installed Plugins&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-install.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;plugin-editor.php&#39;&gt;Plugin Editor&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; id=&#34;menu-users&#34;&gt;
+	&lt;a href=&#39;users.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-users&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-users&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Users&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Users&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;users.php&#39; class=&#34;wp-first-item&#34;&gt;All Users&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;user-new.php&#39;&gt;Add New&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;profile.php&#39;&gt;Your Profile&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; id=&#34;menu-tools&#34;&gt;
+	&lt;a href=&#39;tools.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-tools&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Tools&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Tools&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;tools.php&#39; class=&#34;wp-first-item&#34;&gt;Available Tools&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;import.php&#39;&gt;Import&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;export.php&#39;&gt;Export&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;site-health.php&#39;&gt;Site Health&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=export_personal_data&#39;&gt;Export Personal Data&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;tools.php?page=remove_personal_data&#39;&gt;Erase Personal Data&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+	&lt;li class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; id=&#34;menu-settings&#34;&gt;
+	&lt;a href=&#39;options-general.php&#39; class=&#34;wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last&#34; aria-haspopup=&#34;true&#34;&gt;&lt;div class=&#34;wp-menu-arrow&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-image dashicons-before dashicons-admin-settings&#39;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#39;wp-menu-name&#39;&gt;Settings&lt;/div&gt;&lt;/a&gt;
+	&lt;ul class=&#39;wp-submenu wp-submenu-wrap&#39;&gt;&lt;li class=&#39;wp-submenu-head&#39; aria-hidden=&#39;true&#39;&gt;Settings&lt;/li&gt;&lt;li class=&#34;wp-first-item&#34;&gt;&lt;a href=&#39;options-general.php&#39; class=&#34;wp-first-item&#34;&gt;General&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-writing.php&#39;&gt;Writing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-reading.php&#39;&gt;Reading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-discussion.php&#39;&gt;Discussion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-media.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;options-permalink.php&#39;&gt;Permalinks&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#39;privacy.php&#39;&gt;Privacy&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li id=&#34;collapse-menu&#34; class=&#34;hide-if-no-js&#34;&gt;&lt;button type=&#34;button&#34; id=&#34;collapse-button&#34; aria-label=&#34;Collapse Main menu&#34; aria-expanded=&#34;true&#34;&gt;&lt;span class=&#34;collapse-button-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/span&gt;&lt;span class=&#34;collapse-button-label&#34;&gt;Collapse menu&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wpcontent&#34;&gt;
+
+		&lt;div id=&#34;wpadminbar&#34; class=&#34;nojq nojs&#34;&gt;
+						&lt;div class=&#34;quicklinks&#34; id=&#34;wp-toolbar&#34; role=&#34;navigation&#34; aria-label=&#34;Toolbar&#34;&gt;
+				&lt;ul id=&#39;wp-admin-bar-root-default&#39; class=&#34;ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-menu-toggle&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;#&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-wp-logo&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;About WordPress&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-about&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/about.php&#39;&gt;About WordPress&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-wp-logo-external&#39; class=&#34;ab-sub-secondary ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-wporg&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/&#39;&gt;WordPress.org&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-documentation&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://codex.wordpress.org/&#39;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-support-forums&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/&#39;&gt;Support&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-feedback&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;https://wordpress.org/support/forum/requests-and-feedback&#39;&gt;Feedback&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-site-name&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/&#39;&gt;Authcov Blog&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-site-name-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-view-site&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/&#39;&gt;Visit Site&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-comments&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/edit-comments.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label awaiting-mod pending-count count-0&#34; aria-hidden=&#34;true&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;screen-reader-text comments-in-moderation-text&#34;&gt;0 Comments in moderation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-content&#39; class=&#34;menupop&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;&lt;span class=&#34;ab-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ab-label&#34;&gt;New&lt;/span&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-new-content-default&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-new-post&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php&#39;&gt;Post&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-media&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/media-new.php&#39;&gt;Media&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-page&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/post-new.php?post_type=page&#39;&gt;Page&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-new-user&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/user-new.php&#39;&gt;User&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;ul id=&#39;wp-admin-bar-top-secondary&#39; class=&#34;ab-top-secondary ab-top-menu&#34;&gt;&lt;li id=&#39;wp-admin-bar-my-account&#39; class=&#34;menupop with-avatar&#34;&gt;&lt;a class=&#39;ab-item&#39; aria-haspopup=&#34;true&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Howdy, &lt;span class=&#34;display-name&#34;&gt;admin&lt;/span&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=26&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=52&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-26 photo&#39; height=&#39;26&#39; width=&#39;26&#39; /&gt;&lt;/a&gt;&lt;div class=&#34;ab-sub-wrapper&#34;&gt;&lt;ul id=&#39;wp-admin-bar-user-actions&#39; class=&#34;ab-submenu&#34;&gt;&lt;li id=&#39;wp-admin-bar-user-info&#39;&gt;&lt;a class=&#39;ab-item&#39; tabindex=&#34;-1&#34; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=64&amp;#038;d=mm&amp;#038;r=g&#39; srcset=&#39;http://2.gravatar.com/avatar/2472a33331251822932b118144ee70d4?s=128&amp;#038;d=mm&amp;#038;r=g 2x&#39; class=&#39;avatar avatar-64 photo&#39; height=&#39;64&#39; width=&#39;64&#39; /&gt;&lt;span class=&#39;display-name&#39;&gt;admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-edit-profile&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-admin/profile.php&#39;&gt;Edit My Profile&lt;/a&gt;&lt;/li&gt;&lt;li id=&#39;wp-admin-bar-logout&#39;&gt;&lt;a class=&#39;ab-item&#39; href=&#39;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#39;&gt;Log Out&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;			&lt;/div&gt;
+						&lt;a class=&#34;screen-reader-shortcut&#34; href=&#34;http://localhost:8000/wp-login.php?action=logout&amp;#038;_wpnonce=429c91cb19&#34;&gt;Log Out&lt;/a&gt;
+					&lt;/div&gt;
+
+		
+&lt;div id=&#34;wpbody&#34; role=&#34;main&#34;&gt;
+
+&lt;div id=&#34;wpbody-content&#34;&gt;
+		&lt;div id=&#34;screen-meta&#34; class=&#34;metabox-prefs&#34;&gt;
+
+			&lt;div id=&#34;contextual-help-wrap&#34; class=&#34;hidden&#34; tabindex=&#34;-1&#34; aria-label=&#34;Contextual Help Tab&#34;&gt;
+				&lt;div id=&#34;contextual-help-back&#34;&gt;&lt;/div&gt;
+				&lt;div id=&#34;contextual-help-columns&#34;&gt;
+					&lt;div class=&#34;contextual-help-tabs&#34;&gt;
+						&lt;ul&gt;
+						
+							&lt;li id=&#34;tab-link-overview&#34; class=&#34;active&#34;&gt;
+								&lt;a href=&#34;#tab-panel-overview&#34; aria-controls=&#34;tab-panel-overview&#34;&gt;
+									Overview								&lt;/a&gt;
+							&lt;/li&gt;
+													&lt;/ul&gt;
+					&lt;/div&gt;
+
+										&lt;div class=&#34;contextual-help-sidebar&#34;&gt;
+						&lt;p&gt;&lt;strong&gt;For more information:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://codex.wordpress.org/Appearance_Background_Screen&#34;&gt;Documentation on Custom Background&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#34;https://wordpress.org/support/&#34;&gt;Support&lt;/a&gt;&lt;/p&gt;					&lt;/div&gt;
+					
+					&lt;div class=&#34;contextual-help-tabs-wrap&#34;&gt;
+						
+							&lt;div id=&#34;tab-panel-overview&#34; class=&#34;help-tab-content active&#34;&gt;
+								&lt;p&gt;You can customize the look of your site without touching any of your theme&amp;#8217;s code by using a custom background. Your background can be an image or a color.&lt;/p&gt;&lt;p&gt;To use a background image, simply upload it or choose an image that has already been uploaded to your Media Library by clicking the &amp;#8220;Choose Image&amp;#8221; button. You can display a single instance of your image, or tile it to fill the screen. You can have your background fixed in place, so your site content moves on top of it, or you can have it scroll with your site.&lt;/p&gt;&lt;p&gt;You can also choose a background color by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &amp;#8220;#ff0000&amp;#8221; for red, or by choosing a color using the color picker.&lt;/p&gt;&lt;p&gt;Don&amp;#8217;t forget to click on the Save Changes button when you are finished.&lt;/p&gt;							&lt;/div&gt;
+												&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&#34;screen-meta-links&#34;&gt;
+					&lt;div id=&#34;contextual-help-link-wrap&#34; class=&#34;hide-if-no-js screen-meta-toggle&#34;&gt;
+			&lt;button type=&#34;button&#34; id=&#34;contextual-help-link&#34; class=&#34;button show-settings&#34; aria-controls=&#34;contextual-help-wrap&#34; aria-expanded=&#34;false&#34;&gt;Help&lt;/button&gt;
+			&lt;/div&gt;
+				&lt;/div&gt;
+		&lt;div class=&#34;wrap&#34; id=&#34;custom-background&#34;&gt;
+&lt;h1&gt;Custom Background&lt;/h1&gt;
+
+		&lt;div class=&#34;notice notice-info hide-if-no-customize&#34;&gt;
+	&lt;p&gt;
+			You can now manage and live-preview Custom Backgrounds in the &lt;a href=&#34;http://localhost:8000/wp-admin/customize.php?autofocus[control]=background_image&#34;&gt;Customizer&lt;/a&gt;.	&lt;/p&gt;
+&lt;/div&gt;
+		
+		
+&lt;h3&gt;Background Image&lt;/h3&gt;
+
+&lt;table class=&#34;form-table&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Preview&lt;/th&gt;
+&lt;td&gt;
+			&lt;div id=&#34;custom-background-image&#34; style=&#34;background-color: #1a1a1a;&#34;&gt;				&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+
+		
+				
+		&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Select Image&lt;/th&gt;
+&lt;td&gt;&lt;form enctype=&#34;multipart/form-data&#34; id=&#34;upload-form&#34; class=&#34;wp-upload-form&#34; method=&#34;post&#34;&gt;
+	&lt;p&gt;
+		&lt;label for=&#34;upload&#34;&gt;Choose an image from your computer:&lt;/label&gt;&lt;br /&gt;
+		&lt;input type=&#34;file&#34; id=&#34;upload&#34; name=&#34;import&#34; /&gt;
+		&lt;input type=&#34;hidden&#34; name=&#34;action&#34; value=&#34;save&#34; /&gt;
+			&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce-custom-background-upload&#34; name=&#34;_wpnonce-custom-background-upload&#34; value=&#34;1abeacbf69&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/themes.php?page=custom-background&#34; /&gt;			&lt;input type=&#34;submit&#34; name=&#34;submit&#34; id=&#34;submit&#34; class=&#34;button&#34; value=&#34;Upload&#34;  /&gt;	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;label for=&#34;choose-from-library-link&#34;&gt;Or choose an image from your media library:&lt;/label&gt;&lt;br /&gt;
+		&lt;button id=&#34;choose-from-library-link&#34; class=&#34;button&#34;
+			data-choose=&#34;Choose a Background Image&#34;
+			data-update=&#34;Set as background&#34;&gt;Choose Image&lt;/button&gt;
+	&lt;/p&gt;
+	&lt;/form&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+		&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Display Options&lt;/h3&gt;
+&lt;form method=&#34;post&#34;&gt;
+&lt;table class=&#34;form-table&#34;&gt;
+&lt;tbody&gt;
+		&lt;tr&gt;
+&lt;th scope=&#34;row&#34;&gt;Background Color&lt;/th&gt;
+&lt;td&gt;&lt;fieldset&gt;&lt;legend class=&#34;screen-reader-text&#34;&gt;&lt;span&gt;Background Color&lt;/span&gt;&lt;/legend&gt;
+		&lt;input type=&#34;text&#34; name=&#34;background-color&#34; id=&#34;background-color&#34; value=&#34;#1a1a1a&#34; data-default-color=&#34;#1a1a1a&#34;&gt;
+&lt;/fieldset&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+		&lt;input type=&#34;hidden&#34; id=&#34;_wpnonce&#34; name=&#34;_wpnonce&#34; value=&#34;eb561702f0&#34; /&gt;&lt;input type=&#34;hidden&#34; name=&#34;_wp_http_referer&#34; value=&#34;/wp-admin/themes.php?page=custom-background&#34; /&gt;		&lt;p class=&#34;submit&#34;&gt;&lt;input type=&#34;submit&#34; name=&#34;save-background-options&#34; id=&#34;save-background-options&#34; class=&#34;button button-primary&#34; value=&#34;Save Changes&#34;  /&gt;&lt;/p&gt;&lt;/form&gt;
+
+&lt;/div&gt;
+		
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody-content --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpbody --&gt;
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpcontent --&gt;
+
+&lt;div id=&#34;wpfooter&#34; role=&#34;contentinfo&#34;&gt;
+		&lt;p id=&#34;footer-left&#34; class=&#34;alignleft&#34;&gt;
+		&lt;span id=&#34;footer-thankyou&#34;&gt;Thank you for creating with &lt;a href=&#34;https://wordpress.org/&#34;&gt;WordPress&lt;/a&gt;.&lt;/span&gt;	&lt;/p&gt;
+	&lt;p id=&#34;footer-upgrade&#34; class=&#34;alignright&#34;&gt;
+		Version 5.2.2	&lt;/p&gt;
+	&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+	&lt;!--[if lte IE 8]&gt;
+	&lt;style&gt;
+		.attachment:focus {
+			outline: #1e8cbe solid;
+		}
+		.selected.attachment {
+			outline: #1e8cbe solid;
+		}
+	&lt;/style&gt;
+	&lt;![endif]--&gt;
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-media-frame&#34;&gt;
+		&lt;div class=&#34;media-frame-menu&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-title&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-router&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-content&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-toolbar&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-uploader&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-media-modal&#34;&gt;
+		&lt;div tabindex=&#34;0&#34; class=&#34;media-modal wp-core-ui&#34;&gt;
+			&lt;button type=&#34;button&#34; class=&#34;media-modal-close&#34;&gt;&lt;span class=&#34;media-modal-icon&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close media panel&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
+			&lt;div class=&#34;media-modal-content&#34;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;media-modal-backdrop&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-uploader-window&#34;&gt;
+		&lt;div class=&#34;uploader-window-content&#34;&gt;
+			&lt;h1&gt;Drop files to upload&lt;/h1&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-uploader-editor&#34;&gt;
+		&lt;div class=&#34;uploader-editor-content&#34;&gt;
+			&lt;div class=&#34;uploader-editor-title&#34;&gt;Drop files to upload&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-uploader-inline&#34;&gt;
+		&lt;# var messageClass = data.message ? &#39;has-upload-message&#39; : &#39;no-upload-message&#39;; #&gt;
+		&lt;# if ( data.canClose ) { #&gt;
+		&lt;button class=&#34;close dashicons dashicons-no&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close uploader&lt;/span&gt;&lt;/button&gt;
+		&lt;# } #&gt;
+		&lt;div class=&#34;uploader-inline-content {{ messageClass }}&#34;&gt;
+		&lt;# if ( data.message ) { #&gt;
+			&lt;h2 class=&#34;upload-message&#34;&gt;{{ data.message }}&lt;/h2&gt;
+		&lt;# } #&gt;
+					&lt;div class=&#34;upload-ui&#34;&gt;
+				&lt;h2 class=&#34;upload-instructions drop-instructions&#34;&gt;Drop files anywhere to upload&lt;/h2&gt;
+				&lt;p class=&#34;upload-instructions drop-instructions&#34;&gt;or&lt;/p&gt;
+				&lt;button type=&#34;button&#34; class=&#34;browser button button-hero&#34;&gt;Select Files&lt;/button&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&#34;upload-inline-status&#34;&gt;&lt;/div&gt;
+
+			&lt;div class=&#34;post-upload-ui&#34;&gt;
+				
+				&lt;p class=&#34;max-upload-size&#34;&gt;
+				Maximum upload file size: 2 MB.				&lt;/p&gt;
+
+				&lt;# if ( data.suggestedWidth &amp;&amp; data.suggestedHeight ) { #&gt;
+					&lt;p class=&#34;suggested-dimensions&#34;&gt;
+						Suggested image dimensions: {{data.suggestedWidth}} by {{data.suggestedHeight}} pixels.					&lt;/p&gt;
+				&lt;# } #&gt;
+
+							&lt;/div&gt;
+				&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-media-library-view-switcher&#34;&gt;
+		&lt;a href=&#34;/wp-admin/themes.php?page=custom-background&amp;#038;mode=list&#34; class=&#34;view-list&#34;&gt;
+			&lt;span class=&#34;screen-reader-text&#34;&gt;List View&lt;/span&gt;
+		&lt;/a&gt;
+		&lt;a href=&#34;/wp-admin/themes.php?page=custom-background&amp;#038;mode=grid&#34; class=&#34;view-grid current&#34;&gt;
+			&lt;span class=&#34;screen-reader-text&#34;&gt;Grid View&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-uploader-status&#34;&gt;
+		&lt;h2&gt;Uploading&lt;/h2&gt;
+		&lt;button type=&#34;button&#34; class=&#34;button-link upload-dismiss-errors&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Dismiss Errors&lt;/span&gt;&lt;/button&gt;
+
+		&lt;div class=&#34;media-progress-bar&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+		&lt;div class=&#34;upload-details&#34;&gt;
+			&lt;span class=&#34;upload-count&#34;&gt;
+				&lt;span class=&#34;upload-index&#34;&gt;&lt;/span&gt; / &lt;span class=&#34;upload-total&#34;&gt;&lt;/span&gt;
+			&lt;/span&gt;
+			&lt;span class=&#34;upload-detail-separator&#34;&gt;&amp;ndash;&lt;/span&gt;
+			&lt;span class=&#34;upload-filename&#34;&gt;&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;upload-errors&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-uploader-status-error&#34;&gt;
+		&lt;span class=&#34;upload-error-filename&#34;&gt;{{{ data.filename }}}&lt;/span&gt;
+		&lt;span class=&#34;upload-error-message&#34;&gt;{{ data.message }}&lt;/span&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-edit-attachment-frame&#34;&gt;
+		&lt;div class=&#34;edit-media-header&#34;&gt;
+			&lt;button class=&#34;left dashicons &lt;# if ( ! data.hasPrevious ) { #&gt; disabled &lt;# } #&gt;&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Edit previous media item&lt;/span&gt;&lt;/button&gt;
+			&lt;button class=&#34;right dashicons &lt;# if ( ! data.hasNext ) { #&gt; disabled &lt;# } #&gt;&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Edit next media item&lt;/span&gt;&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;media-frame-title&#34;&gt;&lt;/div&gt;
+		&lt;div class=&#34;media-frame-content&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-attachment-details-two-column&#34;&gt;
+		&lt;div class=&#34;attachment-media-view {{ data.orientation }}&#34;&gt;
+			&lt;div class=&#34;thumbnail thumbnail-{{ data.type }}&#34;&gt;
+				&lt;# if ( data.uploading ) { #&gt;
+					&lt;div class=&#34;media-progress-bar&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;# } else if ( data.sizes &amp;&amp; data.sizes.large ) { #&gt;
+					&lt;img class=&#34;details-image&#34; src=&#34;{{ data.sizes.large.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+				&lt;# } else if ( data.sizes &amp;&amp; data.sizes.full ) { #&gt;
+					&lt;img class=&#34;details-image&#34; src=&#34;{{ data.sizes.full.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+				&lt;# } else if ( -1 === jQuery.inArray( data.type, [ &#39;audio&#39;, &#39;video&#39; ] ) ) { #&gt;
+					&lt;img class=&#34;details-image icon&#34; src=&#34;{{ data.icon }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( &#39;audio&#39; === data.type ) { #&gt;
+				&lt;div class=&#34;wp-media-wrapper&#34;&gt;
+					&lt;audio style=&#34;visibility: hidden&#34; controls class=&#34;wp-audio-shortcode&#34; width=&#34;100%&#34; preload=&#34;none&#34;&gt;
+						&lt;source type=&#34;{{ data.mime }}&#34; src=&#34;{{ data.url }}&#34;/&gt;
+					&lt;/audio&gt;
+				&lt;/div&gt;
+				&lt;# } else if ( &#39;video&#39; === data.type ) {
+					var w_rule = &#39;&#39;;
+					if ( data.width ) {
+						w_rule = &#39;width: &#39; + data.width + &#39;px;&#39;;
+					} else if ( wp.media.view.settings.contentWidth ) {
+						w_rule = &#39;width: &#39; + wp.media.view.settings.contentWidth + &#39;px;&#39;;
+					}
+				#&gt;
+				&lt;div style=&#34;{{ w_rule }}&#34; class=&#34;wp-media-wrapper wp-video&#34;&gt;
+					&lt;video controls=&#34;controls&#34; class=&#34;wp-video-shortcode&#34; preload=&#34;metadata&#34;
+						&lt;# if ( data.width ) { #&gt;width=&#34;{{ data.width }}&#34;&lt;# } #&gt;
+						&lt;# if ( data.height ) { #&gt;height=&#34;{{ data.height }}&#34;&lt;# } #&gt;
+						&lt;# if ( data.image &amp;&amp; data.image.src !== data.icon ) { #&gt;poster=&#34;{{ data.image.src }}&#34;&lt;# } #&gt;&gt;
+						&lt;source type=&#34;{{ data.mime }}&#34; src=&#34;{{ data.url }}&#34;/&gt;
+					&lt;/video&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;div class=&#34;attachment-actions&#34;&gt;
+					&lt;# if ( &#39;image&#39; === data.type &amp;&amp; ! data.uploading &amp;&amp; data.sizes &amp;&amp; data.can.save ) { #&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button edit-attachment&#34;&gt;Edit Image&lt;/button&gt;
+					&lt;# } else if ( &#39;pdf&#39; === data.subtype &amp;&amp; data.sizes ) { #&gt;
+					Document Preview					&lt;# } #&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;attachment-info&#34;&gt;
+			&lt;span class=&#34;settings-save-status&#34;&gt;
+				&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+				&lt;span class=&#34;saved&#34;&gt;Saved.&lt;/span&gt;
+			&lt;/span&gt;
+			&lt;div class=&#34;details&#34;&gt;
+				&lt;div class=&#34;filename&#34;&gt;&lt;strong&gt;File name:&lt;/strong&gt; {{ data.filename }}&lt;/div&gt;
+				&lt;div class=&#34;filename&#34;&gt;&lt;strong&gt;File type:&lt;/strong&gt; {{ data.mime }}&lt;/div&gt;
+				&lt;div class=&#34;uploaded&#34;&gt;&lt;strong&gt;Uploaded on:&lt;/strong&gt; {{ data.dateFormatted }}&lt;/div&gt;
+
+				&lt;div class=&#34;file-size&#34;&gt;&lt;strong&gt;File size:&lt;/strong&gt; {{ data.filesizeHumanReadable }}&lt;/div&gt;
+				&lt;# if ( &#39;image&#39; === data.type &amp;&amp; ! data.uploading ) { #&gt;
+					&lt;# if ( data.width &amp;&amp; data.height ) { #&gt;
+						&lt;div class=&#34;dimensions&#34;&gt;&lt;strong&gt;Dimensions:&lt;/strong&gt;
+							{{ data.width }} by {{ data.height }} pixels						&lt;/div&gt;
+					&lt;# } #&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( data.fileLength &amp;&amp; data.fileLengthHumanReadable ) { #&gt;
+					&lt;div class=&#34;file-length&#34;&gt;&lt;strong&gt;Length:&lt;/strong&gt;
+						&lt;span aria-hidden=&#34;true&#34;&gt;{{ data.fileLength }}&lt;/span&gt;
+						&lt;span class=&#34;screen-reader-text&#34;&gt;{{ data.fileLengthHumanReadable }}&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( &#39;audio&#39; === data.type &amp;&amp; data.meta.bitrate ) { #&gt;
+					&lt;div class=&#34;bitrate&#34;&gt;
+						&lt;strong&gt;Bitrate:&lt;/strong&gt; {{ Math.round( data.meta.bitrate / 1000 ) }}kb/s
+						&lt;# if ( data.meta.bitrate_mode ) { #&gt;
+						{{ &#39; &#39; + data.meta.bitrate_mode.toUpperCase() }}
+						&lt;# } #&gt;
+					&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;div class=&#34;compat-meta&#34;&gt;
+					&lt;# if ( data.compat &amp;&amp; data.compat.meta ) { #&gt;
+						{{{ data.compat.meta }}}
+					&lt;# } #&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&#34;settings&#34;&gt;
+				&lt;# var maybeReadOnly = data.can.save || data.allowLocalEdits ? &#39;&#39; : &#39;readonly&#39;; #&gt;
+				&lt;# if ( &#39;image&#39; === data.type ) { #&gt;
+					&lt;label class=&#34;setting&#34; data-setting=&#34;alt&#34;&gt;
+						&lt;span class=&#34;name&#34;&gt;Alternative Text&lt;/span&gt;
+						&lt;input type=&#34;text&#34; value=&#34;{{ data.alt }}&#34; aria-describedby=&#34;alt-text-description&#34; {{ maybeReadOnly }} /&gt;
+					&lt;/label&gt;
+					&lt;p class=&#34;description&#34; id=&#34;alt-text-description&#34;&gt;&lt;a href=&#34;https://www.w3.org/WAI/tutorials/images/decision-tree&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Describe the purpose of the image&lt;span class=&#34;screen-reader-text&#34;&gt; (opens in a new tab)&lt;/span&gt;&lt;/a&gt;. Leave empty if the image is purely decorative.&lt;/p&gt;
+				&lt;# } #&gt;
+								&lt;label class=&#34;setting&#34; data-setting=&#34;title&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Title&lt;/span&gt;
+					&lt;input type=&#34;text&#34; value=&#34;{{ data.title }}&#34; {{ maybeReadOnly }} /&gt;
+				&lt;/label&gt;
+								&lt;# if ( &#39;audio&#39; === data.type ) { #&gt;
+								&lt;label class=&#34;setting&#34; data-setting=&#34;artist&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Artist&lt;/span&gt;
+					&lt;input type=&#34;text&#34; value=&#34;{{ data.artist || data.meta.artist || &#39;&#39; }}&#34; /&gt;
+				&lt;/label&gt;
+								&lt;label class=&#34;setting&#34; data-setting=&#34;album&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Album&lt;/span&gt;
+					&lt;input type=&#34;text&#34; value=&#34;{{ data.album || data.meta.album || &#39;&#39; }}&#34; /&gt;
+				&lt;/label&gt;
+								&lt;# } #&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;caption&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Caption&lt;/span&gt;
+					&lt;textarea {{ maybeReadOnly }}&gt;{{ data.caption }}&lt;/textarea&gt;
+				&lt;/label&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;description&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Description&lt;/span&gt;
+					&lt;textarea {{ maybeReadOnly }}&gt;{{ data.description }}&lt;/textarea&gt;
+				&lt;/label&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Uploaded By&lt;/span&gt;
+					&lt;span class=&#34;value&#34;&gt;{{ data.authorName }}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;# if ( data.uploadedToTitle ) { #&gt;
+					&lt;div class=&#34;setting&#34;&gt;
+						&lt;span class=&#34;name&#34;&gt;Uploaded To&lt;/span&gt;
+						&lt;# if ( data.uploadedToLink ) { #&gt;
+							&lt;span class=&#34;value&#34;&gt;&lt;a href=&#34;{{ data.uploadedToLink }}&#34;&gt;{{ data.uploadedToTitle }}&lt;/a&gt;&lt;/span&gt;
+						&lt;# } else { #&gt;
+							&lt;span class=&#34;value&#34;&gt;{{ data.uploadedToTitle }}&lt;/span&gt;
+						&lt;# } #&gt;
+					&lt;/div&gt;
+				&lt;# } #&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;url&#34;&gt;
+					&lt;span class=&#34;name&#34;&gt;Copy Link&lt;/span&gt;
+					&lt;input type=&#34;text&#34; value=&#34;{{ data.url }}&#34; readonly /&gt;
+				&lt;/label&gt;
+				&lt;div class=&#34;attachment-compat&#34;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&#34;actions&#34;&gt;
+				&lt;a class=&#34;view-attachment&#34; href=&#34;{{ data.link }}&#34;&gt;View attachment page&lt;/a&gt;
+				&lt;# if ( data.can.save ) { #&gt; |
+					&lt;a href=&#34;{{ data.editLink }}&#34;&gt;Edit more details&lt;/a&gt;
+				&lt;# } #&gt;
+				&lt;# if ( ! data.uploading &amp;&amp; data.can.remove ) { #&gt; |
+											&lt;button type=&#34;button&#34; class=&#34;button-link delete-attachment&#34;&gt;Delete Permanently&lt;/button&gt;
+									&lt;# } #&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-attachment&#34;&gt;
+		&lt;div class=&#34;attachment-preview js--select-attachment type-{{ data.type }} subtype-{{ data.subtype }} {{ data.orientation }}&#34;&gt;
+			&lt;div class=&#34;thumbnail&#34;&gt;
+				&lt;# if ( data.uploading ) { #&gt;
+					&lt;div class=&#34;media-progress-bar&#34;&gt;&lt;div style=&#34;width: {{ data.percent }}%&#34;&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;# } else if ( &#39;image&#39; === data.type &amp;&amp; data.sizes ) { #&gt;
+					&lt;div class=&#34;centered&#34;&gt;
+						&lt;img src=&#34;{{ data.size.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+					&lt;/div&gt;
+				&lt;# } else { #&gt;
+					&lt;div class=&#34;centered&#34;&gt;
+						&lt;# if ( data.image &amp;&amp; data.image.src &amp;&amp; data.image.src !== data.icon ) { #&gt;
+							&lt;img src=&#34;{{ data.image.src }}&#34; class=&#34;thumbnail&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+						&lt;# } else if ( data.sizes &amp;&amp; data.sizes.medium ) { #&gt;
+							&lt;img src=&#34;{{ data.sizes.medium.url }}&#34; class=&#34;thumbnail&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+						&lt;# } else { #&gt;
+							&lt;img src=&#34;{{ data.icon }}&#34; class=&#34;icon&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+						&lt;# } #&gt;
+					&lt;/div&gt;
+					&lt;div class=&#34;filename&#34;&gt;
+						&lt;div&gt;{{ data.filename }}&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;# } #&gt;
+			&lt;/div&gt;
+			&lt;# if ( data.buttons.close ) { #&gt;
+				&lt;button type=&#34;button&#34; class=&#34;button-link attachment-close media-modal-icon&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Remove&lt;/span&gt;&lt;/button&gt;
+			&lt;# } #&gt;
+		&lt;/div&gt;
+		&lt;# if ( data.buttons.check ) { #&gt;
+			&lt;button type=&#34;button&#34; class=&#34;check&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;media-modal-icon&#34;&gt;&lt;/span&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Deselect&lt;/span&gt;&lt;/button&gt;
+		&lt;# } #&gt;
+		&lt;#
+		var maybeReadOnly = data.can.save || data.allowLocalEdits ? &#39;&#39; : &#39;readonly&#39;;
+		if ( data.describe ) {
+			if ( &#39;image&#39; === data.type ) { #&gt;
+				&lt;input type=&#34;text&#34; value=&#34;{{ data.caption }}&#34; class=&#34;describe&#34; data-setting=&#34;caption&#34;
+					placeholder=&#34;Caption this image&amp;hellip;&#34; {{ maybeReadOnly }} /&gt;
+			&lt;# } else { #&gt;
+				&lt;input type=&#34;text&#34; value=&#34;{{ data.title }}&#34; class=&#34;describe&#34; data-setting=&#34;title&#34;
+					&lt;# if ( &#39;video&#39; === data.type ) { #&gt;
+						placeholder=&#34;Describe this video&amp;hellip;&#34;
+					&lt;# } else if ( &#39;audio&#39; === data.type ) { #&gt;
+						placeholder=&#34;Describe this audio file&amp;hellip;&#34;
+					&lt;# } else { #&gt;
+						placeholder=&#34;Describe this media file&amp;hellip;&#34;
+					&lt;# } #&gt; {{ maybeReadOnly }} /&gt;
+			&lt;# }
+		} #&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-attachment-details&#34;&gt;
+		&lt;h2&gt;
+			Attachment Details			&lt;span class=&#34;settings-save-status&#34;&gt;
+				&lt;span class=&#34;spinner&#34;&gt;&lt;/span&gt;
+				&lt;span class=&#34;saved&#34;&gt;Saved.&lt;/span&gt;
+			&lt;/span&gt;
+		&lt;/h2&gt;
+		&lt;div class=&#34;attachment-info&#34;&gt;
+			&lt;div class=&#34;thumbnail thumbnail-{{ data.type }}&#34;&gt;
+				&lt;# if ( data.uploading ) { #&gt;
+					&lt;div class=&#34;media-progress-bar&#34;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+				&lt;# } else if ( &#39;image&#39; === data.type &amp;&amp; data.sizes ) { #&gt;
+					&lt;img src=&#34;{{ data.size.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+				&lt;# } else { #&gt;
+					&lt;img src=&#34;{{ data.icon }}&#34; class=&#34;icon&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+				&lt;# } #&gt;
+			&lt;/div&gt;
+			&lt;div class=&#34;details&#34;&gt;
+				&lt;div class=&#34;filename&#34;&gt;{{ data.filename }}&lt;/div&gt;
+				&lt;div class=&#34;uploaded&#34;&gt;{{ data.dateFormatted }}&lt;/div&gt;
+
+				&lt;div class=&#34;file-size&#34;&gt;{{ data.filesizeHumanReadable }}&lt;/div&gt;
+				&lt;# if ( &#39;image&#39; === data.type &amp;&amp; ! data.uploading ) { #&gt;
+					&lt;# if ( data.width &amp;&amp; data.height ) { #&gt;
+						&lt;div class=&#34;dimensions&#34;&gt;
+							{{ data.width }} by {{ data.height }} pixels						&lt;/div&gt;
+					&lt;# } #&gt;
+
+					&lt;# if ( data.can.save &amp;&amp; data.sizes ) { #&gt;
+						&lt;a class=&#34;edit-attachment&#34; href=&#34;{{ data.editLink }}&amp;amp;image-editor&#34; target=&#34;_blank&#34;&gt;Edit Image&lt;/a&gt;
+					&lt;# } #&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( data.fileLength &amp;&amp; data.fileLengthHumanReadable ) { #&gt;
+					&lt;div class=&#34;file-length&#34;&gt;Length:						&lt;span aria-hidden=&#34;true&#34;&gt;{{ data.fileLength }}&lt;/span&gt;
+						&lt;span class=&#34;screen-reader-text&#34;&gt;{{ data.fileLengthHumanReadable }}&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( ! data.uploading &amp;&amp; data.can.remove ) { #&gt;
+											&lt;button type=&#34;button&#34; class=&#34;button-link delete-attachment&#34;&gt;Delete Permanently&lt;/button&gt;
+									&lt;# } #&gt;
+
+				&lt;div class=&#34;compat-meta&#34;&gt;
+					&lt;# if ( data.compat &amp;&amp; data.compat.meta ) { #&gt;
+						{{{ data.compat.meta }}}
+					&lt;# } #&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;# var maybeReadOnly = data.can.save || data.allowLocalEdits ? &#39;&#39; : &#39;readonly&#39;; #&gt;
+		&lt;# if ( &#39;image&#39; === data.type ) { #&gt;
+			&lt;label class=&#34;setting&#34; data-setting=&#34;alt&#34;&gt;
+				&lt;span class=&#34;name&#34;&gt;Alt Text&lt;/span&gt;
+				&lt;input type=&#34;text&#34; value=&#34;{{ data.alt }}&#34; aria-describedby=&#34;alt-text-description&#34; {{ maybeReadOnly }} /&gt;
+			&lt;/label&gt;
+			&lt;p class=&#34;description&#34; id=&#34;alt-text-description&#34;&gt;&lt;a href=&#34;https://www.w3.org/WAI/tutorials/images/decision-tree&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Describe the purpose of the image&lt;span class=&#34;screen-reader-text&#34;&gt; (opens in a new tab)&lt;/span&gt;&lt;/a&gt;. Leave empty if the image is purely decorative.&lt;/p&gt;
+		&lt;# } #&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;title&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Title&lt;/span&gt;
+			&lt;input type=&#34;text&#34; value=&#34;{{ data.title }}&#34; {{ maybeReadOnly }} /&gt;
+		&lt;/label&gt;
+				&lt;# if ( &#39;audio&#39; === data.type ) { #&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;artist&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Artist&lt;/span&gt;
+			&lt;input type=&#34;text&#34; value=&#34;{{ data.artist || data.meta.artist || &#39;&#39; }}&#34; /&gt;
+		&lt;/label&gt;
+				&lt;label class=&#34;setting&#34; data-setting=&#34;album&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Album&lt;/span&gt;
+			&lt;input type=&#34;text&#34; value=&#34;{{ data.album || data.meta.album || &#39;&#39; }}&#34; /&gt;
+		&lt;/label&gt;
+				&lt;# } #&gt;
+		&lt;label class=&#34;setting&#34; data-setting=&#34;caption&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Caption&lt;/span&gt;
+			&lt;textarea {{ maybeReadOnly }}&gt;{{ data.caption }}&lt;/textarea&gt;
+		&lt;/label&gt;
+		&lt;label class=&#34;setting&#34; data-setting=&#34;description&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Description&lt;/span&gt;
+			&lt;textarea {{ maybeReadOnly }}&gt;{{ data.description }}&lt;/textarea&gt;
+		&lt;/label&gt;
+		&lt;label class=&#34;setting&#34; data-setting=&#34;url&#34;&gt;
+			&lt;span class=&#34;name&#34;&gt;Copy Link&lt;/span&gt;
+			&lt;input type=&#34;text&#34; value=&#34;{{ data.url }}&#34; readonly /&gt;
+		&lt;/label&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-media-selection&#34;&gt;
+		&lt;div class=&#34;selection-info&#34;&gt;
+			&lt;span class=&#34;count&#34;&gt;&lt;/span&gt;
+			&lt;# if ( data.editable ) { #&gt;
+				&lt;button type=&#34;button&#34; class=&#34;button-link edit-selection&#34;&gt;Edit Selection&lt;/button&gt;
+			&lt;# } #&gt;
+			&lt;# if ( data.clearable ) { #&gt;
+				&lt;button type=&#34;button&#34; class=&#34;button-link clear-selection&#34;&gt;Clear&lt;/button&gt;
+			&lt;# } #&gt;
+		&lt;/div&gt;
+		&lt;div class=&#34;selection-view&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-attachment-display-settings&#34;&gt;
+		&lt;h2&gt;Attachment Display Settings&lt;/h2&gt;
+
+		&lt;# if ( &#39;image&#39; === data.type ) { #&gt;
+			&lt;label class=&#34;setting align&#34;&gt;
+				&lt;span&gt;Alignment&lt;/span&gt;
+				&lt;select class=&#34;alignment&#34;
+					data-setting=&#34;align&#34;
+					&lt;# if ( data.userSettings ) { #&gt;
+						data-user-setting=&#34;align&#34;
+					&lt;# } #&gt;&gt;
+
+					&lt;option value=&#34;left&#34;&gt;
+						Left					&lt;/option&gt;
+					&lt;option value=&#34;center&#34;&gt;
+						Center					&lt;/option&gt;
+					&lt;option value=&#34;right&#34;&gt;
+						Right					&lt;/option&gt;
+					&lt;option value=&#34;none&#34; selected&gt;
+						None					&lt;/option&gt;
+				&lt;/select&gt;
+			&lt;/label&gt;
+		&lt;# } #&gt;
+
+		&lt;div class=&#34;setting&#34;&gt;
+			&lt;label&gt;
+				&lt;# if ( data.model.canEmbed ) { #&gt;
+					&lt;span&gt;Embed or Link&lt;/span&gt;
+				&lt;# } else { #&gt;
+					&lt;span&gt;Link To&lt;/span&gt;
+				&lt;# } #&gt;
+
+				&lt;select class=&#34;link-to&#34;
+					data-setting=&#34;link&#34;
+					&lt;# if ( data.userSettings &amp;&amp; ! data.model.canEmbed ) { #&gt;
+						data-user-setting=&#34;urlbutton&#34;
+					&lt;# } #&gt;&gt;
+
+				&lt;# if ( data.model.canEmbed ) { #&gt;
+					&lt;option value=&#34;embed&#34; selected&gt;
+						Embed Media Player					&lt;/option&gt;
+					&lt;option value=&#34;file&#34;&gt;
+				&lt;# } else { #&gt;
+					&lt;option value=&#34;none&#34; selected&gt;
+						None					&lt;/option&gt;
+					&lt;option value=&#34;file&#34;&gt;
+				&lt;# } #&gt;
+					&lt;# if ( data.model.canEmbed ) { #&gt;
+						Link to Media File					&lt;# } else { #&gt;
+						Media File					&lt;# } #&gt;
+					&lt;/option&gt;
+					&lt;option value=&#34;post&#34;&gt;
+					&lt;# if ( data.model.canEmbed ) { #&gt;
+						Link to Attachment Page					&lt;# } else { #&gt;
+						Attachment Page					&lt;# } #&gt;
+					&lt;/option&gt;
+				&lt;# if ( &#39;image&#39; === data.type ) { #&gt;
+					&lt;option value=&#34;custom&#34;&gt;
+						Custom URL					&lt;/option&gt;
+				&lt;# } #&gt;
+				&lt;/select&gt;
+			&lt;/label&gt;
+			&lt;input type=&#34;text&#34; class=&#34;link-to-custom&#34; data-setting=&#34;linkUrl&#34; /&gt;
+		&lt;/div&gt;
+
+		&lt;# if ( &#39;undefined&#39; !== typeof data.sizes ) { #&gt;
+			&lt;label class=&#34;setting&#34;&gt;
+				&lt;span&gt;Size&lt;/span&gt;
+				&lt;select class=&#34;size&#34; name=&#34;size&#34;
+					data-setting=&#34;size&#34;
+					&lt;# if ( data.userSettings ) { #&gt;
+						data-user-setting=&#34;imgsize&#34;
+					&lt;# } #&gt;&gt;
+											&lt;#
+						var size = data.sizes[&#39;thumbnail&#39;];
+						if ( size ) { #&gt;
+							&lt;option value=&#34;thumbnail&#34; &gt;
+								Thumbnail &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+							&lt;/option&gt;
+						&lt;# } #&gt;
+											&lt;#
+						var size = data.sizes[&#39;medium&#39;];
+						if ( size ) { #&gt;
+							&lt;option value=&#34;medium&#34; &gt;
+								Medium &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+							&lt;/option&gt;
+						&lt;# } #&gt;
+											&lt;#
+						var size = data.sizes[&#39;large&#39;];
+						if ( size ) { #&gt;
+							&lt;option value=&#34;large&#34; &gt;
+								Large &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+							&lt;/option&gt;
+						&lt;# } #&gt;
+											&lt;#
+						var size = data.sizes[&#39;full&#39;];
+						if ( size ) { #&gt;
+							&lt;option value=&#34;full&#34;  selected=&#39;selected&#39;&gt;
+								Full Size &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+							&lt;/option&gt;
+						&lt;# } #&gt;
+									&lt;/select&gt;
+			&lt;/label&gt;
+		&lt;# } #&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-gallery-settings&#34;&gt;
+		&lt;h2&gt;Gallery Settings&lt;/h2&gt;
+
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;span&gt;Link To&lt;/span&gt;
+			&lt;select class=&#34;link-to&#34;
+				data-setting=&#34;link&#34;
+				&lt;# if ( data.userSettings ) { #&gt;
+					data-user-setting=&#34;urlbutton&#34;
+				&lt;# } #&gt;&gt;
+
+				&lt;option value=&#34;post&#34; &lt;# if ( ! wp.media.galleryDefaults.link || &#39;post&#39; == wp.media.galleryDefaults.link ) {
+					#&gt;selected=&#34;selected&#34;&lt;# }
+				#&gt;&gt;
+					Attachment Page				&lt;/option&gt;
+				&lt;option value=&#34;file&#34; &lt;# if ( &#39;file&#39; == wp.media.galleryDefaults.link ) { #&gt;selected=&#34;selected&#34;&lt;# } #&gt;&gt;
+					Media File				&lt;/option&gt;
+				&lt;option value=&#34;none&#34; &lt;# if ( &#39;none&#39; == wp.media.galleryDefaults.link ) { #&gt;selected=&#34;selected&#34;&lt;# } #&gt;&gt;
+					None				&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/label&gt;
+
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;span&gt;Columns&lt;/span&gt;
+			&lt;select class=&#34;columns&#34; name=&#34;columns&#34;
+				data-setting=&#34;columns&#34;&gt;
+									&lt;option value=&#34;1&#34; &lt;#
+						if ( 1 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						1					&lt;/option&gt;
+									&lt;option value=&#34;2&#34; &lt;#
+						if ( 2 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						2					&lt;/option&gt;
+									&lt;option value=&#34;3&#34; &lt;#
+						if ( 3 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						3					&lt;/option&gt;
+									&lt;option value=&#34;4&#34; &lt;#
+						if ( 4 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						4					&lt;/option&gt;
+									&lt;option value=&#34;5&#34; &lt;#
+						if ( 5 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						5					&lt;/option&gt;
+									&lt;option value=&#34;6&#34; &lt;#
+						if ( 6 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						6					&lt;/option&gt;
+									&lt;option value=&#34;7&#34; &lt;#
+						if ( 7 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						7					&lt;/option&gt;
+									&lt;option value=&#34;8&#34; &lt;#
+						if ( 8 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						8					&lt;/option&gt;
+									&lt;option value=&#34;9&#34; &lt;#
+						if ( 9 == wp.media.galleryDefaults.columns ) { #&gt;selected=&#34;selected&#34;&lt;# }
+					#&gt;&gt;
+						9					&lt;/option&gt;
+							&lt;/select&gt;
+		&lt;/label&gt;
+
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;span&gt;Random Order&lt;/span&gt;
+			&lt;input type=&#34;checkbox&#34; data-setting=&#34;_orderbyRandom&#34; /&gt;
+		&lt;/label&gt;
+
+		&lt;label class=&#34;setting size&#34;&gt;
+			&lt;span&gt;Size&lt;/span&gt;
+			&lt;select class=&#34;size&#34; name=&#34;size&#34;
+				data-setting=&#34;size&#34;
+				&lt;# if ( data.userSettings ) { #&gt;
+					data-user-setting=&#34;imgsize&#34;
+				&lt;# } #&gt;
+				&gt;
+									&lt;option value=&#34;thumbnail&#34;&gt;
+						Thumbnail					&lt;/option&gt;
+									&lt;option value=&#34;medium&#34;&gt;
+						Medium					&lt;/option&gt;
+									&lt;option value=&#34;large&#34;&gt;
+						Large					&lt;/option&gt;
+									&lt;option value=&#34;full&#34;&gt;
+						Full Size					&lt;/option&gt;
+							&lt;/select&gt;
+		&lt;/label&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-playlist-settings&#34;&gt;
+		&lt;h2&gt;Playlist Settings&lt;/h2&gt;
+
+		&lt;# var emptyModel = _.isEmpty( data.model ),
+			isVideo = &#39;video&#39; === data.controller.get(&#39;library&#39;).props.get(&#39;type&#39;); #&gt;
+
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;input type=&#34;checkbox&#34; data-setting=&#34;tracklist&#34; &lt;# if ( emptyModel ) { #&gt;
+				checked=&#34;checked&#34;
+			&lt;# } #&gt; /&gt;
+			&lt;# if ( isVideo ) { #&gt;
+			&lt;span&gt;Show Video List&lt;/span&gt;
+			&lt;# } else { #&gt;
+			&lt;span&gt;Show Tracklist&lt;/span&gt;
+			&lt;# } #&gt;
+		&lt;/label&gt;
+
+		&lt;# if ( ! isVideo ) { #&gt;
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;input type=&#34;checkbox&#34; data-setting=&#34;artists&#34; &lt;# if ( emptyModel ) { #&gt;
+				checked=&#34;checked&#34;
+			&lt;# } #&gt; /&gt;
+			&lt;span&gt;Show Artist Name in Tracklist&lt;/span&gt;
+		&lt;/label&gt;
+		&lt;# } #&gt;
+
+		&lt;label class=&#34;setting&#34;&gt;
+			&lt;input type=&#34;checkbox&#34; data-setting=&#34;images&#34; &lt;# if ( emptyModel ) { #&gt;
+				checked=&#34;checked&#34;
+			&lt;# } #&gt; /&gt;
+			&lt;span&gt;Show Images&lt;/span&gt;
+		&lt;/label&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-embed-link-settings&#34;&gt;
+		&lt;label class=&#34;setting link-text&#34;&gt;
+			&lt;span&gt;Link Text&lt;/span&gt;
+			&lt;input type=&#34;text&#34; class=&#34;alignment&#34; data-setting=&#34;linkText&#34; /&gt;
+		&lt;/label&gt;
+		&lt;div class=&#34;embed-container&#34; style=&#34;display: none;&#34;&gt;
+			&lt;div class=&#34;embed-preview&#34;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-embed-image-settings&#34;&gt;
+		&lt;div class=&#34;thumbnail&#34;&gt;
+			&lt;img src=&#34;{{ data.model.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+		&lt;/div&gt;
+
+		&lt;label class=&#34;setting alt-text has-description&#34;&gt;
+			&lt;span&gt;Alternative Text&lt;/span&gt;
+			&lt;input type=&#34;text&#34; data-setting=&#34;alt&#34; aria-describedby=&#34;alt-text-description&#34; /&gt;
+		&lt;/label&gt;
+		&lt;p class=&#34;description&#34; id=&#34;alt-text-description&#34;&gt;&lt;a href=&#34;https://www.w3.org/WAI/tutorials/images/decision-tree&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Describe the purpose of the image&lt;span class=&#34;screen-reader-text&#34;&gt; (opens in a new tab)&lt;/span&gt;&lt;/a&gt;. Leave empty if the image is purely decorative.&lt;/p&gt;
+
+					&lt;label class=&#34;setting caption&#34;&gt;
+				&lt;span&gt;Caption&lt;/span&gt;
+				&lt;textarea data-setting=&#34;caption&#34; /&gt;
+			&lt;/label&gt;
+		
+		&lt;div class=&#34;setting align&#34;&gt;
+			&lt;span&gt;Align&lt;/span&gt;
+			&lt;div class=&#34;button-group button-large&#34; data-setting=&#34;align&#34;&gt;
+				&lt;button class=&#34;button&#34; value=&#34;left&#34;&gt;
+					Left				&lt;/button&gt;
+				&lt;button class=&#34;button&#34; value=&#34;center&#34;&gt;
+					Center				&lt;/button&gt;
+				&lt;button class=&#34;button&#34; value=&#34;right&#34;&gt;
+					Right				&lt;/button&gt;
+				&lt;button class=&#34;button active&#34; value=&#34;none&#34;&gt;
+					None				&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&#34;setting link-to&#34;&gt;
+			&lt;span&gt;Link To&lt;/span&gt;
+			&lt;div class=&#34;button-group button-large&#34; data-setting=&#34;link&#34;&gt;
+				&lt;button class=&#34;button&#34; value=&#34;file&#34;&gt;
+					Image URL				&lt;/button&gt;
+				&lt;button class=&#34;button&#34; value=&#34;custom&#34;&gt;
+					Custom URL				&lt;/button&gt;
+				&lt;button class=&#34;button active&#34; value=&#34;none&#34;&gt;
+					None				&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;input type=&#34;text&#34; class=&#34;link-to-custom&#34; data-setting=&#34;linkUrl&#34; /&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-image-details&#34;&gt;
+		&lt;div class=&#34;media-embed&#34;&gt;
+			&lt;div class=&#34;embed-media-settings&#34;&gt;
+				&lt;div class=&#34;column-image&#34;&gt;
+					&lt;div class=&#34;image&#34;&gt;
+						&lt;img src=&#34;{{ data.model.url }}&#34; draggable=&#34;false&#34; alt=&#34;&#34; /&gt;
+
+						&lt;# if ( data.attachment &amp;&amp; window.imageEdit ) { #&gt;
+							&lt;div class=&#34;actions&#34;&gt;
+								&lt;input type=&#34;button&#34; class=&#34;edit-attachment button&#34; value=&#34;Edit Original&#34; /&gt;
+								&lt;input type=&#34;button&#34; class=&#34;replace-attachment button&#34; value=&#34;Replace&#34; /&gt;
+							&lt;/div&gt;
+						&lt;# } #&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;column-settings&#34;&gt;
+					&lt;label class=&#34;setting alt-text has-description&#34;&gt;
+						&lt;span&gt;Alternative Text&lt;/span&gt;
+						&lt;input type=&#34;text&#34; data-setting=&#34;alt&#34; value=&#34;{{ data.model.alt }}&#34; aria-describedby=&#34;alt-text-description&#34; /&gt;
+					&lt;/label&gt;
+					&lt;p class=&#34;description&#34; id=&#34;alt-text-description&#34;&gt;&lt;a href=&#34;https://www.w3.org/WAI/tutorials/images/decision-tree&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Describe the purpose of the image&lt;span class=&#34;screen-reader-text&#34;&gt; (opens in a new tab)&lt;/span&gt;&lt;/a&gt;. Leave empty if the image is purely decorative.&lt;/p&gt;
+
+											&lt;label class=&#34;setting caption&#34;&gt;
+							&lt;span&gt;Caption&lt;/span&gt;
+							&lt;textarea data-setting=&#34;caption&#34;&gt;{{ data.model.caption }}&lt;/textarea&gt;
+						&lt;/label&gt;
+					
+					&lt;h2&gt;Display Settings&lt;/h2&gt;
+					&lt;div class=&#34;setting align&#34;&gt;
+						&lt;span&gt;Align&lt;/span&gt;
+						&lt;div class=&#34;button-group button-large&#34; data-setting=&#34;align&#34;&gt;
+							&lt;button class=&#34;button&#34; value=&#34;left&#34;&gt;
+								Left							&lt;/button&gt;
+							&lt;button class=&#34;button&#34; value=&#34;center&#34;&gt;
+								Center							&lt;/button&gt;
+							&lt;button class=&#34;button&#34; value=&#34;right&#34;&gt;
+								Right							&lt;/button&gt;
+							&lt;button class=&#34;button active&#34; value=&#34;none&#34;&gt;
+								None							&lt;/button&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+
+					&lt;# if ( data.attachment ) { #&gt;
+						&lt;# if ( &#39;undefined&#39; !== typeof data.attachment.sizes ) { #&gt;
+							&lt;label class=&#34;setting size&#34;&gt;
+								&lt;span&gt;Size&lt;/span&gt;
+								&lt;select class=&#34;size&#34; name=&#34;size&#34;
+									data-setting=&#34;size&#34;
+									&lt;# if ( data.userSettings ) { #&gt;
+										data-user-setting=&#34;imgsize&#34;
+									&lt;# } #&gt;&gt;
+																			&lt;#
+										var size = data.sizes[&#39;thumbnail&#39;];
+										if ( size ) { #&gt;
+											&lt;option value=&#34;thumbnail&#34;&gt;
+												Thumbnail &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+											&lt;/option&gt;
+										&lt;# } #&gt;
+																			&lt;#
+										var size = data.sizes[&#39;medium&#39;];
+										if ( size ) { #&gt;
+											&lt;option value=&#34;medium&#34;&gt;
+												Medium &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+											&lt;/option&gt;
+										&lt;# } #&gt;
+																			&lt;#
+										var size = data.sizes[&#39;large&#39;];
+										if ( size ) { #&gt;
+											&lt;option value=&#34;large&#34;&gt;
+												Large &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+											&lt;/option&gt;
+										&lt;# } #&gt;
+																			&lt;#
+										var size = data.sizes[&#39;full&#39;];
+										if ( size ) { #&gt;
+											&lt;option value=&#34;full&#34;&gt;
+												Full Size &amp;ndash; {{ size.width }} &amp;times; {{ size.height }}
+											&lt;/option&gt;
+										&lt;# } #&gt;
+																		&lt;option value=&#34;custom&#34;&gt;
+										Custom Size									&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/label&gt;
+						&lt;# } #&gt;
+							&lt;div class=&#34;custom-size&lt;# if ( data.model.size !== &#39;custom&#39; ) { #&gt; hidden&lt;# } #&gt;&#34;&gt;
+								&lt;label&gt;&lt;span&gt;Width &lt;small&gt;(px)&lt;/small&gt;&lt;/span&gt; &lt;input data-setting=&#34;customWidth&#34; type=&#34;number&#34; step=&#34;1&#34; value=&#34;{{ data.model.customWidth }}&#34; /&gt;&lt;/label&gt;&lt;span class=&#34;sep&#34;&gt;&amp;times;&lt;/span&gt;&lt;label&gt;&lt;span&gt;Height &lt;small&gt;(px)&lt;/small&gt;&lt;/span&gt;&lt;input data-setting=&#34;customHeight&#34; type=&#34;number&#34; step=&#34;1&#34; value=&#34;{{ data.model.customHeight }}&#34; /&gt;&lt;/label&gt;
+							&lt;/div&gt;
+					&lt;# } #&gt;
+
+					&lt;div class=&#34;setting link-to&#34;&gt;
+						&lt;span&gt;Link To&lt;/span&gt;
+						&lt;select data-setting=&#34;link&#34;&gt;
+						&lt;# if ( data.attachment ) { #&gt;
+							&lt;option value=&#34;file&#34;&gt;
+								Media File							&lt;/option&gt;
+							&lt;option value=&#34;post&#34;&gt;
+								Attachment Page							&lt;/option&gt;
+						&lt;# } else { #&gt;
+							&lt;option value=&#34;file&#34;&gt;
+								Image URL							&lt;/option&gt;
+						&lt;# } #&gt;
+							&lt;option value=&#34;custom&#34;&gt;
+								Custom URL							&lt;/option&gt;
+							&lt;option value=&#34;none&#34;&gt;
+								None							&lt;/option&gt;
+						&lt;/select&gt;
+						&lt;input type=&#34;text&#34; class=&#34;link-to-custom&#34; data-setting=&#34;linkUrl&#34; /&gt;
+					&lt;/div&gt;
+					&lt;div class=&#34;advanced-section&#34;&gt;
+						&lt;h2&gt;&lt;button type=&#34;button&#34; class=&#34;button-link advanced-toggle&#34;&gt;Advanced Options&lt;/button&gt;&lt;/h2&gt;
+						&lt;div class=&#34;advanced-settings hidden&#34;&gt;
+							&lt;div class=&#34;advanced-image&#34;&gt;
+								&lt;label class=&#34;setting title-text&#34;&gt;
+									&lt;span&gt;Image Title Attribute&lt;/span&gt;
+									&lt;input type=&#34;text&#34; data-setting=&#34;title&#34; value=&#34;{{ data.model.title }}&#34; /&gt;
+								&lt;/label&gt;
+								&lt;label class=&#34;setting extra-classes&#34;&gt;
+									&lt;span&gt;Image CSS Class&lt;/span&gt;
+									&lt;input type=&#34;text&#34; data-setting=&#34;extraClasses&#34; value=&#34;{{ data.model.extraClasses }}&#34; /&gt;
+								&lt;/label&gt;
+							&lt;/div&gt;
+							&lt;div class=&#34;advanced-link&#34;&gt;
+								&lt;div class=&#34;setting link-target&#34;&gt;
+									&lt;label&gt;&lt;input type=&#34;checkbox&#34; data-setting=&#34;linkTargetBlank&#34; value=&#34;_blank&#34; &lt;# if ( data.model.linkTargetBlank ) { #&gt;checked=&#34;checked&#34;&lt;# } #&gt;&gt;Open link in a new tab&lt;/label&gt;
+								&lt;/div&gt;
+								&lt;label class=&#34;setting link-rel&#34;&gt;
+									&lt;span&gt;Link Rel&lt;/span&gt;
+									&lt;input type=&#34;text&#34; data-setting=&#34;linkRel&#34; value=&#34;{{ data.model.linkRel }}&#34; /&gt;
+								&lt;/label&gt;
+								&lt;label class=&#34;setting link-class-name&#34;&gt;
+									&lt;span&gt;Link CSS Class&lt;/span&gt;
+									&lt;input type=&#34;text&#34; data-setting=&#34;linkClassName&#34; value=&#34;{{ data.model.linkClassName }}&#34; /&gt;
+								&lt;/label&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-image-editor&#34;&gt;
+		&lt;div id=&#34;media-head-{{ data.id }}&#34;&gt;&lt;/div&gt;
+		&lt;div id=&#34;image-editor-{{ data.id }}&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-audio-details&#34;&gt;
+		&lt;# var ext, html5types = {
+			mp3: wp.media.view.settings.embedMimes.mp3,
+			ogg: wp.media.view.settings.embedMimes.ogg
+		}; #&gt;
+
+				&lt;div class=&#34;media-embed media-embed-details&#34;&gt;
+			&lt;div class=&#34;embed-media-settings embed-audio-settings&#34;&gt;
+				&lt;audio style=&#34;visibility: hidden&#34;
+	controls
+	class=&#34;wp-audio-shortcode&#34;
+	width=&#34;{{ _.isUndefined( data.model.width ) ? 400 : data.model.width }}&#34;
+	preload=&#34;{{ _.isUndefined( data.model.preload ) ? &#39;none&#39; : data.model.preload }}&#34;
+	&lt;#
+		if ( ! _.isUndefined( data.model.autoplay ) &amp;&amp; data.model.autoplay ) {
+		#&gt; autoplay&lt;#
+	}
+		if ( ! _.isUndefined( data.model.loop ) &amp;&amp; data.model.loop ) {
+		#&gt; loop&lt;#
+	}
+	#&gt;
+&gt;
+	&lt;# if ( ! _.isEmpty( data.model.src ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.src }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ data.model.src.split(&#39;.&#39;).pop() ] }}&#34; /&gt;
+	&lt;# } #&gt;
+
+		&lt;# if ( ! _.isEmpty( data.model.mp3 ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.mp3 }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ &#39;mp3&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+			&lt;# if ( ! _.isEmpty( data.model.ogg ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.ogg }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ &#39;ogg&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+			&lt;# if ( ! _.isEmpty( data.model.flac ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.flac }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ &#39;flac&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+			&lt;# if ( ! _.isEmpty( data.model.m4a ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.m4a }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ &#39;m4a&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+			&lt;# if ( ! _.isEmpty( data.model.wav ) ) { #&gt;
+	&lt;source src=&#34;{{ data.model.wav }}&#34; type=&#34;{{ wp.media.view.settings.embedMimes[ &#39;wav&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		&lt;/audio&gt;
+	
+				&lt;# if ( ! _.isEmpty( data.model.src ) ) {
+					ext = data.model.src.split(&#39;.&#39;).pop();
+					if ( html5types[ ext ] ) {
+						delete html5types[ ext ];
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;audio-source&#34;&gt;URL&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;audio-source&#34; readonly data-setting=&#34;src&#34; value=&#34;{{ data.model.src }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.mp3 ) ) {
+					if ( ! _.isUndefined( html5types.mp3 ) ) {
+						delete html5types.mp3;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;mp3-source&#34;&gt;MP3&lt;/span&gt;
+					&lt;input type=&#34;text&#34; id=&#34;mp3-source&#34; readonly data-setting=&#34;mp3&#34; value=&#34;{{ data.model.mp3 }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.ogg ) ) {
+					if ( ! _.isUndefined( html5types.ogg ) ) {
+						delete html5types.ogg;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;ogg-source&#34;&gt;OGG&lt;/span&gt;
+					&lt;input type=&#34;text&#34; id=&#34;ogg-source&#34; readonly data-setting=&#34;ogg&#34; value=&#34;{{ data.model.ogg }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.flac ) ) {
+					if ( ! _.isUndefined( html5types.flac ) ) {
+						delete html5types.flac;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;flac-source&#34;&gt;FLAC&lt;/span&gt;
+					&lt;input type=&#34;text&#34; id=&#34;flac-source&#34; readonly data-setting=&#34;flac&#34; value=&#34;{{ data.model.flac }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.m4a ) ) {
+					if ( ! _.isUndefined( html5types.m4a ) ) {
+						delete html5types.m4a;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;m4a-source&#34;&gt;M4A&lt;/span&gt;
+					&lt;input type=&#34;text&#34; id=&#34;m4a-source&#34; readonly data-setting=&#34;m4a&#34; value=&#34;{{ data.model.m4a }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.wav ) ) {
+					if ( ! _.isUndefined( html5types.wav ) ) {
+						delete html5types.wav;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;wav-source&#34;&gt;WAV&lt;/span&gt;
+					&lt;input type=&#34;text&#34; id=&#34;wav-source&#34; readonly data-setting=&#34;wav&#34; value=&#34;{{ data.model.wav }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove audio source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+				
+				&lt;# if ( ! _.isEmpty( html5types ) ) { #&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;span&gt;Add alternate sources for maximum HTML5 playback:&lt;/span&gt;
+					&lt;div class=&#34;button-large&#34;&gt;
+					&lt;# _.each( html5types, function (mime, type) { #&gt;
+					&lt;button class=&#34;button add-media-source&#34; data-mime=&#34;{{ mime }}&#34;&gt;{{ type }}&lt;/button&gt;
+					&lt;# } ) #&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;div class=&#34;setting preload&#34;&gt;
+					&lt;span&gt;Preload&lt;/span&gt;
+					&lt;div class=&#34;button-group button-large&#34; data-setting=&#34;preload&#34;&gt;
+						&lt;button class=&#34;button&#34; value=&#34;auto&#34;&gt;Auto&lt;/button&gt;
+						&lt;button class=&#34;button&#34; value=&#34;metadata&#34;&gt;Metadata&lt;/button&gt;
+						&lt;button class=&#34;button active&#34; value=&#34;none&#34;&gt;None&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;label class=&#34;setting checkbox-setting autoplay&#34;&gt;
+					&lt;input type=&#34;checkbox&#34; data-setting=&#34;autoplay&#34; /&gt;
+					&lt;span&gt;Autoplay&lt;/span&gt;
+				&lt;/label&gt;
+
+				&lt;label class=&#34;setting checkbox-setting&#34;&gt;
+					&lt;input type=&#34;checkbox&#34; data-setting=&#34;loop&#34; /&gt;
+					&lt;span&gt;Loop&lt;/span&gt;
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-video-details&#34;&gt;
+		&lt;# var ext, html5types = {
+			mp4: wp.media.view.settings.embedMimes.mp4,
+			ogv: wp.media.view.settings.embedMimes.ogv,
+			webm: wp.media.view.settings.embedMimes.webm
+		}; #&gt;
+
+				&lt;div class=&#34;media-embed media-embed-details&#34;&gt;
+			&lt;div class=&#34;embed-media-settings embed-video-settings&#34;&gt;
+				&lt;div class=&#34;wp-video-holder&#34;&gt;
+				&lt;#
+				var w = ! data.model.width || data.model.width &gt; 640 ? 640 : data.model.width,
+					h = ! data.model.height ? 360 : data.model.height;
+
+				if ( data.model.width &amp;&amp; w !== data.model.width ) {
+					h = Math.ceil( ( h * w ) / data.model.width );
+				}
+				#&gt;
+
+				&lt;#  var w_rule = &#39;&#39;, classes = [],
+		w, h, settings = wp.media.view.settings,
+		isYouTube = isVimeo = false;
+
+	if ( ! _.isEmpty( data.model.src ) ) {
+		isYouTube = data.model.src.match(/youtube|youtu\.be/);
+		isVimeo = -1 !== data.model.src.indexOf(&#39;vimeo&#39;);
+	}
+
+	if ( settings.contentWidth &amp;&amp; data.model.width &gt;= settings.contentWidth ) {
+		w = settings.contentWidth;
+	} else {
+		w = data.model.width;
+	}
+
+	if ( w !== data.model.width ) {
+		h = Math.ceil( ( data.model.height * w ) / data.model.width );
+	} else {
+		h = data.model.height;
+	}
+
+	if ( w ) {
+		w_rule = &#39;width: &#39; + w + &#39;px; &#39;;
+	}
+
+	if ( isYouTube ) {
+		classes.push( &#39;youtube-video&#39; );
+	}
+
+	if ( isVimeo ) {
+		classes.push( &#39;vimeo-video&#39; );
+	}
+
+#&gt;
+&lt;div style=&#34;{{ w_rule }}&#34; class=&#34;wp-video&#34;&gt;
+&lt;video controls
+	class=&#34;wp-video-shortcode {{ classes.join( &#39; &#39; ) }}&#34;
+	&lt;# if ( w ) { #&gt;width=&#34;{{ w }}&#34;&lt;# } #&gt;
+	&lt;# if ( h ) { #&gt;height=&#34;{{ h }}&#34;&lt;# } #&gt;
+			&lt;#
+		if ( ! _.isUndefined( data.model.poster ) &amp;&amp; data.model.poster ) {
+			#&gt; poster=&#34;{{ data.model.poster }}&#34;&lt;#
+		} #&gt;
+			preload			=&#34;{{ _.isUndefined( data.model.preload ) ? &#39;metadata&#39; : data.model.preload }}&#34;
+				&lt;#
+		if ( ! _.isUndefined( data.model.autoplay ) &amp;&amp; data.model.autoplay ) {
+		#&gt; autoplay&lt;#
+	}
+		if ( ! _.isUndefined( data.model.loop ) &amp;&amp; data.model.loop ) {
+		#&gt; loop&lt;#
+	}
+	#&gt;
+&gt;
+	&lt;# if ( ! _.isEmpty( data.model.src ) ) {
+		if ( isYouTube ) { #&gt;
+		&lt;source src=&#34;{{ data.model.src }}&#34; type=&#34;video/youtube&#34; /&gt;
+		&lt;# } else if ( isVimeo ) { #&gt;
+		&lt;source src=&#34;{{ data.model.src }}&#34; type=&#34;video/vimeo&#34; /&gt;
+		&lt;# } else { #&gt;
+		&lt;source src=&#34;{{ data.model.src }}&#34; type=&#34;{{ settings.embedMimes[ data.model.src.split(&#39;.&#39;).pop() ] }}&#34; /&gt;
+		&lt;# }
+	} #&gt;
+
+		&lt;# if ( data.model.mp4 ) { #&gt;
+	&lt;source src=&#34;{{ data.model.mp4 }}&#34; type=&#34;{{ settings.embedMimes[ &#39;mp4&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		&lt;# if ( data.model.m4v ) { #&gt;
+	&lt;source src=&#34;{{ data.model.m4v }}&#34; type=&#34;{{ settings.embedMimes[ &#39;m4v&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		&lt;# if ( data.model.webm ) { #&gt;
+	&lt;source src=&#34;{{ data.model.webm }}&#34; type=&#34;{{ settings.embedMimes[ &#39;webm&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		&lt;# if ( data.model.ogv ) { #&gt;
+	&lt;source src=&#34;{{ data.model.ogv }}&#34; type=&#34;{{ settings.embedMimes[ &#39;ogv&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		&lt;# if ( data.model.flv ) { #&gt;
+	&lt;source src=&#34;{{ data.model.flv }}&#34; type=&#34;{{ settings.embedMimes[ &#39;flv&#39; ] }}&#34; /&gt;
+	&lt;# } #&gt;
+		{{{ data.model.content }}}
+&lt;/video&gt;
+&lt;/div&gt;
+	
+				&lt;# if ( ! _.isEmpty( data.model.src ) ) {
+					ext = data.model.src.split(&#39;.&#39;).pop();
+					if ( html5types[ ext ] ) {
+						delete html5types[ ext ];
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;video-source&#34;&gt;URL&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;video-source&#34; readonly data-setting=&#34;src&#34; value=&#34;{{ data.model.src }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.mp4 ) ) {
+					if ( ! _.isUndefined( html5types.mp4 ) ) {
+						delete html5types.mp4;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;mp4-source&#34;&gt;MP4&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;mp4-source&#34; readonly data-setting=&#34;mp4&#34; value=&#34;{{ data.model.mp4 }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.m4v ) ) {
+					if ( ! _.isUndefined( html5types.m4v ) ) {
+						delete html5types.m4v;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;m4v-source&#34;&gt;M4V&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;m4v-source&#34; readonly data-setting=&#34;m4v&#34; value=&#34;{{ data.model.m4v }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.webm ) ) {
+					if ( ! _.isUndefined( html5types.webm ) ) {
+						delete html5types.webm;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;webm-source&#34;&gt;WEBM&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;webm-source&#34; readonly data-setting=&#34;webm&#34; value=&#34;{{ data.model.webm }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.ogv ) ) {
+					if ( ! _.isUndefined( html5types.ogv ) ) {
+						delete html5types.ogv;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;ogv-source&#34;&gt;OGV&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;ogv-source&#34; readonly data-setting=&#34;ogv&#34; value=&#34;{{ data.model.ogv }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;# if ( ! _.isEmpty( data.model.flv ) ) {
+					if ( ! _.isUndefined( html5types.flv ) ) {
+						delete html5types.flv;
+					}
+				#&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;flv-source&#34;&gt;FLV&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;flv-source&#34; readonly data-setting=&#34;flv&#34; value=&#34;{{ data.model.flv }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove video source&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+								&lt;/div&gt;
+
+				&lt;# if ( ! _.isEmpty( html5types ) ) { #&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;span&gt;Add alternate sources for maximum HTML5 playback:&lt;/span&gt;
+					&lt;div class=&#34;button-large&#34;&gt;
+					&lt;# _.each( html5types, function (mime, type) { #&gt;
+					&lt;button class=&#34;button add-media-source&#34; data-mime=&#34;{{ mime }}&#34;&gt;{{ type }}&lt;/button&gt;
+					&lt;# } ) #&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+
+				&lt;# if ( ! _.isEmpty( data.model.poster ) ) { #&gt;
+				&lt;div class=&#34;setting&#34;&gt;
+					&lt;label for=&#34;poster-image&#34;&gt;Poster Image&lt;/label&gt;
+					&lt;input type=&#34;text&#34; id=&#34;poster-image&#34; readonly data-setting=&#34;poster&#34; value=&#34;{{ data.model.poster }}&#34; /&gt;
+					&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting&#34;&gt;Remove poster image&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;# } #&gt;
+				&lt;div class=&#34;setting preload&#34;&gt;
+					&lt;span&gt;Preload&lt;/span&gt;
+					&lt;div class=&#34;button-group button-large&#34; data-setting=&#34;preload&#34;&gt;
+						&lt;button class=&#34;button&#34; value=&#34;auto&#34;&gt;Auto&lt;/button&gt;
+						&lt;button class=&#34;button&#34; value=&#34;metadata&#34;&gt;Metadata&lt;/button&gt;
+						&lt;button class=&#34;button active&#34; value=&#34;none&#34;&gt;None&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;label class=&#34;setting checkbox-setting autoplay&#34;&gt;
+					&lt;input type=&#34;checkbox&#34; data-setting=&#34;autoplay&#34; /&gt;
+					&lt;span&gt;Autoplay&lt;/span&gt;
+				&lt;/label&gt;
+
+				&lt;label class=&#34;setting checkbox-setting&#34;&gt;
+					&lt;input type=&#34;checkbox&#34; data-setting=&#34;loop&#34; /&gt;
+					&lt;span&gt;Loop&lt;/span&gt;
+				&lt;/label&gt;
+
+				&lt;div class=&#34;setting&#34; data-setting=&#34;content&#34;&gt;
+					&lt;#
+					var content = &#39;&#39;;
+					if ( ! _.isEmpty( data.model.content ) ) {
+						var tracks = jQuery( data.model.content ).filter( &#39;track&#39; );
+						_.each( tracks.toArray(), function (track) {
+							content += track.outerHTML; #&gt;
+						&lt;label for=&#34;video-track&#34;&gt;Tracks (subtitles, captions, descriptions, chapters, or metadata)&lt;/span&gt;
+						&lt;input class=&#34;content-track&#34; type=&#34;text&#34; id=&#34;video-track&#34; readonly value=&#34;{{ track.outerHTML }}&#34; /&gt;
+						&lt;button type=&#34;button&#34; class=&#34;button-link remove-setting remove-track&#34;&gt;Remove video track&lt;/button&gt;
+						&lt;# } ); #&gt;
+					&lt;# } else { #&gt;
+					&lt;span&gt;Tracks (subtitles, captions, descriptions, chapters, or metadata)&lt;/span&gt;
+					&lt;em&gt;There are no associated subtitles.&lt;/em&gt;
+					&lt;# } #&gt;
+					&lt;textarea class=&#34;hidden content-setting&#34;&gt;{{ content }}&lt;/textarea&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-editor-gallery&#34;&gt;
+		&lt;# if ( data.attachments.length ) { #&gt;
+			&lt;div class=&#34;gallery gallery-columns-{{ data.columns }}&#34;&gt;
+				&lt;# _.each( data.attachments, function( attachment, index ) { #&gt;
+					&lt;dl class=&#34;gallery-item&#34;&gt;
+						&lt;dt class=&#34;gallery-icon&#34;&gt;
+							&lt;# if ( attachment.thumbnail ) { #&gt;
+								&lt;img src=&#34;{{ attachment.thumbnail.url }}&#34; width=&#34;{{ attachment.thumbnail.width }}&#34; height=&#34;{{ attachment.thumbnail.height }}&#34; alt=&#34;&#34; /&gt;
+							&lt;# } else { #&gt;
+								&lt;img src=&#34;{{ attachment.url }}&#34; alt=&#34;&#34; /&gt;
+							&lt;# } #&gt;
+						&lt;/dt&gt;
+						&lt;# if ( attachment.caption ) { #&gt;
+							&lt;dd class=&#34;wp-caption-text gallery-caption&#34;&gt;
+								{{{ data.verifyHTML( attachment.caption ) }}}
+							&lt;/dd&gt;
+						&lt;# } #&gt;
+					&lt;/dl&gt;
+					&lt;# if ( index % data.columns === data.columns - 1 ) { #&gt;
+						&lt;br style=&#34;clear: both;&#34;&gt;
+					&lt;# } #&gt;
+				&lt;# } ); #&gt;
+			&lt;/div&gt;
+		&lt;# } else { #&gt;
+			&lt;div class=&#34;wpview-error&#34;&gt;
+				&lt;div class=&#34;dashicons dashicons-format-gallery&#34;&gt;&lt;/div&gt;&lt;p&gt;No items found.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;# } #&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-crop-content&#34;&gt;
+		&lt;img class=&#34;crop-image&#34; src=&#34;{{ data.url }}&#34; alt=&#34;Image crop area preview. Requires mouse interaction.&#34;&gt;
+		&lt;div class=&#34;upload-errors&#34;&gt;&lt;/div&gt;
+	&lt;/script&gt;
+
+	&lt;script type=&#34;text/html&#34; id=&#34;tmpl-site-icon-preview&#34;&gt;
+		&lt;h2&gt;Preview&lt;/h2&gt;
+		&lt;strong aria-hidden=&#34;true&#34;&gt;As a browser icon&lt;/strong&gt;
+		&lt;div class=&#34;favicon-preview&#34;&gt;
+			&lt;img src=&#34;http://localhost:8000/wp-admin/images/browser.png&#34; class=&#34;browser-preview&#34; width=&#34;182&#34; height=&#34;&#34; alt=&#34;&#34; /&gt;
+
+			&lt;div class=&#34;favicon&#34;&gt;
+				&lt;img id=&#34;preview-favicon&#34; src=&#34;{{ data.url }}&#34; alt=&#34;Preview as a browser icon&#34;/&gt;
+			&lt;/div&gt;
+			&lt;span class=&#34;browser-title&#34; aria-hidden=&#34;true&#34;&gt;Authcov Blog&lt;/span&gt;
+		&lt;/div&gt;
+
+		&lt;strong aria-hidden=&#34;true&#34;&gt;As an app icon&lt;/strong&gt;
+		&lt;div class=&#34;app-icon-preview&#34;&gt;
+			&lt;img id=&#34;preview-app-icon&#34; src=&#34;{{ data.url }}&#34; alt=&#34;Preview as an app icon&#34;/&gt;
+		&lt;/div&gt;
+	&lt;/script&gt;
+
+		&lt;div id=&#34;wp-auth-check-wrap&#34; class=&#34;hidden&#34;&gt;
+	&lt;div id=&#34;wp-auth-check-bg&#34;&gt;&lt;/div&gt;
+	&lt;div id=&#34;wp-auth-check&#34;&gt;
+	&lt;button type=&#34;button&#34; class=&#34;wp-auth-check-close button-link&#34;&gt;&lt;span class=&#34;screen-reader-text&#34;&gt;Close dialog&lt;/span&gt;&lt;/button&gt;
+			&lt;div id=&#34;wp-auth-check-form&#34; class=&#34;loading&#34; data-src=&#34;http://localhost:8000/wp-login.php?interim-login=1&amp;#038;wp_lang=en_US&#34;&gt;&lt;/div&gt;
+			&lt;div class=&#34;wp-auth-fallback&#34;&gt;
+		&lt;p&gt;&lt;b class=&#34;wp-auth-fallback-expired&#34; tabindex=&#34;0&#34;&gt;Session expired&lt;/b&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;a href=&#34;http://localhost:8000/wp-login.php&#34; target=&#34;_blank&#34;&gt;Please log in again.&lt;/a&gt;
+		The login page will open in a new tab. After logging in you can close it and return to this page.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var commonL10n = {&#34;warnDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;dismiss&#34;:&#34;Dismiss this notice.&#34;,&#34;collapseMenu&#34;:&#34;Collapse Main menu&#34;,&#34;expandMenu&#34;:&#34;Expand Main menu&#34;};var _wpUtilSettings = {&#34;ajax&#34;:{&#34;url&#34;:&#34;\/wp-admin\/admin-ajax.php&#34;}};var _wpMediaModelsL10n = {&#34;settings&#34;:{&#34;ajaxurl&#34;:&#34;\/wp-admin\/admin-ajax.php&#34;,&#34;post&#34;:{&#34;id&#34;:0}}};var pluploadL10n = {&#34;queue_limit_exceeded&#34;:&#34;You have attempted to queue too many files.&#34;,&#34;file_exceeds_size_limit&#34;:&#34;%s exceeds the maximum upload size for this site.&#34;,&#34;zero_byte_file&#34;:&#34;This file is empty. Please try another.&#34;,&#34;invalid_filetype&#34;:&#34;Sorry, this file type is not permitted for security reasons.&#34;,&#34;not_an_image&#34;:&#34;This file is not an image. Please try another.&#34;,&#34;image_memory_exceeded&#34;:&#34;Memory exceeded. Please try another smaller file.&#34;,&#34;image_dimensions_exceeded&#34;:&#34;This is larger than the maximum size. Please try another.&#34;,&#34;default_error&#34;:&#34;An error occurred in the upload. Please try again later.&#34;,&#34;missing_upload_url&#34;:&#34;There was a configuration error. Please contact the server administrator.&#34;,&#34;upload_limit_exceeded&#34;:&#34;You may only upload 1 file.&#34;,&#34;http_error&#34;:&#34;HTTP error.&#34;,&#34;upload_failed&#34;:&#34;Upload failed.&#34;,&#34;big_upload_failed&#34;:&#34;Please try uploading this file with the %1$sbrowser uploader%2$s.&#34;,&#34;big_upload_queued&#34;:&#34;%s exceeds the maximum upload size for the multi-file uploader when used in your browser.&#34;,&#34;io_error&#34;:&#34;IO error.&#34;,&#34;security_error&#34;:&#34;Security error.&#34;,&#34;file_cancelled&#34;:&#34;File canceled.&#34;,&#34;upload_stopped&#34;:&#34;Upload stopped.&#34;,&#34;dismiss&#34;:&#34;Dismiss&#34;,&#34;crunching&#34;:&#34;Crunching\u2026&#34;,&#34;deleted&#34;:&#34;moved to the trash.&#34;,&#34;error_uploading&#34;:&#34;\u201c%s\u201d has failed to upload.&#34;};
+var _wpPluploadSettings = {&#34;defaults&#34;:{&#34;file_data_name&#34;:&#34;async-upload&#34;,&#34;url&#34;:&#34;\/wp-admin\/async-upload.php&#34;,&#34;filters&#34;:{&#34;max_file_size&#34;:&#34;2097152b&#34;,&#34;mime_types&#34;:[{&#34;extensions&#34;:&#34;jpg,jpeg,jpe,gif,png,bmp,tiff,tif,ico,asf,asx,wmv,wmx,wm,avi,divx,flv,mov,qt,mpeg,mpg,mpe,mp4,m4v,ogv,webm,mkv,3gp,3gpp,3g2,3gp2,txt,asc,c,cc,h,srt,csv,tsv,ics,rtx,css,htm,html,vtt,dfxp,mp3,m4a,m4b,aac,ra,ram,wav,ogg,oga,flac,mid,midi,wma,wax,mka,rtf,js,pdf,class,tar,zip,gz,gzip,rar,7z,psd,xcf,doc,pot,pps,ppt,wri,xla,xls,xlt,xlw,mdb,mpp,docx,docm,dotx,dotm,xlsx,xlsm,xlsb,xltx,xltm,xlam,pptx,pptm,ppsx,ppsm,potx,potm,ppam,sldx,sldm,onetoc,onetoc2,onetmp,onepkg,oxps,xps,odt,odp,ods,odg,odc,odb,odf,wp,wpd,key,numbers,pages&#34;}]},&#34;multipart_params&#34;:{&#34;action&#34;:&#34;upload-attachment&#34;,&#34;_wpnonce&#34;:&#34;aac5a845a4&#34;}},&#34;browser&#34;:{&#34;mobile&#34;:false,&#34;supported&#34;:true},&#34;limitExceeded&#34;:false};var wpApiSettings = {&#34;root&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/&#34;,&#34;nonce&#34;:&#34;17cbdf462b&#34;,&#34;versionString&#34;:&#34;wp\/v2\/&#34;};var _wpMediaViewsL10n = {&#34;url&#34;:&#34;URL&#34;,&#34;addMedia&#34;:&#34;Add Media&#34;,&#34;search&#34;:&#34;Search&#34;,&#34;select&#34;:&#34;Select&#34;,&#34;cancel&#34;:&#34;Cancel&#34;,&#34;update&#34;:&#34;Update&#34;,&#34;replace&#34;:&#34;Replace&#34;,&#34;remove&#34;:&#34;Remove&#34;,&#34;back&#34;:&#34;Back&#34;,&#34;selected&#34;:&#34;%d selected&#34;,&#34;dragInfo&#34;:&#34;Drag and drop to reorder media files.&#34;,&#34;uploadFilesTitle&#34;:&#34;Upload Files&#34;,&#34;uploadImagesTitle&#34;:&#34;Upload Images&#34;,&#34;mediaLibraryTitle&#34;:&#34;Media Library&#34;,&#34;insertMediaTitle&#34;:&#34;Add Media&#34;,&#34;createNewGallery&#34;:&#34;Create a new gallery&#34;,&#34;createNewPlaylist&#34;:&#34;Create a new playlist&#34;,&#34;createNewVideoPlaylist&#34;:&#34;Create a new video playlist&#34;,&#34;returnToLibrary&#34;:&#34;\u2190 Return to library&#34;,&#34;allMediaItems&#34;:&#34;All media items&#34;,&#34;allDates&#34;:&#34;All dates&#34;,&#34;noItemsFound&#34;:&#34;No items found.&#34;,&#34;insertIntoPost&#34;:&#34;Insert into post&#34;,&#34;unattached&#34;:&#34;Unattached&#34;,&#34;mine&#34;:&#34;Mine&#34;,&#34;trash&#34;:&#34;Trash&#34;,&#34;uploadedToThisPost&#34;:&#34;Uploaded to this post&#34;,&#34;warnDelete&#34;:&#34;You are about to permanently delete this item from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;warnBulkDelete&#34;:&#34;You are about to permanently delete these items from your site.\nThis action cannot be undone.\n &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;warnBulkTrash&#34;:&#34;You are about to trash these items.\n  &#39;Cancel&#39; to stop, &#39;OK&#39; to delete.&#34;,&#34;bulkSelect&#34;:&#34;Bulk Select&#34;,&#34;trashSelected&#34;:&#34;Move to Trash&#34;,&#34;restoreSelected&#34;:&#34;Restore from Trash&#34;,&#34;deletePermanently&#34;:&#34;Delete Permanently&#34;,&#34;apply&#34;:&#34;Apply&#34;,&#34;filterByDate&#34;:&#34;Filter by date&#34;,&#34;filterByType&#34;:&#34;Filter by type&#34;,&#34;searchMediaLabel&#34;:&#34;Search Media&#34;,&#34;searchMediaPlaceholder&#34;:&#34;Search media items...&#34;,&#34;noMedia&#34;:&#34;No media files found.&#34;,&#34;attachmentDetails&#34;:&#34;Attachment Details&#34;,&#34;insertFromUrlTitle&#34;:&#34;Insert from URL&#34;,&#34;setFeaturedImageTitle&#34;:&#34;Featured Image&#34;,&#34;setFeaturedImage&#34;:&#34;Set featured image&#34;,&#34;createGalleryTitle&#34;:&#34;Create Gallery&#34;,&#34;editGalleryTitle&#34;:&#34;Edit Gallery&#34;,&#34;cancelGalleryTitle&#34;:&#34;\u2190 Cancel Gallery&#34;,&#34;insertGallery&#34;:&#34;Insert gallery&#34;,&#34;updateGallery&#34;:&#34;Update gallery&#34;,&#34;addToGallery&#34;:&#34;Add to gallery&#34;,&#34;addToGalleryTitle&#34;:&#34;Add to Gallery&#34;,&#34;reverseOrder&#34;:&#34;Reverse order&#34;,&#34;imageDetailsTitle&#34;:&#34;Image Details&#34;,&#34;imageReplaceTitle&#34;:&#34;Replace Image&#34;,&#34;imageDetailsCancel&#34;:&#34;Cancel Edit&#34;,&#34;editImage&#34;:&#34;Edit Image&#34;,&#34;chooseImage&#34;:&#34;Choose Image&#34;,&#34;selectAndCrop&#34;:&#34;Select and Crop&#34;,&#34;skipCropping&#34;:&#34;Skip Cropping&#34;,&#34;cropImage&#34;:&#34;Crop Image&#34;,&#34;cropYourImage&#34;:&#34;Crop your image&#34;,&#34;cropping&#34;:&#34;Cropping\u2026&#34;,&#34;suggestedDimensions&#34;:&#34;Suggested image dimensions: %1$s by %2$s pixels.&#34;,&#34;cropError&#34;:&#34;There has been an error cropping your image.&#34;,&#34;audioDetailsTitle&#34;:&#34;Audio Details&#34;,&#34;audioReplaceTitle&#34;:&#34;Replace Audio&#34;,&#34;audioAddSourceTitle&#34;:&#34;Add Audio Source&#34;,&#34;audioDetailsCancel&#34;:&#34;Cancel Edit&#34;,&#34;videoDetailsTitle&#34;:&#34;Video Details&#34;,&#34;videoReplaceTitle&#34;:&#34;Replace Video&#34;,&#34;videoAddSourceTitle&#34;:&#34;Add Video Source&#34;,&#34;videoDetailsCancel&#34;:&#34;Cancel Edit&#34;,&#34;videoSelectPosterImageTitle&#34;:&#34;Select Poster Image&#34;,&#34;videoAddTrackTitle&#34;:&#34;Add Subtitles&#34;,&#34;playlistDragInfo&#34;:&#34;Drag and drop to reorder tracks.&#34;,&#34;createPlaylistTitle&#34;:&#34;Create Audio Playlist&#34;,&#34;editPlaylistTitle&#34;:&#34;Edit Audio Playlist&#34;,&#34;cancelPlaylistTitle&#34;:&#34;\u2190 Cancel Audio Playlist&#34;,&#34;insertPlaylist&#34;:&#34;Insert audio playlist&#34;,&#34;updatePlaylist&#34;:&#34;Update audio playlist&#34;,&#34;addToPlaylist&#34;:&#34;Add to audio playlist&#34;,&#34;addToPlaylistTitle&#34;:&#34;Add to Audio Playlist&#34;,&#34;videoPlaylistDragInfo&#34;:&#34;Drag and drop to reorder videos.&#34;,&#34;createVideoPlaylistTitle&#34;:&#34;Create Video Playlist&#34;,&#34;editVideoPlaylistTitle&#34;:&#34;Edit Video Playlist&#34;,&#34;cancelVideoPlaylistTitle&#34;:&#34;\u2190 Cancel Video Playlist&#34;,&#34;insertVideoPlaylist&#34;:&#34;Insert video playlist&#34;,&#34;updateVideoPlaylist&#34;:&#34;Update video playlist&#34;,&#34;addToVideoPlaylist&#34;:&#34;Add to video playlist&#34;,&#34;addToVideoPlaylistTitle&#34;:&#34;Add to Video Playlist&#34;,&#34;attachmentsList&#34;:&#34;Attachments list&#34;,&#34;settings&#34;:{&#34;tabs&#34;:[],&#34;tabUrl&#34;:&#34;http:\/\/localhost:8000\/wp-admin\/media-upload.php?chromeless=1&#34;,&#34;mimeTypes&#34;:{&#34;image&#34;:&#34;Images&#34;,&#34;audio&#34;:&#34;Audio&#34;,&#34;video&#34;:&#34;Video&#34;},&#34;captions&#34;:true,&#34;nonce&#34;:{&#34;sendToEditor&#34;:&#34;26d42aecff&#34;},&#34;post&#34;:{&#34;id&#34;:0},&#34;defaultProps&#34;:{&#34;link&#34;:&#34;none&#34;,&#34;align&#34;:&#34;&#34;,&#34;size&#34;:&#34;&#34;},&#34;attachmentCounts&#34;:{&#34;audio&#34;:1,&#34;video&#34;:1},&#34;oEmbedProxyUrl&#34;:&#34;http:\/\/localhost:8000\/index.php?rest_route=\/oembed\/1.0\/proxy&#34;,&#34;embedExts&#34;:[&#34;mp3&#34;,&#34;ogg&#34;,&#34;flac&#34;,&#34;m4a&#34;,&#34;wav&#34;,&#34;mp4&#34;,&#34;m4v&#34;,&#34;webm&#34;,&#34;ogv&#34;,&#34;flv&#34;],&#34;embedMimes&#34;:{&#34;mp3&#34;:&#34;audio\/mpeg&#34;,&#34;ogg&#34;:&#34;audio\/ogg&#34;,&#34;flac&#34;:&#34;audio\/flac&#34;,&#34;m4a&#34;:&#34;audio\/mpeg&#34;,&#34;wav&#34;:&#34;audio\/wav&#34;,&#34;mp4&#34;:&#34;video\/mp4&#34;,&#34;m4v&#34;:&#34;video\/mp4&#34;,&#34;webm&#34;:&#34;video\/webm&#34;,&#34;ogv&#34;:&#34;video\/ogg&#34;,&#34;flv&#34;:&#34;video\/x-flv&#34;},&#34;contentWidth&#34;:840,&#34;months&#34;:[{&#34;year&#34;:&#34;2019&#34;,&#34;month&#34;:&#34;8&#34;,&#34;text&#34;:&#34;August 2019&#34;}],&#34;mediaTrash&#34;:0}};var mceViewL10n = {&#34;shortcodes&#34;:[&#34;wp_caption&#34;,&#34;caption&#34;,&#34;gallery&#34;,&#34;playlist&#34;,&#34;audio&#34;,&#34;video&#34;,&#34;embed&#34;]};var imageEditL10n = {&#34;error&#34;:&#34;Could not load the preview image. Please reload the page and try again.&#34;};var wpColorPickerL10n = {&#34;clear&#34;:&#34;Clear&#34;,&#34;clearAriaLabel&#34;:&#34;Clear color&#34;,&#34;defaultString&#34;:&#34;Default&#34;,&#34;defaultAriaLabel&#34;:&#34;Select default color&#34;,&#34;pick&#34;:&#34;Select Color&#34;,&#34;defaultLabel&#34;:&#34;Color value&#34;};/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-admin/load-scripts.php?c=0&amp;amp;load%5B%5D=hoverIntent,common,admin-bar,underscore,shortcode,backbone,wp-util,wp-backbone,media-models,wp-plupload,jquery-ui-core,jquery-ui&amp;amp;load%5B%5D=-widget,jquery-ui-mouse,jquery-ui-sortable,wp-mediaelement,wp-api-request,media-views,media-editor,media-audiovideo,mce-view,img&amp;amp;load%5B%5D=areaselect,image-edit,jquery-ui-draggable,jquery-ui-slider,jquery-touch-punch,iris,wp-color-picker,custom-background,svg-painter&amp;amp;ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.0.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+( &#39;fetch&#39; in window ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( document.contains ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.26.0-0&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( window.FormData &amp;&amp; window.FormData.prototype.keys ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );( Element.prototype.matches &amp;&amp; Element.prototype.closest ) || document.write( &#39;&lt;script src=&#34;http://localhost:8000/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2&#34;&gt;&lt;/scr&#39; + &#39;ipt&gt;&#39; );
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/dist/hooks.min.js?ver=2.2.0&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var heartbeatSettings = {&#34;nonce&#34;:&#34;dca1a89819&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/heartbeat.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+/* &lt;![CDATA[ */
+var authcheckL10n = {&#34;beforeunload&#34;:&#34;Your session has expired. You can log in again from this page or go to the login page.&#34;,&#34;interval&#34;:&#34;180&#34;};
+/* ]]&gt; */
+&lt;/script&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;http://localhost:8000/wp-includes/js/wp-auth-check.min.js?ver=5.2.2&#39;&gt;&lt;/script&gt;
+
+&lt;div class=&#34;clear&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- wpwrap --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;if(typeof wpOnload==&#39;function&#39;)wpOnload();&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" width="800px" height="600px"></iframe>
+      </div>
+  </div>
+
+          </main>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+</html>
+
